@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="author" content="Germán Iglesias Ramos"/>
+    <meta name="description" content="Página principal de la pagina web dedicada a la venta de sidra"/>
+    <meta name="keywords" content="sidra, Sidra, sidreria, Sidreria, Sidrería, sidrería, sidras, culin, culín, escanciador, bebida
+	corcho, botella, botellas, asturias, Asturias, chigre, escanciar, llagar, Llagar"/>
+    <link rel="icon" href="../img/iconoSidra.jpg" type="image/jpg"/>
+    <!-- Espacio para meter las hojas de estilos o los diferentes scrips-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../JAVASCRIPT/reloj.js"></script>
+    <link href="../CSS/reloj.css" rel="stylesheet" type="text/css"/>
+    <link href="../CSS/estilos.css" rel="stylesheet" type="text/css"/>
+    <link href="../CSS/navBar.css" rel="stylesheet" type="text/css"/>
+    <title>El Llagar Online</title>
+</head>
+<body>
+<div id="clockDate">
+    <p id="date"></p>
+    <ul id="clock">
+        <li id="hours"></li>
+        <li class="dot">:</li>
+        <li id="minutes"></li>
+        <li class="dot">:</li>
+        <li id="seconds"></li>
+    </ul>
+</div>
+<header>
+    <h1><a href="../index.html" title="Ir a la página principal">
+        <img src="../IMG/Llagar.gif" alt="El Llagar Online"/>
+    </a></h1>
+</header>
+<nav>
+    <ul id="lista_menu">
+        <li><a href="index.html">Principal</a></li>
+        <li><a href="HTML/historia.html">Historia</a></li>
+        <li><a href="HTML/productos.html">Productos</a>
+            <ul>
+                <li><a href="xml/sidras.xml">Sidras</a></li>
+                <li><a href="xml/sidrasEspumosas.xml">Sidras Espumosas</a></li>
+				<li><a href="xml/otrosProductos.xml">Otros Productos</a></li>
+            </ul>
+        </li>
+		<li><a href="HTML/establecimientos.html">Establecimientos</a></li>
+        <li><a href="HTML/contacto.html">Contacto</a></li>
+    </ul>
+</nav>
+<main>
+    <section>
+        <h2>Historia</h2>
+        <p> El Llagar Online nace como una propuesta para la evaluación extraordinaria de la asignatura Softwares y
+            Estandares para la Web.</p>
+        <p> En esta página web se intenta mostrar los distintos conocimientos adquiridos durante
+            las diferentes prácticas de la asignatura.</p>
+        <p> Para ello se aplicarán los conocimientos de HTML para realizar
+            las diferentes vistas de la aplicación, de la misma manera se utilizarán los conocimientos adquiridos de CSS
+            para mostrar de forma correcta y tratar los estilos de las vistas.</p>
+        <p>Por otro lado, también se utilizará XML para guardar las pizzas que conformarán la carta de la aplicación,
+            junto con estos XML se crearán las DTDs y XMLSchemas necesarios para la validación, de la misma forma para
+            mostrar las pizzas se utilizarán transformaciones XSLT.</p>
+        <p> En lo referente a la computación en el cliente se utilizará jquery para la creación de un reloj para las
+            diferentes páginas de aplicación, el formato json será utilizado para el intercambio de
+            información entre el cliente y el servidor y se utilizará Ajax para leer y mostrar la información en dicho
+            formato.</p>
+        <p> También sera usado en lo que concierne a la computación en el cliente la api de geolocalización de
+            HTML5, y se consumirán los servicios web de Google Maps para mostrar la ubicación de los locales a los
+            clientes, asi como la ubicación del cliente respecto a estos, en caso de que autorice la
+            geolocalización.</p>
+        <p> Por otro lado la computación en el servidor se hará sobre PHP, se utilizará para validar la
+            información del cliente y guardarla en una base de datos MYSQL y se enviará desde PHP un mensaje a los
+            usuarios
+            de que se ha procesado su pedido correctamente.</p>
+        <p> El funcionamiento de todo lo anterior se probará sobre la
+            máquina local XAMPP, y se utilizarán los validadores de HTML, CSS, XML, etc. para comprobar que están bien
+            formados todos los ficheros que conforman el sitio web.</p>
+    </section>
+</main>
+
+<footer>
+    <div id="copy">
+        <span class="copy">
+                &copy; Copyright 2019 - Llagar Online -  Derechos reservados
+        </span>
+        <span class="contacto_footer">
+            Sitio web hecho por:
+            <a href="mailto:uo202549@uniovi.es">Germán Iglesias Ramos</a>
+        </span>
+    </div>
+
+    <div class="sitio_web">
+        <h3>Sitio web</h3>
+        <ul>
+            <li><a href="../index.html">Principal</a></li>
+            <li><a href="historia.html">Historia</a></li>
+            <li><a href="productos.html">Productos</a></li>
+			<li><a href="establecimientos.html">Establecimientos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </div>
+
+    <div class="accesibilidad">
+        <h3>Sobre la accesibilidad</h3>
+        <p>Web optimizada para su uso en los siguientes navegadores:<br/>
+            Internet Explorer 8, Firefox 2.0 o superior, Safari, Ópera y Chrome.<br/>
+            Sitio web creado con CSS &amp; HTML válidos. • Accesibilidad AAA.</p>
+    </div>
+    <div class="clear"></div>
+</footer>
+
+</body>
+</html>

@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="author" content="Germán Iglesias Ramos"/>
-    <meta name="description" content="Página principal de la pagina web dedicada a la distribución y venta de sidras y derivados"/>
+    <meta name="description" content="Página principal de la pagina web dedicada a la venta de sidra"/>
     <meta name="keywords" content="sidra, Sidra, sidreria, Sidreria, Sidrería, sidrería, sidras, culin, culín, escanciador, bebida
 	corcho, botella, botellas, asturias, Asturias, chigre, escanciar, llagar, Llagar"/>
-    <link rel="icon" href="IMG/iconoSidra.jpg" type="image/jpg"/>
+    <link rel="icon" href="../img/iconoSidra.jpg" type="image/jpg"/>
     <!-- Espacio para meter las hojas de estilos o los diferentes scrips-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="JAVASCRIPT/reloj.js"></script>
-    <link href="CSS/reloj.css" rel="stylesheet" type="text/css"/>
-    <link href="CSS/navBar.css" rel="stylesheet" type="text/css"/>
-    <link href="CSS/estilos.css" rel="stylesheet" type="text/css"/>
+    <script src="../JAVASCRIPT/reloj.js"></script>
+    <link href="../CSS/reloj.css" rel="stylesheet" type="text/css"/>
+    <link href="../CSS/estilos.css" rel="stylesheet" type="text/css"/>
+    <link href="../CSS/navBar.css" rel="stylesheet" type="text/css"/>
     <title>El Llagar Online</title>
 </head>
 <body>
@@ -27,8 +27,8 @@
     </ul>
 </div>
 <header>
-    <h1><a href="index.html" title="Ir a la página principal">
-        <img src="IMG/Llagar.gif" alt="El Llagar Online"/>
+    <h1><a href="../index.html" title="Ir a la página principal">
+        <img src="../IMG/Llagar.gif" alt="El Llagar Online"/>
     </a></h1>
 </header>
 <nav>
@@ -42,46 +42,48 @@
 				<li><a href="xml/otrosProductos.xml">Otros Productos</a></li>
             </ul>
         </li>
-        <li><a href="HTML/establecimientos.html">Establecimientos</a></li>
+		<li><a href="HTML/establecimientos.html">Establecimientos</a></li>
         <li><a href="HTML/contacto.html">Contacto</a></li>
     </ul>
 </nav>
-
 <main>
     <section>
-        <h2>¡Bienvenido a el Llagar Online!</h2>
-        <p>Se encuetra en la página web del Llagar Online.<br/>
-            Aquí podrá encontrar una descripción de nuestros locales,
-            productos y servicios para que pueda degustar nuestros productos tradicionales
-            relacionados con la sidra, tanto en nuestros locales como a domicilio.<br/>
-            ¡Bienvenidos y que disfruten!</p>
 
-        <input class="botonPrincipal" type="button" onclick="location.href='HTML/locales.html';"
-               value="Nuestros locales"/>
-        <input class="botonPrincipal" type="button" onclick="location.href='HTML/productos.html';"
-               value="Nuestros Productos"/>
+        <h2>¡Accede a nuestras ofertas de sidras!</h2>
+
+        <div id="botonesProductos">
+            <input class="botonSidra" type="image" src="../IMG/IMG_5122.jpg" onclick="location.href='../xml/pizzas.xml';"
+                   alt="Sidras tradicionales" title="Pulse para ver nuestras sidras tradicionales"/>
+            <input class="botonSidra" type="image" src="../IMG/sidra-extra-achampanada.jpg"
+                   title="Pulse para ver nuestras sidras espumosas"
+                   onclick="location.href='../XML/pizzasEspeciales.xml';"
+                   alt="Sidras espumosas"/>
+			<input class="botonSidra" type="image" src="../IMG/escanciador-de-sidra-electrico.jpg" onclick="location.href='../xml/pizzas.xml';"
+                   alt="Otros productos" title="Pulse para ver otros productos"/>	   
+        </div>
+
     </section>
 </main>
 
 <footer>
     <div id="copy">
         <span class="copy">
-                &copy; Copyright 2019 - El Llagar Online -  Derechos reservados
+                &copy; Copyright 2019 - Llagar Online -  Derechos reservados
         </span>
         <span class="contacto_footer">
-            Pagina web hecha por:
+            Sitio web hecho por:
             <a href="mailto:uo202549@uniovi.es">Germán Iglesias Ramos</a>
         </span>
     </div>
 
-    <div class="mapa_web">
-        <h3>Mapa web</h3>
+    <div class="sitio_web">
+        <h3>Sitio web</h3>
         <ul>
-            <li><a href="index.html">Principal</a></li>
-            <li><a href="HTML/historia.html">Historia</a></li>
-            <li><a href="HTML/productos.html">Productos</a></li>
-            <li><a href="HTML/establecimientos.html">Establecimientos</a></li>
-            <li><a href="HTML/contacto.html">Contacto</a></li>
+            <li><a href="../index.html">Principal</a></li>
+            <li><a href="historia.html">Historia</a></li>
+            <li><a href="productos.html">Productos</a></li>
+			<li><a href="establecimientos.html">Establecimientos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
         </ul>
     </div>
 
