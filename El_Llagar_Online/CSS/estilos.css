@@ -26,8 +26,17 @@ main{
 }
 
 .botonPrincipal{
-    width: 30%;
-    font-size: 16px;
+    text-align: center;
+    position: relative;
+    width: 40%;
+    font-size: 26px;
+    background: rgb(67, 189, 77);
+}
+
+.botonPrincipal:hover{
+    background: rgba(0,0,0,0);
+    color: #3a7999;
+    box-shadow: inset 0 0 0 3px #3a7999;
 }
 
 p{
@@ -70,7 +79,7 @@ Estilos del contenidos del pie de pagina de las paginas web.
 }
 
 #copy a {
-    color: #5365ff;
+    color: #1e1e22;
     text-decoration: none;
 }
 
@@ -80,6 +89,7 @@ Estilos del contenidos del pie de pagina de las paginas web.
 
 .contacto_footer {
     float: right;
+    /*color: #232427;**/
 }
 
 .copy {
