@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE productos SYSTEM "Otros.dtd">
+ <productos>
+     <producto>
+         <titulo>Escanciador eléctrico Manzana</titulo>
+         <rutaFoto>../img/escanciador-electrico-manzana.jpg</rutaFoto>
+         <nombre>Escanciador eléctrico modelo Manzana</nombre>
+         <descripcion>Primer escanciador electrico de su familia, ahora con un diseño renovado y más atractivo. Incluye varilla extensible y bomba de gran capacidad. Valido para botella vasca y asturiana</descripcion>
+         <precio unidad="€">60,00</precio>
+     </producto>
+ </productos>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sidras SYSTEM "Sidra.dtd">
+ <sidras>
+     <sidra>
+         <titulo>Sidra Menéndez natural 70 cl.</titulo>
+         <rutaFoto>../img/00118731500114____1__600x600.jpg</rutaFoto>
+         <nombre>Menéndez</nombre>
+         <descripcion>Tonos dorados. Buena intensidad con aromas florales a manzana. Sabor fresco y ligera acidez con una larga persistencia en boca.</descripcion>
+         <precio unidad="€">1,85</precio>
+         <porcentaje_alcohol cantidad="100" unidad="%">6.5</porcentaje_alcohol>
+         <cantidad_neta cantidad="100" unidad="cl">70</cantidad_neta>
+     </sidra>
+     
+     <sidra>
+         <titulo>MANUEL BUSTO sidra natural botella 70 cl</titulo>
+         <rutaFoto>../img/mbustosidra2.jpg</rutaFoto>
+         <nombre>M.Busto</nombre>
+         <descripcion>Sidra Natural  ”tradicional” o “en rama”, elaborada a partir de manzanas asturianas seleccionadas de variedades dulces, amargas y ácidas con posterior fermentación en toneles de castaño.</descripcion>
+         <precio unidad="€">2,75</precio>
+         <porcentaje_alcohol cantidad="100" unidad="%">6.5</porcentaje_alcohol>
+         <cantidad_neta cantidad="100" unidad="cl">70</cantidad_neta>
+     </sidra>
+ </sidras>
+     

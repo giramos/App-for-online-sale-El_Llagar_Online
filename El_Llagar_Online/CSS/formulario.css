@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+input[type='text'] {
+    width: 30%;
+    height: 4%;
+}
+
+input[type='email'] {
+    width: 30%;
+    height: 4%;
+}
+
+textarea {
+    display: block;
+    width: 30%;
+    height: 40%;
+
+    resize: horizontal;
+    overflow: auto;
+    padding-bottom: 5%;
+}
+
+.botonesForm {
+    width: 30%;
+    font-size: 14px;
+}
+
+#botonesForm {
+    display: inline;
+}
+
