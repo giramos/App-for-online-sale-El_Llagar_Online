@@ -32,7 +32,8 @@ nav ul li {
 }
 
 nav ul li:hover {
-    background: #F3F781;
+  background: #F3F781;
+    
 }
 
 nav ul li:hover a {
