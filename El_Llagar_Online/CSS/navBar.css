@@ -10,7 +10,7 @@ nav ul li:hover > ul {
 }
 
 nav > ul {
-    background: #F3F781;
+    background: #F3F781;/*color del menu*/
     padding: 0 0;
     list-style: none;
     position: relative;
@@ -20,12 +20,15 @@ nav > ul {
     text-align: center;
     z-index: 1;
     border-radius: 10px 10px 10px 10px;
-    border: 1px solid #000;
+    border: 5px solid rgb(202, 206, 5);/*el borde de todo el menu*/
+    font-size: 20px;
+    font: small-caps 100%/200% serif;/*formato de la letra del menu*/
 }
 
 nav ul li {
     float: left;
     width: 20%;
+    
 }
 
 nav ul li:hover {
