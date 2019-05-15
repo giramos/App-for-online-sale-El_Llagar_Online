@@ -16,13 +16,18 @@ header {
 }
 
 header img {
-    width: 30%;
-    height: 30%;
-    border: 0;
+    width: 12%;
+    height: 12%;
 }
 
 main{
     padding-bottom: 5%;
+    
+}
+
+.botonesPrincipales {
+    text-align: center;
+   
 }
 
 .botonPrincipal{
@@ -41,6 +46,7 @@ main{
 
 p{
     font-size: 120%;
+    
 }
 
 h2{
