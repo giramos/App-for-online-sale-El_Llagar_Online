@@ -139,3 +139,11 @@ Estilos del contenidos del pie de pagina de las paginas web.
 footer{
     border-top: 6px double #6b727c;
 }
+
+/*no nse**//
+h1{
+    padding: 2em 5em;
+    font: normal 20px/30px Montserrat, sans-serif;
+    color: #999;
+}
+
