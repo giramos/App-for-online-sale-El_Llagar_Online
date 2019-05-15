@@ -33,15 +33,15 @@ main{
 .botonPrincipal{
     text-align: center;
     position: relative;
-    width: 40%;
+    width: 50%;
     font-size: 26px;
-    background: rgb(67, 189, 77);
+    background: burlywood;
 }
 
 .botonPrincipal:hover{
     background: rgba(0,0,0,0);
-    color: #3a7999;
-    box-shadow: inset 0 0 0 3px #3a7999;
+    color: #1e94cf;
+    box-shadow: inset 0 0 0 3px #1e94cf;
 }
 
 p{
