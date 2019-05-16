@@ -63,6 +63,10 @@ h2{
     text-align: center;
 }
 
+h3{
+    font-size: 120%;
+}
+
 .botonSidra{
     width: 30%;
     height: 30%;
