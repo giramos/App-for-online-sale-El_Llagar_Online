@@ -1,13 +1,12 @@
 @charset "utf-8";
 
 #clockDate {
-    float: right;
-    
+    float: right;    
 }
 
-#date {
+.date {/*al cambiar la especificidad cambiamos el tamaño de la letra OJO ahi*/
     font-family: 'BebasNeueRegular', Arial, Helvetica, sans-serif;
-    font-size: 11px;
+    font-size: 110px;
     text-align: center;
     margin: 0 auto;
     height: 14px;
@@ -30,8 +29,6 @@
 
 .punto {
     position: relative;
-    -moz-animation: mymove 1s ease infinite;
-    -webkit-animation: mymove 1s ease infinite;
     padding-left: 10px;
     padding-right: 10px;
 }

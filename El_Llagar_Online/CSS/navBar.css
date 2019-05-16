@@ -1,13 +1,17 @@
 @charset "utf-8";
 
+  /* especificidad: 003 */
+
 nav ul ul {
     display: none;
 }
+  /* especificidad: 014 */
 
 nav ul li:hover > ul {
     display: block;
     list-style: none;
 }
+  /* especificidad: 002 */
 
 nav > ul {
     background: #F3F781;/*color del menu*/
@@ -25,21 +29,25 @@ nav > ul {
     font: small-caps 100%/200% serif;/*formato de la letra del menu*/
     
 }
+  /* especificidad: 003 */
 
 nav ul li {
     float: left;
     width: 20%;
     
 }
+  /* especificidad: 013 */
 
 nav ul li:hover {
   background: #F3F781;
     
 }
+  /* especificidad: 014 */
 
 nav ul li:hover a {
     color: #000;
 }
+  /* especificidad: 004 */
 
 nav ul li a {
     color: rgb(0, 0, 0);
@@ -47,6 +55,7 @@ nav ul li a {
     padding: 25px 40px;
     text-decoration: none;
 }
+  /* especificidad: 003 */
 
 nav ul ul {
     background-color: #F3F781;
@@ -55,6 +64,7 @@ nav ul ul {
     width: 20%;
     border-radius: 10px 10px 10px 10px;
 }
+  /* especificidad: 004 */
 
 nav ul ul li {
     float: none;
@@ -63,11 +73,13 @@ nav ul ul li {
     position: relative;
     width: 100%;
 }
+  /* especificidad: 005 */
 
 nav ul ul li a {
     padding: 15px 40px;
     color: #000;
 }
+  /* especificidad: 015 */
 
 nav ul ul li a:hover {
     background: rgba(0, 0, 0, 0.2);

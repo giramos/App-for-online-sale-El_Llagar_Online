@@ -12,14 +12,17 @@
     <link href="../css/estilos.css" rel="stylesheet" type="text/css" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="../JAVASCRIPT/reloj.js"></script>
+    <script src="../JAVASCRIPT/analogico.js"></script>
     <link href="../CSS/reloj.css" rel="stylesheet" type="text/css" />
     <link href="../CSS/estilos.css" rel="stylesheet" type="text/css" />
     <link href="../CSS/navBar.css" rel="stylesheet" type="text/css" />
     <link href="../CSS/estiloTitulo.css" rel="stylesheet" type="text/css" />
+    <link href="../CSS/analogico.css" rel="stylesheet" type="text/css" />
     <title>El Llagar Online</title>
 </head>
 
-<body>
+<body onload="funcionReloj()">
+    <!-- esta funcion php nos activa el analogico -->
     <div class="Iam">
         <p>Esto es</p>
         <blockquote>
@@ -33,15 +36,27 @@
         </blockquote>
     </div>
 
+    <div id="cajacontenido">
+        <div id="aplicacion">
+            <div id="CajaReloj">
+                <img id="segundos" src="../IMG/Aguja3.png" alt="Manilla segundos reloj" />
+                <img id="minutos" src="../IMG/Aguja2.png" alt="Manilla pequeña reloj" />
+                <img id="hora" src="../IMG/Aguja1.png" alt="Manilla grande reloj" />
+            </div>
+        </div>
+    </div>
+
+    <div class="clear"></div>
+
     <div id="clockDate">
         <p id="date"></p>
-        <ul id="clock">
-            <li id="hours"></li>
-            <li class="dot">:</li>
-            <li id="minutes"></li>
-            <li class="dot">:</li>
-            <li id="seconds"></li>
-        </ul>
+        <!--<ul id="clock"> Si quitamos el comentario aparecera la hora como en un inicio
+                    <li id="hours"></li> lo podremos mira mas adelante
+                    <li class="dot">:</li>
+                    <li id="minutes"></li>
+                    <li class="dot">:</li>
+                    <li id="seconds"></li>
+                </ul>-->
     </div>
     <header>
         <a href="../index.html" title="Ir a la página principal">

@@ -1,14 +1,17 @@
 @charset "utf-8";
+  /* especificidad: 011 */
 
 input[type='text'] {
     width: 30%;
     height: 4%;
 }
+  /* especificidad: 011 */
 
 input[type='email'] {
     width: 30%;
     height: 4%;
 }
+  /* especificidad: 001 */
 
 textarea {
     display: block;
@@ -19,11 +22,13 @@ textarea {
     overflow: auto;
     padding-bottom: 5%;
 }
+  /* especificidad: 010 */
 
 .botonesForm {
     width: 30%;
     font-size: 14px;
 }
+  /* especificidad: 100 */
 
 #botonesForm {
     display: inline;

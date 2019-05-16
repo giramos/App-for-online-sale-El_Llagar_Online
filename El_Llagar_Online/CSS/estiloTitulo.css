@@ -1,19 +1,24 @@
 @charset "utf-8";
  
  /*Titulo, animación */
+ /* especificidad: 010 */
  .Iam {
     position: relative;
     font: normal 25px/35px Montserrat, sans-serif;
     color: #999;
+    margin-top: 0%;
     
   }
+  /* especificidad: 011 */
  .Iam p {
     height: 50px;
     float: left;
     margin-right: 0.3em;
     
   }
-  .Iam blockquote {
+    /* especificidad: 011 */
+
+  .Iam blockquote { /*parte que engloba las letras rojas*/
     float: left;
     overflow: hidden;
     position: relative;
@@ -22,6 +27,8 @@
     right: 34px;
     
   }
+    /* especificidad: 020 */
+
   .Iam .innerIam {
     display: inline-block;
     color: #e74c3c;
