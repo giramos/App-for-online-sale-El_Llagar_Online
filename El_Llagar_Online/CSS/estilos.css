@@ -4,7 +4,7 @@ body {
     max-width: 60%;
     margin: auto;
     padding: 10px;
-    background-color: #faebd7;
+    background-color: #F6F6F6;
 }
 
 body header {
@@ -16,30 +16,55 @@ header {
 }
 
 header img {
-    width: 30%;
-    height: 30%;
-    border: 0;
+    width: 12%;
+    height: 12%;
 }
 
 main{
     padding-bottom: 5%;
+    
+}
+
+.botonesPrincipales {
+    text-align: center;
+   
 }
 
 .botonPrincipal{
-    width: 30%;
-    font-size: 16px;
+    text-align: center;
+    position: relative;
+    width: 50%;
+    font-size: 26px;
+    background: burlywood;
+}
+
+.botonPrincipal:hover{
+    background: rgba(0,0,0,0);
+    color: #1e94cf;
+    box-shadow: inset 0 0 0 3px #1e94cf;
 }
 
 p{
     font-size: 120%;
+    
+}
+
+h1{
+    font-size: 300%; /*tamaño de la letra*/
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*Sombra FUEGOOOO*/
+    text-shadow: 0 0 20px #fefcc9, 2px -2px 3px #feec85, -4px -4px 5px #ffae34,
+     5px -10px 6px #ec760c, -5px -12px 8px #cd4606, 0 -15px 20px #973716, 2px -15px 20px #451b0e;
 }
 
 h2{
     font-size: 200%;
+    text-align: center;
 }
 
 h3{
-    font-size: 130%;
+    font-size: 120%;
 }
 
 .botonSidra{
@@ -70,7 +95,7 @@ Estilos del contenidos del pie de pagina de las paginas web.
 }
 
 #copy a {
-    color: #5365ff;
+    color: #1e1e22;
     text-decoration: none;
 }
 
@@ -80,6 +105,7 @@ Estilos del contenidos del pie de pagina de las paginas web.
 
 .contacto_footer {
     float: right;
+    /*color: #232427;**/
 }
 
 .copy {
@@ -88,6 +114,7 @@ Estilos del contenidos del pie de pagina de las paginas web.
 
 .mapa_web {
     float: left;
+    
 }
 
 .mapa_web ul {
@@ -121,5 +148,8 @@ Estilos del contenidos del pie de pagina de las paginas web.
 }
 
 footer{
-    border-top: 2px solid #6b727c;
+    border-top: 6px double #6b727c;
 }
+
+
+
