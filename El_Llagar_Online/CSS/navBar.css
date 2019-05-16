@@ -23,6 +23,7 @@ nav > ul {
     border: 5px solid rgb(202, 206, 5);/*el borde de todo el menu*/
     font-size: 20px;/*tamaño de la letra*/
     font: small-caps 100%/200% serif;/*formato de la letra del menu*/
+    
 }
 
 nav ul li {
