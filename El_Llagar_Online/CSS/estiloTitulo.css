@@ -11,13 +11,16 @@
     height: 50px;
     float: left;
     margin-right: 0.3em;
+    
   }
-  .Iam b {
+  .Iam blockquote {
     float: left;
     overflow: hidden;
     position: relative;
-    height: 50px;
-    top: 40px;
+    height: 45px;
+    top: 20px;
+    right: 34px;
+    
   }
   .Iam .innerIam {
     display: inline-block;
