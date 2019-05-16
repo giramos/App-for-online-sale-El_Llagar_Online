@@ -50,7 +50,9 @@ p{
 }
 
 h2{
-    font-size: 200%;
+    font-size: 300%; /*tamaño de la letra*/
+    text-align: center;
+    font-family: "Playfair Display", serif;
 }
 
 h3{
