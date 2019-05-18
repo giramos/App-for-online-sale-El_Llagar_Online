@@ -1,7 +1,15 @@
 @charset "utf-8";
 
-  /* especificidad: 003 */
 
+	 
+  /* especificidad: 003 */
+  @media screen and (max-width:800px ) {
+    nav{
+      height: auto;
+      text-align: center;
+      line-height: 0.5em; /*HAS DE MIRAR PARA LO DE LOS ESTABLECIMIENTOS*/
+    }
+  }
 nav ul ul {
     display: none;
 }
