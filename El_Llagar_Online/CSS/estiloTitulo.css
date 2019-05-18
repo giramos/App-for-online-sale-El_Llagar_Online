@@ -2,41 +2,50 @@
  
  /*Titulo, animación */
  /* especificidad: 010 */
- .Iam {
+ .header .Iam {
     position: relative;
     font: normal 25px/35px "Montserrat", sans-serif;
-    color: #999;
     margin-top: 0%;
-    
+    margin-left: 0%;
+    margin-bottom: 0%;
+    margin-right: 0%;
   }
   /* especificidad: 011 */
- .Iam p {
-    height: 50px;
+  .header .Iam .a {
+    height: 20px;
     float: left;
-    margin-right: 0.3em;
-    margin-top: 4%;
+    margin-left: 0em;
+    margin-top: 0%;
+    text-align: left;
+    margin-bottom: 0%;
+    margin-right: 0%;
     
   }
+ 
     /* especificidad: 011 */
 
-  .Iam blockquote { /*parte que engloba las letras rojas*/
-    float: left;
+    .header .Iam blockquote { /*parte que engloba las letras rojas*/
+    float: right;
     overflow: hidden;
-    position: relative;
-    height: 45px;
-    top: 15px;
-    right: 34px;
+    position: static;
+    height: 75px;
+    top: 1px;
+    right: 0px;
+    text-align: left;
+    margin-right: 0em;
+    margin-bottom: 0%;
     
   }
     /* especificidad: 020 */
 
-  .Iam .innerIam {
+    .header .Iam .innerIam {
     display: inline-block;
     color: #e74c3c;
     position: relative;
     white-space: nowrap;
     top: 0;
-    left: 0;
+    right: 0;
+    font-size: 150%;
   
   
   /*animacion*/

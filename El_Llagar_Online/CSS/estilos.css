@@ -14,20 +14,24 @@ body {
 /* Especificidad 001 */
 header {
     /* mueve el elemento debajo de los elementos flotantes a ambos lados - both*/
-    clear: both;
+    ;
 }
 /* Especificidad 002 */
 body header {
-    /*pondremos el GIF del asturiano escanciando en el centro*/
-    margin-top: 0px;
+    /*pondremos el GIF del asturiano escanciando a la izquierda*/
+   margin-top: 0px;
     padding: 0px;;
     text-align: center;
 }
 /* Especificidad 002 */
-header img {
-    /*Tamaño de la imagen*/
-    width: 12%;
-    height: 12%;
+.header img {
+    /*Tamaño de la imagen y posicion*/
+    width: 10%;
+    height: 10%;
+    float: left;
+    margin-bottom: 2%;
+    margin-left: 0%;
+    clear: both;
 }
 /* Especificidad 001 */
 main{
