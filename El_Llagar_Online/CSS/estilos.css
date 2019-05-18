@@ -79,17 +79,17 @@ h2{
 h3{
     font-size: 1.2rem;
 }
-
+/* Especificidad 010*/
 .botonSidra{
     width: 30%;
     height: 30%;
     border: #6b727c solid 2px;
 }
-
+/* Especificidad 020*/
 .botonSidra:hover{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
+/* Especificidad 100*/
 #botonesProductos{
     text-align: center;
 }
@@ -97,9 +97,9 @@ h3{
 /*
 Estilos del contenidos del pie de pagina de las paginas web.
  */
-
+/* Especificidad 100*/
 #copy {
-    margin-bottom: 1%;
+    margin-bottom: 1%;/*espacio, distancia arriba con la linea que separa le body y el footer */
     padding-top: 5%;
     padding-bottom: 6%;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -108,7 +108,7 @@ Estilos del contenidos del pie de pagina de las paginas web.
 }
 
 #copy a {
-    color: #1e1e22;
+    color: #1e1e22;/*color de la letra del autor, o sea YO*/
     text-decoration: none;
 }
 
