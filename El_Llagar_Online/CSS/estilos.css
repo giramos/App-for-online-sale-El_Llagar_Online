@@ -58,11 +58,11 @@ main{
 }
 /* Especificidad 001 */
 p{    
-    font-size: 1.2rem;/*La unidad relativa rem corresponde a la altura total del tipo de letra*/
+    font-size: 120%;
 }
 /* Especificidad 001 */
 h1{
-    font-size: 3rem; /*tamaño de la letra*/
+    font-size: 3rem; /*tamaño de la letra*//*La unidad relativa rem corresponde a la altura total del tipo de letra*/
     text-align: center;
     font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
     /*Sombra efecto FUEGOOOO*/
@@ -71,13 +71,13 @@ h1{
 }
 /* Especificidad 001 */
 h2{
-    font-size: 2rem;
+    font-size: 2rem;/*La unidad relativa rem corresponde a la altura total del tipo de letra*/
     text-align: center; /*decidi alinear tanto h1 coomo h2 centrados*/
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif
 }
 /* Especificidad 001 */
 h3{
-    font-size: 1.2rem;
+    font-size: 1.2rem;/*La unidad relativa rem corresponde a la altura total del tipo de letra*/
 }
 /* Especificidad 010*/
 .botonSidra{
@@ -93,7 +93,11 @@ h3{
 #botonesProductos{
     text-align: center;
 }
-
+ .botella {
+    float: left; 
+    margin: 80px 10px 25px 25px;
+    
+ }
 /*
 Estilos del contenidos del pie de pagina de las paginas web.
  */
@@ -104,7 +108,9 @@ Estilos del contenidos del pie de pagina de las paginas web.
     padding-bottom: 6%;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 0.8em;
+    font-family: white;
     line-height: 1.5em;
+    color: black;
 }
 
 #copy a {
@@ -156,9 +162,21 @@ Estilos del contenidos del pie de pagina de las paginas web.
     font-size: 90%;
 }
 
+.siguiente{
+    text-align: center;
+    background: #222;
+    border-bottom: 1px solid #666;
+    color: #eee;
+    font: 24px ,serif;
+    text-decoration: none;
+    float: right;
+}
 .clear{
     clear: both;
 }
+
+
+
 
 footer{
     border-top: 6px double #6b727c;
