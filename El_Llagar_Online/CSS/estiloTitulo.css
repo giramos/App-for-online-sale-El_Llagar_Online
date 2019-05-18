@@ -4,7 +4,7 @@
  /* especificidad: 010 */
  .Iam {
     position: relative;
-    font: normal 25px/35px Montserrat, sans-serif;
+    font: normal 25px/35px "Montserrat", sans-serif;
     color: #999;
     margin-top: 0%;
     
@@ -14,6 +14,7 @@
     height: 50px;
     float: left;
     margin-right: 0.3em;
+    margin-top: 4%;
     
   }
     /* especificidad: 011 */
@@ -23,7 +24,7 @@
     overflow: hidden;
     position: relative;
     height: 45px;
-    top: 20px;
+    top: 15px;
     right: 34px;
     
   }
