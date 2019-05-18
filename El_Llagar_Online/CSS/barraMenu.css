@@ -24,7 +24,7 @@ nav > ul {
     text-align: center;
     z-index: 1;
     border-radius: 10px 10px 10px 10px;
-    border: 5px solid rgb(202, 206, 5);/*el borde de todo el menu*/
+    border: 15px double rgb(202, 206, 5);/*el borde de todo el menu*/
     font-size: larger;/*tamaño de la letra*/
     font: small-caps 100%/200% serif;/*formato de la letra del menu*/
     font-optical-sizing: auto;
@@ -40,7 +40,7 @@ nav ul li {
   /* especificidad: 013 */
 
 nav ul li:hover {/*el foco*/
-  background: #FBE6C8;
+  background: rgb(240, 221, 181);
   font-optical-sizing: auto;
   font-size: larger;
   
@@ -67,6 +67,7 @@ nav ul ul {
     position: absolute;
     width: 20%;
     border-radius: 10px 10px 10px 10px;
+    
 }
   /* especificidad: 004 */
 
@@ -86,6 +87,6 @@ nav ul ul li a {
   /* especificidad: 015 */
 
 nav ul ul li a:hover {
-    background: #FBE6C8;
+    background: rgb(240, 221, 181);
     border-radius: 10px 10px 10px 10px;
 }
