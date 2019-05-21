@@ -70,7 +70,7 @@
 	width: 35%;
 }
 
-.footer .footer-centro i{
+.footer .footer-centro em{
 	background-color:  #33383b;
 	color: #ffffff;
 	font-size: 25px;
@@ -83,7 +83,7 @@
 	vertical-align: middle;
 }
 
-.footer .footer-centro i.autor{
+.footer .footer-centro em.autor{
 	font-size: 27px;
     line-height: 38px;
     display: block;
