@@ -103,4 +103,20 @@ h3{
     
  }
 
+  .audio{
+    margin-left: auto;
+    margin-right: auto;
+    display:block;  
+ }
 
+ .paisanos{
+     float: right;
+     margin: 20px 20px 10px 10px;
+ }
+.video{
+    margin-left: auto;
+    margin-right: auto;
+    display:block;  
+    width: 60%;
+    
+}
