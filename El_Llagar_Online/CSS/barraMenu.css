@@ -2,7 +2,7 @@
 
 
 	 
-  /* especificidad: 003 */
+  /* especificidad: 001 */
   @media screen and (max-width:800px ) {
     nav{
       height: auto;
@@ -10,6 +10,7 @@
       line-height: 0.5em; /*HAS DE MIRAR PARA LO DE LOS ESTABLECIMIENTOS*/
     }
   }
+  /* Especificidad 003*/
 nav ul ul {
     display: none;
 }

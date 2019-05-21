@@ -7,14 +7,29 @@ body {
     /*	Las reglas se aplican para cualquier
      ancho del navegador que sea inferior al valor definido en la consulta.*/
     margin: auto;
-    background-color: #F6F6F6;
     /*margen superior*/
-    padding: 10px; 
+    padding: 20px 80px;
+    background: #eee url(../IMG/extra_clean_paper.png);
 }
-/* Especificidad 001 */
-header {
+
+
+/*Fecha*/
+/* Especificidad 102 */
+body div #date {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 120%;
+    text-decoration: underline;
+    font-style: italic;
+}
+/* Especificidad 010 */
+.header {
     /* mueve el elemento debajo de los elementos flotantes a ambos lados - both*/
-    ;
+    max-width: 800px;
+    padding: 60px;
+    text-align: center;
+    background: #eee url(../IMG/extra_clean_paper.png);
+    color: white;
+    font-size: 30px;
 }
 /* Especificidad 002 */
 body header {
@@ -23,7 +38,7 @@ body header {
     padding: 0px;;
     text-align: center;
 }
-/* Especificidad 002 */
+/* Especificidad 011 */
 .header img {
     /*Tamaño de la imagen y posicion*/
     width: 10%;
@@ -97,22 +112,33 @@ h3{
 #botonesProductos{
     text-align: center;
 }
+/* Especificidad 010*/
  .botella {
     float: left; 
-    margin: 80px 10px 25px 25px;
-    
+    margin: 80px 10px 25px 25px ;
+    max-width: 800px;
  }
-
+ /* Especificidad 010*/
+ .Llagar{
+    max-width: 800px;
+    width: 70%; height: auto;
+    min-width: 300px;
+ }
+/* Especificidad 010*/
   .audio{
     margin-left: auto;
     margin-right: auto;
     display:block;  
  }
-
+/* Especificidad 010*/
  .paisanos{
      float: right;
      margin: 20px 20px 10px 10px;
+     max-width: 800px;
+     width: auto; 
+    min-width: 300px;
  }
+ /* Especificidad 010*/
 .video{
     margin-left: auto;
     margin-right: auto;

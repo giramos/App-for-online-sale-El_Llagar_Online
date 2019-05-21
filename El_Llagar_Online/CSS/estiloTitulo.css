@@ -1,7 +1,7 @@
 @charset "utf-8";
  
  /*Titulo, animación */
- /* especificidad: 010 */
+ /* especificidad: 020 */
  .header .Iam {
     position: relative;
     font: normal 25px/35px "Montserrat", sans-serif;
@@ -10,7 +10,7 @@
     margin-bottom: 0%;
     margin-right: 0%;
   }
-  /* especificidad: 011 */
+  /* especificidad: 030 */
   .header .Iam .a {
     height: 20px;
     float: left;
@@ -22,7 +22,7 @@
     
   }
  
-    /* especificidad: 011 */
+    /* especificidad: 021 */
 
     .header .Iam blockquote { /*parte que engloba las letras rojas*/
     float: right;
@@ -36,7 +36,7 @@
     margin-bottom: 0%;
     
   }
-    /* especificidad: 020 */
+    /* especificidad: 030 */
 
     .header .Iam .innerIam {
     display: inline-block;

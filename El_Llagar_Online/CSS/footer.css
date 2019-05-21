@@ -1,4 +1,5 @@
- .footer{
+/* Especificidad 010*/
+.footer{
     margin-bottom: 1%;/*espacio, distancia arriba con la linea que separa le body y el footer */
     padding-top: 5%;
 	background-color: #292c2f;
@@ -12,7 +13,7 @@
     line-height: 1em; /*HAS DE MIRAR PARA LO DE LOS ESTABLECIMIENTOS*/
 	
 }
-
+/* Especificidad 020*/
 .footer .footer-izquierda,
 .footer .footer-centro,
 .footer .footer-derecha{
@@ -21,21 +22,21 @@
 }
 
 /* Footer izquierda */
-
+/* Especificidad 020*/
 .footer .footer-izquierda{
     width: 35%;
     color: beige;
 }
 
 /* The company logo */
-
+/* Especificidad 011*/
 .footer h3{
 	color:  #ffffff;
 	font: normal 26px 'Cookie', cursive;
     margin: 0;
 }
 
-
+/* Especificidad 012*/
 .footer span img{
     width:50px;
     height:50px;
@@ -43,7 +44,7 @@
 }
 
 /* Footer menu */
-
+/* Especificidad 020*/
 .footer .footer-menu{
 	color:  #ffffff;
 	margin: 20px 0 12px;
@@ -52,10 +53,12 @@
     
 
 }
+/* Especificidad 023*/
 .footer .footer-izquierda ul li a {/*en el menu los enlaces*/
     text-decoration:none;
     color:#5383d3;
 }
+/* Especificidad 020*/
 .footer .footer-derechos{
 	color:  #8f9296;
 	font-size: 14px;
@@ -65,11 +68,11 @@
 }
 
 /* Footer centro */
-
+/* Especificidad 020*/
 .footer .footer-centro{
 	width: 35%;
 }
-
+/* Especificidad 021*/
 .footer .footer-centro em{
 	background-color:  #33383b;
 	color: #ffffff;
@@ -82,7 +85,7 @@
 	margin: 10px;
 	vertical-align: middle;
 }
-
+/* Especificidad 031*/
 .footer .footer-centro em.autor{
 	font-size: 27px;
     line-height: 38px;
@@ -94,21 +97,21 @@
 }
 
 
-
+/* Especificidad 021*/
 .footer .footer-centro p{
 	display: inline-block;
 	color: #ffffff;
 	vertical-align: middle;
 	margin:0;
 }
-
+/* Especificidad 022*/
 .footer .footer-centro p span{
 	display:block;
 	font-weight: normal;
 	font-size:14px;
 	line-height:2;
 }
-
+/* Especificidad 022*/
 .footer .footer-centro p a{
 	color:  #5383d3;
 	text-decoration: none;;
@@ -116,11 +119,11 @@
 
 
 /* Footer derecha */
-
+/* Especificidad 020*/
 .footer .footer-derecha{
 	width: 28%;
 }
-
+/* Especificidad 020*/
 .footer .footer-company-about{
 	line-height: 20px;
 	color:  #92999f;
@@ -128,7 +131,7 @@
 	font-weight: normal;
 	margin: 0;
 }
-
+/* Especificidad 021*/
 .footer .footer-company-about span{
 	display: block;
 	color:  #ffffff;
@@ -136,11 +139,11 @@
 	font-weight: bold;
 	margin-bottom: 20px;
 }
-
+/* Especificidad 020*/
 .footer .footer-icons{
 	margin-top: 25px;
 }
-
+/* Especificidad 021*/
 .footer .footer-icons a{
 	display: inline-block;
 	width: 35px;
@@ -157,17 +160,18 @@
 	margin-right: 3px;
 	margin-bottom: 5px;
 }
+/* Especificidad 010*/
 .footer{
     border-top: 16px double #F6F6F6;
 }
 
 /* Diseño responsable, puedo obviarlo */
 @media (max-width: 800px) {
-
+/* Especificidad 010*/
 	.footer{
 		font: bold 14px sans-serif;
 	}
-
+/* Especificidad 020*/
 	.footer .footer-izquierda,
 	.footer .footer-centro,
 	.footer .footer-derecha{
@@ -177,7 +181,7 @@
         text-align: center;
         
 	}
-
+/* Especificidad 021*/
 	.footer .footer-centro i{
 		margin-left: 0;
 	}
