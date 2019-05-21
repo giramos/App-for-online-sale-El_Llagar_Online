@@ -8,38 +8,6 @@
     font-family: 'BebasNeueRegular', Arial, Helvetica, sans-serif;
     font-size: 25px;
     text-align: left;
-   
     color:black;
         
-}
-
-.clockDate .date {/*al cambiar la especificidad cambiamos el tamaño de la letra OJO ahi*/
-    font-family: 'BebasNeueRegular', Arial, Helvetica, sans-serif;
-    font-size: 100px;
-    text-align: center;
-    margin: 0 auto;
-    height: 10px;
-}
-
-#clock {
-    width: 0px;
-    margin: 0 auto;
-    padding: 0px;
-    list-style: none;
-    text-align: center;
-    font-family: 'BebasNeueRegular', Arial, Helvetica, sans-serif;
-    font-size: 110px;
-}
-
-#clock > li {
-    display: inline;
-    font-size: 11px;
-    text-align: center;
-    font-family: 'BebasNeueRegular', Arial, Helvetica, sans-serif;
-}
-
-.punto {
-    position: relative;
-    padding-left: 10px;
-    padding-right: 10px;
 }
