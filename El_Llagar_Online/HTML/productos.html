@@ -17,6 +17,7 @@
     <link href="../CSS/estiloTitulo.css" rel="stylesheet" type="text/css" />
     <link href="../CSS/analogico.css" rel="stylesheet" type="text/css" />
     <link href="../CSS/footer.css" rel="stylesheet" type="text/css" />
+    <link href="../CSS/productos.css" rel="stylesheet" type="text/css" />
     <title>El Llagar Online</title>
 </head>
 
@@ -32,9 +33,9 @@
     </div>
 
     <div id="clockDate" title="Fecha">
-            <p id="date"></p>
-        </div>
-        
+        <p id="date"></p>
+    </div>
+
     <header>
         <div class="header">
 
@@ -79,17 +80,34 @@
             <h1>Nuestra Gama de Productos</h1>
             <h2>¡Accede a nuestras ofertas de sidras!</h2>
 
-            <div id="botonesProductos">
-                <input class="botonSidra" type="image" src="../IMG/IMG_5122.jpg"
-                    onclick="location.href='../XML/pizzas.xml';" alt="Sidras tradicionales"
-                    title="Pulse para ver nuestras sidras tradicionales" />
-                <input class="botonSidra" type="image" src="../IMG/sidra-extra-achampanada.jpg"
-                    title="Pulse para ver nuestras sidras espumosas"
-                    onclick="location.href='../XML/pizzasEspeciales.xml';" alt="Sidras espumosas" />
-                <input class="botonSidra" type="image" src="../IMG/escanciador-de-sidra-electrico.jpg"
-                    onclick="location.href='../XML/pizzas.xml';" alt="Otros productos"
-                    title="Pulse para ver otros productos" />
+            <div class="wrapper">
+                <div class="media">
+                    <div class="layer">
+                        <!-- Esto dunciona al clickar -->
+                        <a href="../XML/otrosProductos.xml">
+                            <p>+ Sidras Tradicionales</p>
+                        </a>
+                    </div>
+                    <img src="../IMG/IMG_5122.jpg" alt="Sidras tradicionales" />
+                </div>
+                <div class="media">
+                    <div class="layer">
+                        <a href="../XML/otrosProductos.xml">
+                            <p>+ Sidras Espumosas</p>
+                        </a>
+                    </div>
+                    <img src="../IMG/sidra-extra-achampanada.jpg" alt="Sidras espumosas" />
+                </div>
+                <div class="media">
+                    <div class="layer">
+                        <a href="../XML/otrosProductos.xml">
+                            <p>+ Otros Productos</p>
+                        </a>
+                    </div>
+                    <img src="../IMG/escanciador-de-sidra-electrico.jpg" alt="Otros productos" />
+                </div>
             </div>
+
             <a id="subir" href="#lista_menu"><img src="../IMG/subir.png" title="Ir arriba" /></a>
         </section>
     </main>
@@ -118,22 +136,22 @@
 
         <div class="footer-centro">
             <address>
-            <div>
-                <em class="direccion"></em>
-                <p><span>C/ Castejón Fuero, 23, 33013</span> Oviedo, Asturias, España</p>
-            </div>
+                <div>
+                    <em class="direccion"></em>
+                    <p><span>C/ Castejón Fuero, 23, 33013</span> Oviedo, Asturias, España</p>
+                </div>
 
-            <div>
-                <em class="telefono"></em>
-                <p>985 202 122 - 999 000 789</p>
-            </div>
+                <div>
+                    <em class="telefono"></em>
+                    <p>985 202 122 - 999 000 789</p>
+                </div>
 
-            <div>
-                <em class="autor"></em>
-                <p><span>Web hecha por:</span></p>
-                <p><a href="mailto:uo202549@uniovi.es">Germán Iglesias Ramos UO202549</a></p>
-            </div>
-        </address>
+                <div>
+                    <em class="autor"></em>
+                    <p><span>Web hecha por:</span></p>
+                    <p><a href="mailto:uo202549@uniovi.es">Germán Iglesias Ramos UO202549</a></p>
+                </div>
+            </address>
         </div>
 
         <div class="footer-derecha">

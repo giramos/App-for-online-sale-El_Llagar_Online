@@ -22,29 +22,39 @@ nav ul li:hover > ul {
 }
   /* especificidad: 002 */
 
-nav > ul {
+nav > ul {/*menu*/
     background: #FEFEFE;/*color del menu*/
     padding: 0 0;
     list-style: none;
     position: relative;
     display: inline-table;
-    margin: 0 0 0 0;
+   
     width: 100%;
     text-align: center;
-    z-index: 1;
+    z-index: 100; /*Establece orden de prioridad*/
     border-radius: 10px 10px 10px 10px;
     border: 15px double rgb(202, 206, 5);/*el borde de todo el menu*/
     font-size: larger;/*tamaño de la letra*/
     font: small-caps 100%/200% serif;/*formato de la letra del menu*/
     font-optical-sizing: auto;
     
+            
+    margin: 0 auto;
+    
 }
   /* especificidad: 003 */
 
 nav ul li {
     float: left;
-    width: 20%;
+    width: 19.6%;
+    border-right-style: ridge;
+    border-right-color:  rgb(202, 206, 5);
+    border-right-width: 3px;
+    display: inline-block;
     
+}
+nav ul li:last-child{/*ultimo item del navegador*/
+  border-right: none;
 }
   /* especificidad: 013 */
 
@@ -70,14 +80,20 @@ nav ul li a {
 }
   /* especificidad: 003 */
 
-nav ul ul {
+nav ul ul {/*menu desplegable*/
     background-color: rgb(202, 206, 5);
     padding: 0;
     position: absolute;
-    width: 20%;
+    width: 40%;
     border-radius: 10px 10px 10px 10px;
     
 }
+nav ul ul:last-child {/*ultimo item menu desplegable*/
+  border-right-style: ridge;
+    border-right-color:  rgb(202, 206, 5);
+    border-right-width: 3px;
+}
+
   /* especificidad: 004 */
 
 nav ul ul li {
@@ -99,3 +115,4 @@ nav ul ul li a:hover {
     background: rgb(240, 221, 181);
     border-radius: 10px 10px 10px 10px;
 }
+
