@@ -25,7 +25,9 @@
     /* especificidad: 021 */
 
     .header .Iam blockquote { /*parte que engloba las letras rojas*/
-    float: right;
+      width: 82%;/*ajustado para la optimizacion*/
+      
+      float: right;
     overflow: hidden;
     position: static;
     height: 75px;
@@ -39,6 +41,7 @@
     /* especificidad: 030 */
 
     .header .Iam .innerIam {
+      
     display: inline-block;
     color: #e74c3c;
     position: relative;

@@ -34,13 +34,16 @@ body div #date {
 /* Especificidad 002 */
 body header {
     /*pondremos el GIF del asturiano escanciando a la izquierda*/
-   margin-top: 0px;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
     padding: 0px;;
     text-align: center;
 }
 /* Especificidad 011 */
 .header img {
     /*Tamaño de la imagen y posicion*/
+    
     width: 10%;
     height: 10%;
     float: left;
