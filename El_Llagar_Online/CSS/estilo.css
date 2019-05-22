@@ -43,7 +43,7 @@ body header {
 /* Especificidad 011 */
 .header img {
     /*Tamaño de la imagen y posicion*/
-    
+    position: static;
     width: 12%;
     height: auto;
     float: left;
