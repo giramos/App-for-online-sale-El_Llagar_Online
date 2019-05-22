@@ -9,6 +9,8 @@
     margin-left: 0%;
     margin-bottom: 0%;
     margin-right: 0%;
+    font-weight: bold;
+    text-shadow: 3px 3px 2px #696;/*sombra*/
   }
   /* especificidad: 030 */
   .header .Iam .a {
@@ -30,7 +32,7 @@
       float: right;
     overflow: hidden;
     position: static;
-    height: 75px;
+    height: 95px;
     top: 1px;
     right: 0px;
     text-align: left;

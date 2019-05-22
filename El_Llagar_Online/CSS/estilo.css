@@ -44,10 +44,10 @@ body header {
 .header img {
     /*Tamaño de la imagen y posicion*/
     
-    width: 10%;
-    height: 10%;
+    width: 12%;
+    height: auto;
     float: left;
-    margin-bottom: 2%;
+    margin-bottom: 0%;
     margin-left: 0%;
     clear: both;
 }
@@ -157,3 +157,4 @@ h3{
     width: 60%;
     
 }
+

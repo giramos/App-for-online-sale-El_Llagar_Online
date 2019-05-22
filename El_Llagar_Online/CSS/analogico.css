@@ -3,20 +3,20 @@
 /* especificidad: 100 */
 #CajaReloj {
     float: right;
-    margin: auto;
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     background-image: url(../IMG/Base_reloj.png);
     background-repeat: no-repeat;
     background-size: contain;
-    margin-right: 30px; /*para ajustar el margen derecho*/
+     /*para ajustar el margen derecho*/
+    display: block; margin-left: auto; margin-right: auto;
 }
 /* especificidad: 100 */
 #hora {
     position: absolute;
-    height: 20px;
-    margin-left: 46px;
-    margin-top: 30px;
+    height: 24px;
+    margin-left: 55.2px;
+    margin-top: 36px;
     transform: rotate(0deg);
     transform-origin: bottom;
     /*transition-duration: 1s;*/
@@ -24,9 +24,9 @@
 /* especificidad: 100 */
 #minutos {
     position: absolute;
-    height: 32.5px;
-    margin-left: 47.5px;
-    margin-top: 18.5px;
+    height: 39px;
+    margin-left: 57px;
+    margin-top: 22.2px;
     transform: rotate(0deg);
     transform-origin: bottom;
     /*transition-duration: 1s;*/
@@ -34,9 +34,9 @@
 /* especificidad: 100 */
 #segundos {
     position: absolute;
-    height: 35px;
-    margin-left: 50px;
-    margin-top: 16px;
+    height: 42px;
+    margin-left: 60px;
+    margin-top: 19.2px;
     transform: rotate(0deg);
     transform-origin: bottom;
     /*transition-duration: 1s;*/
