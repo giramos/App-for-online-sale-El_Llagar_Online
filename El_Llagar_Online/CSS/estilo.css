@@ -160,4 +160,13 @@ h3{
 .manzana{
     width: 20%;
 }
+#refer{
+    text-align: center;
+    font-size: 150%;
+}
+#subir{
+    position: fixed; 
+    bottom: 10px; 
+    right: 2%;
+}
 
