@@ -10,7 +10,12 @@
     margin-bottom: 0%;
     margin-right: 0%;
     font-weight: bold;
-    text-shadow: 3px 3px 2px #696;/*sombra*/
+    /*text-shadow: 3px 3px 2px #696;/*sombra*/
+    /*text-shadow: 1px 1px #666, 2px 2px #86D6D3, 3px 3px #666, 4px 4px #86D6D3;/*sombra Pixel*/
+    /*text-shadow: 2px 2px white, -1px -1px #333;/*relieve sombra*/
+    text-shadow: -1px 0 #090, 1px 0 #090, 0 1px #090, 0 -1px #090;/*sombra trazo*/
+    /*text-shadow: 3px 3px 2px #696;/*sombra desenfocada*/
+    /*text-shadow: 10px 8px #ccf, -10px 12px #fcf, -8px -12px #cfc, 12px -5px #fc9;Varias sombras*/
   }
   /* especificidad: 030 */
   .header .Iam .a {
