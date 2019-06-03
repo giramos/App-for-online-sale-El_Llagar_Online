@@ -1,5 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema xmlns="http://tempuri.org/Sidra" elementFormDefault="qualified" targetNamespace="http://tempuri.org/Sidra" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="Windows-1252"?>
+<xs:schema xmlns="http://tempuri.org/sidras" elementFormDefault="qualified" targetNamespace="http://tempuri.org/sidras" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:element name="sidras">
     <xs:complexType>
       <xs:sequence minOccurs="0" maxOccurs="unbounded">
@@ -46,7 +46,7 @@
   <xs:element name="cantidad_neta">
     <xs:complexType>
       <xs:simpleContent>
-        <xs:extension base="xs:double">
+        <xs:extension base="xs:string">
           <xs:attribute name="cantidad" type="xs:string" use="required" />
           <xs:attribute name="unidad" type="xs:string" use="required" />
         </xs:extension>

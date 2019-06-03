@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE sidras SYSTEM "sidras.dtd">
- <sidras>
+<sidras xmlns="http://tempuri.org/sidras"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://tempuri.org/sidras sidras.xsd">
      <sidra>
          <titulo>Sidra Menéndez natural 70 cl.</titulo>
          <rutaFoto>../IMG/00118731500114____1__600x600.jpg</rutaFoto>

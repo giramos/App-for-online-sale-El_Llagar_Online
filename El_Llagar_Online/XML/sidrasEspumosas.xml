@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE sidras SYSTEM "sidras.dtd">
- <sidras>
+<sidras xmlns="http://tempuri.org/sidras"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://tempuri.org/sidras sidras.xsd">
+
      <sidra>
          <titulo>EL GAITERO sidra achampanada etiqueta blanca botella 75 cl.</titulo>
          <rutaFoto>../img/00118730600188____2__600x600.jpg</rutaFoto>

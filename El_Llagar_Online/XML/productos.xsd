@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<xs:schema xmlns="http://tempuri.org/productos" elementFormDefault="qualified" targetNamespace="http://tempuri.org/productos" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="productos">
+    <xs:complexType>
+      <xs:sequence minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="producto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="producto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="titulo" />
+        <xs:element ref="rutaFoto" />
+        <xs:element ref="nombre" />
+        <xs:element ref="descripcion" />
+        <xs:element ref="precio" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="titulo" type="xs:string" />
+  <xs:element name="rutaFoto" type="xs:string" />
+  <xs:element name="nombre" type="xs:string" />
+  <xs:element name="descripcion" type="xs:string" />
+  <xs:element name="precio">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:double">
+          <xs:attribute name="unidad" type="xs:string" use="required" />
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
