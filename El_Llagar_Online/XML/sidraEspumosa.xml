@@ -10,5 +10,35 @@
          <porcentaje_alcohol cantidad="100" unidad="%">4.1</porcentaje_alcohol>
          <cantidad_neta cantidad="100" unidad="cl">75</cantidad_neta>
      </sidra>
+
+     <sidra>
+         <titulo>SIDRA BRUT POMARINA D.O.P.</titulo>
+         <rutaFoto>../img/sidra-el-gaitero-etiqueta-negra.jpg</rutaFoto>
+         <nombre>Pomarina Brut</nombre>
+         <descripcion>Color Amarillo dorado limpio y brillante con burbuja fina. La sidra Pomarina Brut proviene de plantaciones nuevas de fincas con Denominación de Origen Protegida. Su elaboración se caracteriza por realizar la ultima fase de la fermentación de manera presurizada para integrar mejor la burbuja. Esta sidra es una espumosa en su variedad Brut, con sabor fresco y elegante</descripcion>
+         <precio unidad="€">6,35</precio>
+         <porcentaje_alcohol cantidad="100" unidad="%">4</porcentaje_alcohol>
+         <cantidad_neta cantidad="100" unidad="cl">75</cantidad_neta>
+     </sidra>
+
+     <sidra>
+         <titulo>Sidra Lagar de Camin Brut</titulo>
+         <rutaFoto>../img/papa.jpg</rutaFoto>
+         <nombre>Pomarina Brut</nombre>
+         <descripcion>La sidra lagar de Camin Brut es una sidra espumosa totalmente natural. También se conoce como sidra achampanada o brut de manzana. Ideal para celebraciones!</descripcion>
+         <precio unidad="€">3,43</precio>
+         <porcentaje_alcohol cantidad="100" unidad="%">4.5</porcentaje_alcohol>
+         <cantidad_neta cantidad="100" unidad="cl">75</cantidad_neta>
+     </sidra>
+
+     <sidra>
+         <titulo>SIDRA POMAR ROSEE VIUDA ANGELON</titulo>
+         <rutaFoto>../img/papa.jpg</rutaFoto>
+         <nombre>Pomar Rosee</nombre>
+         <descripcion>Sidra espumosa elaborada a partir de las propias manzanas que Viuda de Angelón tiene en la localidad de Monga (Nava, Asturias).</descripcion>
+         <precio unidad="€">3,75</precio>
+         <porcentaje_alcohol cantidad="100" unidad="%">5</porcentaje_alcohol>
+         <cantidad_neta cantidad="100" unidad="cl">75</cantidad_neta>
+     </sidra>
  </sidras>
      
