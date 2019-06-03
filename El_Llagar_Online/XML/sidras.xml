@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE sidras SYSTEM "Sidra.dtd">
+<!DOCTYPE sidras SYSTEM "sidras.dtd">
  <sidras>
      <sidra>
          <titulo>Sidra Menéndez natural 70 cl.</titulo>
@@ -7,8 +7,8 @@
          <nombre>Menéndez</nombre>
          <descripcion>Tonos dorados. Buena intensidad con aromas florales a manzana. Sabor fresco y ligera acidez con una larga persistencia en boca.</descripcion>
          <precio unidad="€">1,85</precio>
-         <porcentaje_alcohol unidad="%">6.5</porcentaje_alcohol>
-         <cantidad_neta unidad="cl">70</cantidad_neta>
+         <porcentaje_alcohol cantidad="100" unidad="%">6.5</porcentaje_alcohol>
+         <cantidad_neta cantidad="100" unidad="cl">70</cantidad_neta>
      </sidra>
      
      <sidra>

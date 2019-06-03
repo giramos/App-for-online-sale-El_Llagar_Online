@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+
         <!ELEMENT productos (producto)*>
         <!ELEMENT producto (titulo, rutaFoto, nombre, descripcion, precio )>
         <!ELEMENT titulo (#PCDATA)>
