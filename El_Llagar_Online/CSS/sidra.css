@@ -1,0 +1,60 @@
+
+  @charset "utf-8";
+
+ .menu img {
+      margin-top: 2%;
+      width: 80%;
+      height: 50%;
+      border: 0;
+  }
+  
+  main {
+      max-width: 60%;
+      margin: auto;
+      padding: 10px;
+      text-align: center;
+  }
+  
+  .menu h3 {
+      font-size: 130%;
+  }
+  .menu h2 {
+    text-align: center;
+}
+
+ .menu .sidras p {
+    padding: 0%;
+    margin: 0%;
+}
+
+.menu input[type="button"] {
+    width: 50%;
+    font-size: 15px;
+}
+
+.sidras {
+    border-top: #575f6a double 4px;
+}
+
+.menu aside {
+    max-width: 60%;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.menu aside table {
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.menu aside table {
+    border-collapse: collapse;
+    font-size: 20px;
+}
+
+.menu aside table, th, td {
+    border: 1px solid black;
+}

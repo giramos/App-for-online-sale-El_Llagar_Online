@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sidras xmlns="http://tempuri.org/sidras"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://tempuri.org/sidras sidras.xsd">
+<?xml-stylesheet type='text/xsl' href='sidras.xsl'?>
+<sidras>
      <sidra>
          <titulo>Sidra Menéndez natural 70 cl.</titulo>
          <rutaFoto>../IMG/00118731500114____1__600x600.jpg</rutaFoto>
          <nombre>Menéndez</nombre>
          <descripcion>Tonos dorados. Buena intensidad con aromas florales a manzana. Sabor fresco y ligera acidez con una larga persistencia en boca.</descripcion>
+         <composicion>
+            <compuesto>Manzana madura</compuesto>
+            <compuesto>Hierbas aromáticas</compuesto>
+            <compuesto>Taninos secos</compuesto>
+         </composicion>
          <precio unidad="€">1,85</precio>
          <porcentaje_alcohol cantidad="100" unidad="%">6.5</porcentaje_alcohol>
          <cantidad_neta cantidad="100" unidad="cl">70</cantidad_neta>
@@ -17,6 +21,13 @@
          <rutaFoto>../IMG/mbustosidra2.jpg</rutaFoto>
          <nombre>M.Busto</nombre>
          <descripcion>Sidra Natural  ”tradicional” o “en rama”, elaborada a partir de manzanas asturianas seleccionadas de variedades dulces, amargas y ácidas con posterior fermentación en toneles de castaño.</descripcion>
+          <composicion>
+            <compuesto>Manzana autóctona</compuesto>
+            <compuesto>Hierbas aromáticas</compuesto>
+            <compuesto>Taninos secos</compuesto>
+            <compuesto>Frutas maduras</compuesto>
+            <compuesto>Taninos secos</compuesto>
+         </composicion>
          <precio unidad="€">2,75</precio>
          <porcentaje_alcohol cantidad="100" unidad="%">6.5</porcentaje_alcohol>
          <cantidad_neta cantidad="100" unidad="cl">70</cantidad_neta>
@@ -27,6 +38,10 @@
          <rutaFoto>../IMG/botella-sidra-trabanco.jpg</rutaFoto>
          <nombre>Trabanco</nombre>
          <descripcion>Trabanco elabora su sidra desde el año 1925 siguiendo una gran tradición sidrera. Es conocida desde siempre por su buen saber hacer y su gran calidad. Es elaborada con las mejores variedades de manzana de sidra a partir de un mosto de manzana 100% natural, que fermentará con levaduras naturales bajo temperaturas controladas en toneles de castaño.</descripcion>
+         <composicion>
+            <compuesto>Manzana autóctona</compuesto>
+            <compuesto>Lácteos fermentados</compuesto>
+         </composicion>
          <precio unidad="€">2,10</precio>
          <porcentaje_alcohol cantidad="100" unidad="%">6</porcentaje_alcohol>
          <cantidad_neta cantidad="100" unidad="cl">75</cantidad_neta>
@@ -37,6 +52,12 @@
          <rutaFoto>../IMG/villacubera-sidra-de-asturias-dop.jpg</rutaFoto>
          <nombre>Villacubera</nombre>
          <descripcion>Villacubera es una sidra natural única, sidra con Denominación de Origen Asturias. Se elabora con exclusivas manzanas de las mejores pomaradas de la región asturiana. Una sidra agresiva que solo se suaviza con una larga maduración en bodega. Su aroma es fino, rico en matices, y al es paladar suave y sabroso, con sutiles notas amargas</descripcion>
+         <composicion>
+            <compuesto>Manzana autóctona</compuesto>
+            <compuesto>Matices de hojarasca</compuesto>
+            <compuesto>Frutas autóctonas</compuesto>
+            <compuesto>Aromas verdosos</compuesto>
+         </composicion>
          <precio unidad="€">2,60</precio>
          <porcentaje_alcohol cantidad="100" unidad="%">6</porcentaje_alcohol>
          <cantidad_neta cantidad="100" unidad="cl">75</cantidad_neta>
@@ -47,6 +68,12 @@
          <rutaFoto>../IMG/botella-sidra-asturiana-cabanon.jpg</rutaFoto>
          <nombre>Cabañón</nombre>
          <descripcion>La Sidra Cabañon se elabora en Naves de Llanes, y está considerada una de las mejores sidras del oriente asturiano, es una sidra casera. Servir fría</descripcion>
+         <composicion>
+            <compuesto>Toques de panadería</compuesto>
+            <compuesto>Hierbas aromáticas</compuesto>
+            <compuesto>Frutas autóctonas</compuesto>
+            <compuesto>Aromas verdosos</compuesto>
+         </composicion>
          <precio unidad="€">2,90</precio>
          <porcentaje_alcohol cantidad="100" unidad="%">6</porcentaje_alcohol>
          <cantidad_neta cantidad="100" unidad="cl">75</cantidad_neta>
@@ -57,6 +84,11 @@
          <rutaFoto>../IMG/botella-sidra-asturiana-cabanon.jpg</rutaFoto>
          <nombre>Cabañón</nombre>
          <descripcion>La Sidra Cabañon se elabora en Naves de Llanes, y está considerada una de las mejores sidras del oriente asturiano, es una sidra casera. Servir fría</descripcion>
+          <composicion>
+            <compuesto>Azúcares</compuesto>
+            <compuesto>Hierbas aromáticas</compuesto>
+            <compuesto>Frutas autóctonas</compuesto>
+         </composicion>
          <precio unidad="€">2,90</precio>
          <porcentaje_alcohol cantidad="100" unidad="%">6</porcentaje_alcohol>
          <cantidad_neta cantidad="100" unidad="cl">75</cantidad_neta>
@@ -67,6 +99,11 @@
          <rutaFoto>../IMG/resize_image.jpg</rutaFoto>
          <nombre>Fanjul</nombre>
          <descripcion>La Sidra Fanjul Natural es seca, ligeramente  ácida y fina astringencia final, destacando su frescor y aroma de manzana. Con color amarillo pálido y finos reflejos verdes</descripcion>
+         <composicion>
+            <compuesto>Manzana madura</compuesto>
+            <compuesto>Hierbas aromáticas</compuesto>
+            <compuesto>Taninos secos</compuesto>
+         </composicion>
          <precio unidad="€">2,32</precio>
          <porcentaje_alcohol cantidad="100" unidad="%">5.5</porcentaje_alcohol>
          <cantidad_neta cantidad="100" unidad="cl">70</cantidad_neta>
@@ -77,6 +114,11 @@
          <rutaFoto>../IMG/resize_image.jpg</rutaFoto>
          <nombre>Fanjul</nombre>
          <descripcion>La Sidra Fanjul Natural es seca, ligeramente  ácida y fina astringencia final, destacando su frescor y aroma de manzana. Con color amarillo pálido y finos reflejos verdes</descripcion>
+         <composicion>
+            <compuesto>Manzana madura</compuesto>
+            <compuesto>Fruta compotada</compuesto>
+            <compuesto>Taninos secos</compuesto>
+         </composicion>
          <precio unidad="€">2,32</precio>
          <porcentaje_alcohol cantidad="100" unidad="%">5.5</porcentaje_alcohol>
          <cantidad_neta cantidad="100" unidad="cl">70</cantidad_neta>
