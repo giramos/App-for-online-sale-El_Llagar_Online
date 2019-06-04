@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<productos xmlns="http://tempuri.org/productos"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://tempuri.org/productos productos.xsd">
+<?xml-stylesheet type='text/xsl' href='productos.xsl'?>
+<productos>
      <producto>
          <titulo>Escanciador eléctrico Manzana</titulo>
          <rutaFoto>../img/escanciador-electrico-manzana.jpg</rutaFoto>

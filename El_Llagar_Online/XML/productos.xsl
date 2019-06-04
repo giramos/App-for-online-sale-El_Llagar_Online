@@ -99,9 +99,9 @@
                     </aside>
 
                     <section>
-                        <h2>Sidras</h2>
+                        <h2>Accesorios Sidreros</h2>
                         
-                        <xsl:for-each select="sidras/sidra">
+                        <xsl:for-each select="productos/producto">
                             
                             <div class="sidras">
                                 <h3>
@@ -126,25 +126,6 @@
                                     <br></br></th>
                                    <td><xsl:value-of select="descripcion"/></td>
                                </tr>
-                                
-
-                                <tr>
-                                <th>
-                                    <br></br>Composición
-                                        <br></br>
-                                    <br></br></th>
-                                   <td><xsl:for-each select="composicion/compuesto">
-                                        <xsl:choose>
-                                            <xsl:when test="position() != last()">
-                                                <xsl:value-of select="."/><xsl:text>, </xsl:text>
-                                            </xsl:when>
-                                            <xsl:otherwise>
-                                                <xsl:value-of select="."/><xsl:text>.</xsl:text>
-                                            </xsl:otherwise>
-                                        </xsl:choose>
-                                    </xsl:for-each></td>
-                               </tr>
-                                
                                
                                 <tr>
                                 <th>
@@ -154,23 +135,6 @@
                                             select="precio/@unidad"/></td>
                                </tr>
 
-                                <tr>
-                                <th>
-                                    <br></br>Alcohol<br></br>
-                                    <br></br></th>
-                                    <td><xsl:value-of select="porcentaje_alcohol"/><xsl:text> </xsl:text><xsl:value-of
-                                            select="porcentaje_alcohol/@unidad"/><xsl:text> en </xsl:text><xsl:value-of
-                                            select="porcentaje_alcohol/@cantidad"/><xsl:text> </xsl:text><xsl:value-of
-                                            select="cantidad_neta/@unidad"/></td>
-                                </tr>
-
-                                <tr>
-                                <th>
-                                    <br></br>Volumen<br></br>
-                                    <br></br></th>
-                                   <td><xsl:value-of select="cantidad_neta"/><xsl:text> </xsl:text><xsl:value-of
-                                            select="cantidad_neta/@unidad"/></td>
-                                </tr>
                                 </table>
                                 <br></br><xsl:apply-templates select="."/><br></br>
 
