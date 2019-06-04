@@ -77,14 +77,15 @@
             </li>
             <li><a href="establecimientos.html" title="Ir a la página de los establecimientos">Lugares</a></li>
             <li><a href="contacto.html" title="Ir a la pñagina de contacto">Contacto</a></li>
-        </ul>
+                </ul>
                 </nav>
 
                 <main class="menu">
+
                 <h1>Productos</h1>
                     <aside>
                         <table id="carroCompra" hidden="true">
-                            <caption>Resumen Pedido</caption>
+                            <caption>Pedido</caption>
                             <tr>
                                 <th>Sidra</th>
                                 <th>Precio</th>
@@ -99,14 +100,22 @@
 
                     <section>
                         <h2>Sidras Tradicionales</h2>
+                        
                         <xsl:for-each select="sidras/sidra">
+                            
                             <div class="sidras">
-                                
                                 <h3>
-                                    <xsl:value-of select="nombre"/>
+                                    <xsl:value-of select="titulo"/>
                                 </h3>
+                                
                                 <xsl:apply-templates select="rutaFoto"/>
                                 
+                                <p>
+                                    <strong><br></br>Nombre:
+                                    </strong>
+                                    <xsl:value-of select="nombre"/>
+                                </p>
+
                                  <p>
                                     <strong><br></br>Descripción:
                                     <br></br>
@@ -129,40 +138,42 @@
                                         </xsl:choose>
                                     </xsl:for-each>
                                 </p>
+                               
                                 <p>
                                     <strong><br></br>Precio:
-                                    
                                     </strong>
                                     <xsl:value-of select="precio"/><xsl:text> </xsl:text><xsl:value-of
                                             select="precio/@unidad"/>
                                 </p>
 
-                                
-                                    <p>
-                                        <strong><br></br>Alcohol:
-                                        
-                                        </strong>
-                                        <xsl:value-of select="porcentaje_alcohol"/><xsl:text> </xsl:text><xsl:value-of
+                                <p>
+                                    <strong><br></br>Alcohol:
+                                    </strong>
+                                    <xsl:value-of select="porcentaje_alcohol"/><xsl:text> </xsl:text><xsl:value-of
                                             select="porcentaje_alcohol/@unidad"/><xsl:text> en </xsl:text><xsl:value-of
                                             select="porcentaje_alcohol/@cantidad"/><xsl:text> </xsl:text><xsl:value-of
                                             select="cantidad_neta/@unidad"/>
-                                    </p>
+                                </p>
 
-                                    <p>
-                                        <strong><br></br>Volumen botella:
-                                        
-                                        </strong>
-                                        <xsl:value-of select="cantidad_neta"/><xsl:text> </xsl:text><xsl:value-of
+                                <p>
+                                    <strong><br></br>Volumen botella:
+                                    </strong>
+                                    <xsl:value-of select="cantidad_neta"/><xsl:text> </xsl:text><xsl:value-of
                                             select="cantidad_neta/@unidad"/>
-                                    </p>
+                                </p>
                                 
                                 <br></br><xsl:apply-templates select="."/><br></br>
+
                             </div>
+
                         </xsl:for-each>
                      
                     </section>
+
                 </main>
+                
                 <a id="subir" href="#lista_menu"><img src="../IMG/subir.png" title="Ir arriba" /></a>
+                
                 <footer class="footer">
                 
                     <div class="footer-izquierda">
@@ -170,8 +181,6 @@
                     <img src="../IMG/astur.png" alt="Imagen de escudo" />
                 </span></h3>
                         
-                     
-
                    <div class="footer-menu">
                 <h3>Mapa web</h3>
                 <ul>

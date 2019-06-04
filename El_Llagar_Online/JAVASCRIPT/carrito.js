@@ -34,7 +34,7 @@ class Carrito {
 
         total.removeAttribute("hidden");
         this.totalPagar += parseInt(precio);
-        total.innerText = "Total Pagar:" + this.totalPagar + "€";
+        total.innerText = "Total Pagar: " + this.totalPagar + "€";
     }
 
     habilitarTramitarPedido() {
