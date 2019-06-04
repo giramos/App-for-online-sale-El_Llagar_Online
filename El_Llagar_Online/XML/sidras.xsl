@@ -129,22 +129,31 @@
                                 </p>
                                 <p>
                                     <strong><br></br>Precio:
+                                    
                                     </strong>
                                     <xsl:value-of select="precio"/><xsl:text> </xsl:text><xsl:value-of
                                             select="precio/@unidad"/>
                                 </p>
 
-                                <xsl:if test=" calorias != '' ">
+                                
                                     <p>
-                                        <strong><br></br>Calorías:
-                                            <br></br>
+                                        <strong><br></br>Alcohol:
+                                        
                                         </strong>
-                                        <xsl:value-of select="calorias"/><xsl:text> </xsl:text><xsl:value-of
-                                            select="calorias/@unidadCal"/><xsl:text> por </xsl:text><xsl:value-of
-                                            select="calorias/@cantidad"/><xsl:text> </xsl:text><xsl:value-of
-                                            select="calorias/@unidad"/>
+                                        <xsl:value-of select="porcentaje_alcohol"/><xsl:text> </xsl:text><xsl:value-of
+                                            select="porcentaje_alcohol/@unidad"/><xsl:text> en </xsl:text><xsl:value-of
+                                            select="porcentaje_alcohol/@cantidad"/><xsl:text> </xsl:text><xsl:value-of
+                                            select="cantidad_neta/@unidad"/>
                                     </p>
-                                </xsl:if>
+
+                                    <p>
+                                        <strong><br></br>Volumen botella:
+                                        
+                                        </strong>
+                                        <xsl:value-of select="cantidad_neta"/><xsl:text> </xsl:text><xsl:value-of
+                                            select="cantidad_neta/@unidad"/>
+                                    </p>
+                                
                             </div>
                         </xsl:for-each>
                      
