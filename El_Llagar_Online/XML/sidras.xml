@@ -11,7 +11,7 @@
             <compuesto>Hierbas aromáticas</compuesto>
             <compuesto>Taninos secos</compuesto>
          </composicion>
-         <precio unidad="€">1,85</precio>
+         <precio unidad="€">1</precio>
          <porcentaje_alcohol cantidad="100" unidad="%">6.5</porcentaje_alcohol>
          <cantidad_neta unidad="cl">70</cantidad_neta>
      </sidra>
@@ -28,7 +28,7 @@
             <compuesto>Frutas maduras</compuesto>
             <compuesto>Taninos secos</compuesto>
          </composicion>
-         <precio unidad="€">2,75</precio>
+         <precio unidad="€">2</precio>
          <porcentaje_alcohol cantidad="100" unidad="%">6.5</porcentaje_alcohol>
          <cantidad_neta unidad="cl">70</cantidad_neta>
      </sidra>
@@ -42,7 +42,7 @@
             <compuesto>Manzana autóctona</compuesto>
             <compuesto>Lácteos fermentados</compuesto>
          </composicion>
-         <precio unidad="€">2,10</precio>
+         <precio unidad="€">2</precio>
          <porcentaje_alcohol cantidad="100" unidad="%">6</porcentaje_alcohol>
          <cantidad_neta unidad="cl">75</cantidad_neta>
      </sidra>
@@ -58,7 +58,7 @@
             <compuesto>Frutas autóctonas</compuesto>
             <compuesto>Aromas verdosos</compuesto>
          </composicion>
-         <precio unidad="€">2,60</precio>
+         <precio unidad="€">3</precio>
          <porcentaje_alcohol cantidad="100" unidad="%">6</porcentaje_alcohol>
          <cantidad_neta unidad="cl">75</cantidad_neta>
      </sidra>
@@ -74,7 +74,7 @@
             <compuesto>Frutas autóctonas</compuesto>
             <compuesto>Aromas verdosos</compuesto>
          </composicion>
-         <precio unidad="€">2,90</precio>
+         <precio unidad="€">4</precio>
          <porcentaje_alcohol cantidad="100" unidad="%">6</porcentaje_alcohol>
          <cantidad_neta unidad="cl">75</cantidad_neta>
      </sidra>
@@ -89,7 +89,7 @@
             <compuesto>Hierbas aromáticas</compuesto>
             <compuesto>Frutas autóctonas</compuesto>
          </composicion>
-         <precio unidad="€">2,90</precio>
+         <precio unidad="€">3</precio>
          <porcentaje_alcohol cantidad="100" unidad="%">6</porcentaje_alcohol>
          <cantidad_neta unidad="cl">75</cantidad_neta>
      </sidra>
@@ -104,7 +104,7 @@
             <compuesto>Hierbas aromáticas</compuesto>
             <compuesto>Taninos secos</compuesto>
          </composicion>
-         <precio unidad="€">2,32</precio>
+         <precio unidad="€">2</precio>
          <porcentaje_alcohol cantidad="100" unidad="%">5.5</porcentaje_alcohol>
          <cantidad_neta unidad="cl">70</cantidad_neta>
      </sidra>
@@ -119,7 +119,7 @@
             <compuesto>Fruta compotada</compuesto>
             <compuesto>Taninos secos</compuesto>
          </composicion>
-         <precio unidad="€">2,32</precio>
+         <precio unidad="€">2</precio>
          <porcentaje_alcohol cantidad="100" unidad="%">5.5</porcentaje_alcohol>
          <cantidad_neta unidad="cl">70</cantidad_neta>
      </sidra>

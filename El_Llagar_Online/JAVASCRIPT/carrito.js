@@ -19,6 +19,7 @@ class Carrito {
 
         nombreCell.innerText = nombre;
         precioCell.innerText = precio;
+        
     }
 
     addElemento(nombre, precio) {

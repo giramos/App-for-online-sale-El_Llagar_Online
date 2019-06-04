@@ -94,7 +94,7 @@
                         <p id="total" hidden="true"></p>
 
                         <input hidden="true" type="button" id="pedido"
-                               onclick="carrito.guardarPedido();" value="Tramitar pedido"/>
+                               onclick="carrito.guardarPedido();" value="Tramitar"/>
                     </aside>
 
                     <section>
