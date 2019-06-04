@@ -14,6 +14,7 @@
                  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
                  <script src="../JAVASCRIPT/reloj.js"></script>
                  <script src="../JAVASCRIPT/analogico.js"></script>
+                 <script src="../JAVASCRIPT/carrito.js"></script>
                  <link href="../CSS/estilo.css" rel="stylesheet" type="text/css" />
                  <link href="../CSS/barraMenu.css" rel="stylesheet" type="text/css" />
                  <link href="../CSS/formulario.css" rel="stylesheet" type="text/css" />
@@ -105,6 +106,7 @@
                                     <xsl:value-of select="nombre"/>
                                 </h3>
                                 <xsl:apply-templates select="rutaFoto"/>
+                                
                                  <p>
                                     <strong><br></br>Descripción:
                                     <br></br>
@@ -154,11 +156,13 @@
                                             select="cantidad_neta/@unidad"/>
                                     </p>
                                 
+                                <br></br><xsl:apply-templates select="."/><br></br>
                             </div>
                         </xsl:for-each>
                      
                     </section>
                 </main>
+                <a id="subir" href="#lista_menu"><img src="../IMG/subir.png" title="Ir arriba" /></a>
                 <footer class="footer">
                 
                     <div class="footer-izquierda">
