@@ -99,7 +99,7 @@
                     </aside>
 
                     <section>
-                        <h2>Sidras</h2>
+                        <h2>Accesorios sidreros</h2>
                         
                         <xsl:for-each select="productos/producto">
                             
@@ -126,11 +126,7 @@
                                     <br></br></th>
                                    <td><xsl:value-of select="descripcion"/></td>
                                </tr>
-                                
-
-                                
-                                
-                               
+   
                                 <tr>
                                 <th>
                                    <br></br>Precio<br></br>
@@ -139,9 +135,6 @@
                                             select="precio/@unidad"/></td>
                                </tr>
 
-                                
-
-                                
                                 </table>
                                 <br></br><xsl:apply-templates select="."/><br></br>
 
