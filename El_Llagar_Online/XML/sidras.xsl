@@ -80,7 +80,7 @@
                 </ul>
                 </nav>
 
-                <main class="menu">
+                <main id="menu">
 
                 <h1>Productos</h1>
                     <aside>
@@ -110,24 +110,30 @@
                                 
                                 <xsl:apply-templates select="rutaFoto"/>
                                 
-                                <p>
-                                    <strong><br></br>Nombre:
-                                    </strong>
-                                    <xsl:value-of select="nombre"/>
-                                </p>
+                                <table id="ficha">
+                                <caption>Ficha técnica</caption>
+                                <tr>
+                                <th>
+                                    <br></br>Nombre<br></br>
+                                    <br></br></th>
+                                   <td><xsl:value-of select="nombre"/></td>
+                               </tr>
 
-                                 <p>
-                                    <strong><br></br>Descripción:
+                                <tr>
+                                <th> 
+                                   <br></br>Descripción
                                     <br></br>
-                                    </strong>
-                                    <xsl:value-of select="descripcion"/>
-                                </p>
+                                    <br></br></th>
+                                   <td><xsl:value-of select="descripcion"/></td>
+                               </tr>
+                                
 
-                                <p>
-                                    <strong><br></br>Composición:
+                                <tr>
+                                <th>
+                                    <br></br>Composición
                                         <br></br>
-                                    </strong>
-                                    <xsl:for-each select="composicion/compuesto">
+                                    <br></br></th>
+                                   <td><xsl:for-each select="composicion/compuesto">
                                         <xsl:choose>
                                             <xsl:when test="position() != last()">
                                                 <xsl:value-of select="."/><xsl:text>, </xsl:text>
@@ -136,32 +142,36 @@
                                                 <xsl:value-of select="."/><xsl:text>.</xsl:text>
                                             </xsl:otherwise>
                                         </xsl:choose>
-                                    </xsl:for-each>
-                                </p>
+                                    </xsl:for-each></td>
+                               </tr>
+                                
                                
-                                <p>
-                                    <strong><br></br>Precio:
-                                    </strong>
-                                    <xsl:value-of select="precio"/><xsl:text> </xsl:text><xsl:value-of
-                                            select="precio/@unidad"/>
-                                </p>
+                                <tr>
+                                <th>
+                                   <br></br>Precio<br></br>
+                                   <br></br></th>
+                                   <td><xsl:value-of select="precio"/><xsl:text> </xsl:text><xsl:value-of
+                                            select="precio/@unidad"/></td>
+                               </tr>
 
-                                <p>
-                                    <strong><br></br>Alcohol:
-                                    </strong>
-                                    <xsl:value-of select="porcentaje_alcohol"/><xsl:text> </xsl:text><xsl:value-of
+                                <tr>
+                                <th>
+                                    <br></br>Alcohol<br></br>
+                                    <br></br></th>
+                                    <td><xsl:value-of select="porcentaje_alcohol"/><xsl:text> </xsl:text><xsl:value-of
                                             select="porcentaje_alcohol/@unidad"/><xsl:text> en </xsl:text><xsl:value-of
                                             select="porcentaje_alcohol/@cantidad"/><xsl:text> </xsl:text><xsl:value-of
-                                            select="cantidad_neta/@unidad"/>
-                                </p>
+                                            select="cantidad_neta/@unidad"/></td>
+                                </tr>
 
-                                <p>
-                                    <strong><br></br>Volumen botella:
-                                    </strong>
-                                    <xsl:value-of select="cantidad_neta"/><xsl:text> </xsl:text><xsl:value-of
-                                            select="cantidad_neta/@unidad"/>
-                                </p>
-                                
+                                <tr>
+                                <th>
+                                    <br></br>Volumen<br></br>
+                                    <br></br></th>
+                                   <td><xsl:value-of select="cantidad_neta"/><xsl:text> </xsl:text><xsl:value-of
+                                            select="cantidad_neta/@unidad"/></td>
+                                </tr>
+                                </table>
                                 <br></br><xsl:apply-templates select="."/><br></br>
 
                             </div>

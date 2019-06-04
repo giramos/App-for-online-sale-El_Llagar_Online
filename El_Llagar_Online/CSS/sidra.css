@@ -7,29 +7,49 @@
     padding: 10px;
     text-align: center;
 }
- .menu img {
+ #menu  img {
       margin-top: 2%;
+      margin-bottom: 4%;
       width: 80%;
       height: 50%;
       border-radius: 6px;
-         border: 6px double #575f6a;
+      border: 6px double #575f6a;
   }
   
-  .menu h3 {
+  #menu h3 {
       font-size: 130%;
   }
-  .menu h2 {
+  #menu h2 {
     text-align: center;
 }
 .sidras {
     border-top: #575f6a double 4px;
 }
- .menu .sidras p {
+#menu #ficha { 
+    width: 100%; 
+    border-collapse: collapse; 
+}
+#menu #ficha th { 
+    
+    font-weight: bolder; 
+    border: 4px double ;
+}
+#menu #ficha td{
+    border: 4px double ;
+    text-align: left; 
+    padding: 6px; 
+}
+#menu #ficha caption{
+    margin-bottom: 5%;
+    font-weight: bold;
+}
+
+#menu .sidras p {
     padding: 0%;
     margin: 0%;
 }
 
-.menu input[type="button"] {
+#menu input[type="button"] {
     width: 50%;
     font-size: 15px;
     text-decoration: none; /*si queremos subrayado o no*/
@@ -41,31 +61,31 @@
     margin-bottom: 10px;
     cursor: pointer; /*manita*/
 }
-.menu input[type="button"]:hover{
+#menu input[type="button"]:hover{
     color: #1883ba;
     background-color: #ffffff;
   }
 
-.menu aside {
+  #menu aside {
     max-width: 60%;
     margin: auto;
     padding: 10px;
     text-align: center;
 }
 
-.menu aside table {
+#menu aside table {
     width: 80%;
     margin: auto;
     padding: 10px;
     text-align: center;
 }
 
-.menu aside table {
+#menu aside table {
     border-collapse: collapse;
     font-size: 20px;
 }
 
-.menu aside table, th, td {
+#menu aside table, th, td {
     border: 1px solid black;
 }
 
