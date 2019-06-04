@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sidras xmlns="http://tempuri.org/sidras"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://tempuri.org/sidras sidras.xsd">
-
+<?xml-stylesheet type='text/xsl' href='sidras.xsl'?>
+<sidras>
+ 
      <sidra>
          <titulo>EL GAITERO sidra achampanada etiqueta blanca botella 75 cl.</titulo>
          <rutaFoto>../img/00118730600188____2__600x600.jpg</rutaFoto>
@@ -17,7 +16,7 @@
          </composicion>
          <precio unidad="€">1,52</precio>
          <porcentaje_alcohol cantidad="100" unidad="%">4.1</porcentaje_alcohol>
-         <cantidad_neta cantidad="100" unidad="cl">75</cantidad_neta>
+         <cantidad_neta unidad="cl">75</cantidad_neta>
      </sidra>
 
      <sidra>
@@ -32,21 +31,21 @@
          </composicion>
          <precio unidad="€">6,35</precio>
          <porcentaje_alcohol cantidad="100" unidad="%">4</porcentaje_alcohol>
-         <cantidad_neta cantidad="100" unidad="cl">75</cantidad_neta>
+         <cantidad_neta unidad="cl">75</cantidad_neta>
      </sidra>
 
      <sidra>
          <titulo>Sidra Lagar de Camin Brut</titulo>
          <rutaFoto>../img/papa.jpg</rutaFoto>
          <nombre>Pomarina Brut</nombre>
+         <descripcion>La sidra lagar de Camin Brut es una sidra espumosa totalmente natural. También se conoce como sidra achampanada o brut de manzana. Ideal para celebraciones!</descripcion>
          <composicion>
             <compuesto>Manzana madura</compuesto>
             <compuesto>Hierbas aromáticas</compuesto>
          </composicion>
-         <descripcion>La sidra lagar de Camin Brut es una sidra espumosa totalmente natural. También se conoce como sidra achampanada o brut de manzana. Ideal para celebraciones!</descripcion>
          <precio unidad="€">3,43</precio>
          <porcentaje_alcohol cantidad="100" unidad="%">4.5</porcentaje_alcohol>
-         <cantidad_neta cantidad="100" unidad="cl">75</cantidad_neta>
+         <cantidad_neta unidad="cl">75</cantidad_neta>
      </sidra>
 
      <sidra>
@@ -61,7 +60,7 @@
          </composicion>
          <precio unidad="€">3,75</precio>
          <porcentaje_alcohol cantidad="100" unidad="%">5</porcentaje_alcohol>
-         <cantidad_neta cantidad="100" unidad="cl">75</cantidad_neta>
+         <cantidad_neta unidad="cl">75</cantidad_neta>
      </sidra>
  </sidras>
      

@@ -14,6 +14,7 @@
         <xs:element ref="rutaFoto" />
         <xs:element ref="nombre" />
         <xs:element ref="descripcion" />
+        <xs:element ref="composicion" />
         <xs:element ref="precio" />
         <xs:element ref="porcentaje_alcohol" />
         <xs:element ref="cantidad_neta" />
@@ -24,6 +25,14 @@
   <xs:element name="rutaFoto" type="xs:string" />
   <xs:element name="nombre" type="xs:string" />
   <xs:element name="descripcion" type="xs:string" />
+  <xs:element name="composicion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="unbounded" ref="compuesto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="compuesto" type="xs:string" />
   <xs:element name="precio">
     <xs:complexType>
       <xs:simpleContent>
@@ -36,7 +45,7 @@
   <xs:element name="porcentaje_alcohol">
     <xs:complexType>
       <xs:simpleContent>
-        <xs:extension base="xs:double">
+        <xs:extension base="xs:string">
           <xs:attribute name="cantidad" type="xs:string" use="required" />
           <xs:attribute name="unidad" type="xs:string" use="required" />
         </xs:extension>
@@ -47,7 +56,6 @@
     <xs:complexType>
       <xs:simpleContent>
         <xs:extension base="xs:string">
-          <xs:attribute name="cantidad" type="xs:string" use="required" />
           <xs:attribute name="unidad" type="xs:string" use="required" />
         </xs:extension>
       </xs:simpleContent>
