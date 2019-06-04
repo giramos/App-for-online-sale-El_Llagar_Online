@@ -42,6 +42,7 @@
 #menu #ficha caption{
     margin-bottom: 5%;
     font-weight: bold;
+    text-decoration: underline;
 }
 
 #menu .sidras p {
