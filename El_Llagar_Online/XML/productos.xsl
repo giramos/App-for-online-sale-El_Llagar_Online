@@ -99,7 +99,7 @@
                     </aside>
 
                     <section>
-                        <h2>Accesorios Sidreros</h2>
+                        <h2>Sidras</h2>
                         
                         <xsl:for-each select="productos/producto">
                             
@@ -126,6 +126,10 @@
                                     <br></br></th>
                                    <td><xsl:value-of select="descripcion"/></td>
                                </tr>
+                                
+
+                                
+                                
                                
                                 <tr>
                                 <th>
@@ -135,6 +139,9 @@
                                             select="precio/@unidad"/></td>
                                </tr>
 
+                                
+
+                                
                                 </table>
                                 <br></br><xsl:apply-templates select="."/><br></br>
 
@@ -204,7 +211,7 @@
         </html>
     </xsl:template>
 
-    <xsl:template match="sidra">
+    <xsl:template match="producto">
         <input type="button" onclick="carrito.addElemento('{./nombre}','{./precio}');" value="Añadir"/>
     </xsl:template>
 
