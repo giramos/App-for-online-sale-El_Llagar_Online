@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manzanas>
+  <manzana>
+    <nombre>Coloradona</nombre>
+    <posicion_geografica>4</posicion_geografica>
+    <mes_temporada>12</mes_temporada>
+    <nivel>99</nivel>
+  </manzana>
+  <manzana>
+    <nombre>Lin</nombre>
+    <posicion_geografica>4</posicion_geografica>
+    <mes_temporada>10</mes_temporada>
+    <nivel>91</nivel>
+  </manzana>
+  <manzana>
+    <nombre>Raxao</nombre>
+    <posicion_geografica>4</posicion_geografica>
+    <mes_temporada>9</mes_temporada>
+    <nivel>95</nivel>
+  </manzana>
+</manzanas>
