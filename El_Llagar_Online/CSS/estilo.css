@@ -15,7 +15,7 @@ body {
 
 /*Fecha*/
 /* Especificidad 102 */
-body div #date {
+body div #clockdate {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 120%;
     text-decoration: underline;

@@ -1,56 +1,26 @@
-const reloj = {
-    hours: 0,
-    minutes: 0,
-    seconds: 0,
-    monthNames: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio",
-        "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"],
-    dayNames: [ "Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"],
-    interval: null,
-    dateDom: null,
-    newDate: null,
-    hoursDom: null,
-    minutesDom: null,
-    secondsDom: null,
+function textoFecha(fecha){
 
-    init: function () {
-        let self = this;
+    var numDiaSem = fecha.getDay(); 
+  
+    
+    var diasSemana = new Array("Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado");
+    var diaLetras = diasSemana[fecha.getDay()];   
+  
+      
+    var meses = new Array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+    var mesLetras = meses[fecha.getMonth()]; 
+    
+    var diaMes = (fecha.getDate());   
+    var anho = fecha.getFullYear();  
+    var hora = fecha.getHours();    
+    var min = fecha.getMinutes();  
 
-        this.newDate = new Date();
-        this.dateDom = $('#date');
-        this.hoursDom = $('#hours');
-        this.minutesDom = $('#minutes');
-        this.secondsDom = $('#seconds');
-        this.interval = setInterval(function () {
-            self.intervalCallback.apply(self);
-        }, 1000);
-
-    },
-
-    toDoubleDigit: function (num) {
-        if (num < 10) {
-            return "0" + parseInt(num, 10);
-        }
-        return num;
-    },
-
-    updateDom: function () {
-        this.dateDom.text(this.dayNames[this.newDate.getDay()] + " " + this.newDate.getDate()
-            + ' ' + this.monthNames[this.newDate.getMonth()] + ' ' + this.newDate.getFullYear());
-        this.hoursDom.text(this.toDoubleDigit(this.hours));
-        this.minutesDom.text(this.toDoubleDigit(this.minutes));
-        this.secondsDom.text(this.toDoubleDigit(this.seconds));
-    },
-
-    intervalCallback: function () {
-        this.newDate.setDate(this.newDate.getDate());
-        this.hours = new Date().getHours();
-        this.minutes = new Date().getMinutes();
-        this.seconds = new Date().getSeconds();
-        this.updateDom();
+    if ((min >= 0) && (min < 10)) {    //añadde un cero cuando los minutostienen 1 dígito.
+      min = "0" + min;
     }
 
-};
-
-$(document).ready(function () {
-    reloj.init();
-});
+    var devolver = "Hoy es " + diaLetras+ ", " + diaMes + " de " + mesLetras + " de " + anho + " y son las " + hora + ":" + min + " horas.";
+    return devolver;
+  }
+  var fecha = new Date();  
+  document.write(textoFecha(fecha));  //Imprimir
