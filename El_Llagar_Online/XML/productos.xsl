@@ -84,7 +84,7 @@
 
                 <h1>Productos</h1>
                     <aside>
-                        <table id="carroCompra" hidden="true">
+                        <table id="carro" hidden="true">
                             <caption>Pedido</caption>
                             <tr>
                                 <th>Sidra</th>
@@ -95,7 +95,7 @@
                         <p id="total" hidden="true"></p>
 
                         <input hidden="true" type="button" id="pedido"
-                               onclick="carrito.guardarPedido();" value="Tramitar"/>
+                               onclick="carrito.guardar();" value="Tramitar"/>
                     </aside>
 
                     <section>
@@ -205,7 +205,7 @@
     </xsl:template>
 
     <xsl:template match="producto">
-        <input type="button" onclick="carrito.addElemento('{./nombre}','{./precio}');" value="Añadir"/>
+        <input type="button" onclick="carrito.añadir('{./nombre}','{./precio}');" value="Añadir"/>
     </xsl:template>
 
     <xsl:template match="rutaFoto">

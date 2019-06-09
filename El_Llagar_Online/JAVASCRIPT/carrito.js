@@ -4,42 +4,36 @@ class Carrito {
 
     constructor() {
         this.elementos = [];
-        this.totalPagar = 0;
+        this.pagar = 0;
     }
 
-    actualizarCarro(nombre, precio) {
-        let carroCompra = document.getElementById("carroCompra");
-
-        carroCompra.removeAttribute("hidden");
-
-        let row = carroCompra.insertRow(1);
-
-        let nombreCell = row.insertCell(0);
-        let precioCell = row.insertCell(1);
-
-        nombreCell.innerText = nombre;
-        precioCell.innerText = precio;
+    actualizar(nombre, precio) {
+        var carro = document.getElementById("carro");
+        carro.removeAttribute("hidden");
+        var celda = carro.insertRow(1);
+        var nombreCelda = celda.insertCell(0);
+        var precioCelda = celda.insertCell(1);
+        nombreCelda.innerText = nombre;
+        precioCelda.innerText = precio;
         
     }
 
-    addElemento(nombre, precio) {
+    añadir(nombre, precio) {
         this.elementos.push({nombre: nombre, precio: precio});
-        this.actualizarCarro(nombre, precio);
-        this.calcularTotalPagar(precio);
-        this.habilitarTramitarPedido();
+        this.actualizar(nombre, precio);
+        this.calcularTotal(precio);
+        this.habilitar();
     }
 
-    calcularTotalPagar(precio) {
-        let total = document.getElementById("total");
-
+    calcularTotal(precio) {
+        var total = document.getElementById("total");
         total.removeAttribute("hidden");
-        this.totalPagar += parseInt(precio);
-        total.innerText = "Total Pagar: " + this.totalPagar + "€";
+        this.pagar += parseInt(precio);
+        total.innerText = "Total del pedido (en euros): " + this.pagar + "€";
     }
 
-    habilitarTramitarPedido() {
-        let tramitar = document.getElementById("pedido");
-
+    habilitar() {
+        var tramitar = document.getElementById("pedido");
         tramitar.removeAttribute("hidden");
     }
 
@@ -47,17 +41,16 @@ class Carrito {
         return JSON.stringify(this.elementos);
     }
 
-    guardarPedido() {
+    guardar() {
         sessionStorage.setItem("pedido", this.getElementos());
-
         location.replace("../HTML/formalizarPedido.html");
     }
 
-    borrarPedido() {
+    borrar() {
         sessionStorage.clear();
     }
 
 }
 
-let carrito = new Carrito();
-carrito.borrarPedido();
+var carrito = new Carrito();
+carrito.borrar();
