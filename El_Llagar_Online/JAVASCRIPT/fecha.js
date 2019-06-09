@@ -10,7 +10,7 @@ const reloj = {
 
     init: function () {
         var self = this;
-        this.newDate = new Date();// Crrea hora
+        this.newDate = new Date();// Crrea fecha
         this.dateDom = $('#date');
         this.interval = setInterval(function () {
             self.intervalCallback.apply(self);
