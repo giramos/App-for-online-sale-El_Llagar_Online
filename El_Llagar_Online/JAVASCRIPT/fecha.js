@@ -22,7 +22,7 @@ const reloj = {
             + ' ' + this.monthNames[this.newDate.getMonth()] + ' ' + this.newDate.getFullYear());
     },
 
-    intervalCallback: function () {
+    intervalCallback: function () {//llamada continuada / actualiza y da la fecha
         this.newDate.setDate(this.newDate.getDate());
       this.updateDom();
     }
