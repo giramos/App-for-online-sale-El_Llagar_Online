@@ -14,7 +14,7 @@ const reloj = {
         this.dateDom = $('#date');
         this.interval = setInterval(function () {
             self.intervalCallback.apply(self);
-        }, 1000);
+        }, 1000);//intervalo de tiempo, que repite la ejecución de la función continuamente
     },
 
     updateDom: function () {//actualizar  objeto DOM
