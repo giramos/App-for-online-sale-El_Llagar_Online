@@ -4,7 +4,7 @@ class Mapa {
     constructor() {
         this.datos = new Map();
         this.inicializar();
-        let tamano = $(window).height() - $("a").outerHeight(true) - $("footer").outerHeight(true);
+        var tamano = $(window).height() - $("a").outerHeight(true) - $("footer").outerHeight(true);
         $("main").css("height", "" + tamano + "px");
     }
 
@@ -17,68 +17,76 @@ class Mapa {
     }
 
     obtener(posicion) {
-        let coordenadas = posicion.coords;
+        var coordenadas = posicion.coords;
         mapa.datos.set('Latitud', coordenadas.latitude);
         mapa.datos.set('Longitud', coordenadas.longitude);
         mapa.mostrar();
     }
 
     mostrar() {
-        let localizacion = {
+        var localizacion = {
             lat: this.datos.get("Latitud"),
             lng: this.datos.get("Longitud")
         };
-        let map = new google.maps.Map(document.getElementsByTagName('main')[0], {
-            zoom: 15,
-            center: localizacion
+        var mapaOpciones = new google.maps.Map(document.getElementsByTagName('main')[0], {
+            zoom: 12,
+            center: localizacion,
+            mapTypeId: google.maps.MapTypeId.TERRAIN
         });
 
-        let infoWindow = new google.maps.InfoWindow({map: map});
+        var infoWindow = new google.maps.InfoWindow({mapaOpciones: mapaOpciones});
         infoWindow.setPosition(localizacion);
-        infoWindow.setContent('Ubucacion actual');
+        infoWindow.setContent('Usted está aquí');
 
 
-        let marker = new google.maps.Marker({
+        var marker = new google.maps.Marker({
             position: localizacion,
             title: "Posición actual",
-            map: map
+            mapaOpciones: mapaOpciones
         });
-
-        let marcadores = [
-            ['Pizzeria: Uniovi EII', 43.354762, -5.851274],
-            ['Pizzeria: M. Fontan', 43.360299, -5.845672],
-            ['Pizzeria: P. San Francisco', 43.361734, -5.850688]
+        //Array para guardar los marcadores
+        var marcadores = [
+            ['El Llagar, Gascona 29: Uniovi EII', 43.354762, -5.851274],
+            ['El Llagar Online, El Paraguas s/n', 43.360859, -5.842452],
+            ['El Llagar Online, Mon 16-26', 43.361240, -5.843515],
+            ['El Llagar Online, Galicia 3', 43.361582, -5.854015],
+            ['El Llagar Online, Monumentos 40B', 43.371686, -5.859772]
         ];
 
-        let i;
-        for (i = 0; i < marcadores.length; i++) {
-            marker = new google.maps.Marker({
+        
+        //Añade los marcadores y lo almacena en el array
+        for (var i = 0; i < marcadores.length; i++) {
+            var marker = new google.maps.Marker({
                 position: new google.maps.LatLng(marcadores[i][1], marcadores[i][2]),
                 title: marcadores[i][0],
-                map: map
+                mapaOpciones: mapaOpciones
             });
         }
 
     }
 
     errores(error) {
-        let marcadores = [
-            ['Pizzeria: Uniovi EII', 43.354762, -5.851274],
-            ['Pizzeria: M. Fontan', 43.360299, -5.845672],
-            ['Pizzeria: P. San Francisco', 43.361734, -5.850688]
+        //Array para guardar los marcadores
+        var marcadores = [
+            ['El Llagar, Gascona 29: Uniovi EII', 43.354762, -5.851274],
+            ['El Llagar Online, El Paraguas s/n', 43.360859, -5.842452],
+            ['El Llagar Online, Mon 16-26', 43.361240, -5.843515],
+            ['El Llagar Online, Galicia 3', 43.361582, -5.854015],
+            ['El Llagar Online, Monumentos 40B', 43.371686, -5.859772]
         ];
 
-        let map = new google.maps.Map(document.getElementsByTagName('main')[0], {
-            zoom: 15,
-            center: new google.maps.LatLng(marcadores[0][1], marcadores[0][2])
+        var mapaOpciones = new google.maps.Map(document.getElementsByTagName('main')[0], {
+            zoom: 12,
+            center: new google.maps.LatLng(marcadores[0][1], marcadores[0][2]),
+            mapTypeId: google.maps.MapTypeId.TERRAIN
         });
 
-        let i, marker;
-        for (i = 0; i < marcadores.length; i++) {
-            marker = new google.maps.Marker({
+        
+        for (var i = 0; i < marcadores.length; i++) {
+            var marker = new google.maps.Marker({
                 position: new google.maps.LatLng(marcadores[i][1], marcadores[i][2]),
                 title: marcadores[i][0],
-                map: map
+                mapaOpciones: mapaOpciones
             });
         }
 
@@ -87,4 +95,4 @@ class Mapa {
 
 }
 
-let mapa = new Mapa();
+var mapa = new Mapa();
