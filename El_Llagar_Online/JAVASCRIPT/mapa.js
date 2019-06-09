@@ -28,7 +28,6 @@ class Mapa {
         infoWindow.setPosition(localizacion);
         infoWindow.setContent('Usted está aquí');
 
-
         var marker = new google.maps.Marker({
             position: localizacion,
             title: "Lugar donde se encuentra actualmente",
@@ -50,13 +49,9 @@ class Mapa {
                 map: mapaOpciones
             });
         }
-
     }
-
     errores(error) {
-        alert('Error: '+error.code+' '+error.message);
+        alert('Error: ' + error.code + ' ' + error.message);
     }
-
 }
-
 var mapa = new Mapa();
