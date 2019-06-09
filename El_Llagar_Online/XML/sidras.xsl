@@ -12,7 +12,7 @@
                  <meta name="keywords" content="HTML, CSS, JavaScript" />
                 <link rel="icon" href="../IMG/iconoSidra.jpg" type="image/jpg" />
                  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-                 <script src="../JAVASCRIPT/reloj.js"></script>
+                 <script src="../JAVASCRIPT/fecha.js"></script>
                  <script src="../JAVASCRIPT/analogico.js"></script>
                  <script src="../JAVASCRIPT/carrito.js"></script>
                  <link href="../CSS/estilo.css" rel="stylesheet" type="text/css" />
@@ -65,8 +65,8 @@
                 <nav>
                     <ul id="lista_menu">
             <li><a href="../index.html" title="Ir a la página principal">Principal</a></li>
-            <li><a href="historia.html" title="Ir a la página de la historia"> Historia</a></li>
-            <li><a href="productos.html" title="Ir a la página de los productos">Productos</a>
+            <li><a href="../HTML/historia.html" title="Ir a la página de la historia"> Historia</a></li>
+            <li><a href="../HTML/productos.html" title="Ir a la página de los productos">Productos</a>
                 <ul>
                     <li><a href="../XML/sidras.xml" title="Ir a la página de las sidras tradicionales">Sidras</a></li>
                     <li><a href="../XML/sidrasEspumosas.xml" title="Ir a la página de las sidras espumosas">Sidras
@@ -75,8 +75,8 @@
                             Productos</a></li>
                 </ul>
             </li>
-            <li><a href="establecimientos.html" title="Ir a la página de los establecimientos">Lugares</a></li>
-            <li><a href="contacto.html" title="Ir a la pñagina de contacto">Contacto</a></li>
+            <li><a href="../HTML/establecimientos.html" title="Ir a la página de los establecimientos">Lugares</a></li>
+            <li><a href="../HTML/contacto.html" title="Ir a la pñagina de contacto">Contacto</a></li>
                 </ul>
                 </nav>
 
@@ -195,11 +195,11 @@
                 <h3>Mapa web</h3>
                 <ul>
                     <li><a href="../index.html" title="Ir a la página principal">Principal</a></li>
-                    <li><a href="historia.html" title="Ir a la página de la historia">Historia</a></li>
-                    <li><a href="productos.html" title="Ir a la página de los productos">Productos</a></li>
-                    <li><a href="establecimientos.html" title="Ir a la página de establecimientos">Establecimientos</a>
+                    <li><a href="../HTML/historia.html" title="Ir a la página de la historia">Historia</a></li>
+                    <li><a href="../HTML/productos.html" title="Ir a la página de los productos">Productos</a></li>
+                    <li><a href="../HTML/establecimientos.html" title="Ir a la página de establecimientos">Establecimientos</a>
                     </li>
-                    <li><a href="contacto.html" title="Ir a la página de contacto">Contacto</a></li>
+                    <li><a href="../HTML/contacto.html" title="Ir a la página de contacto">Contacto</a></li>
                 </ul>
             </div>
             </div>
