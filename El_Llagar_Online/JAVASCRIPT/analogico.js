@@ -4,25 +4,25 @@ function funcionReloj() {
     var minutoActual = momentoActual.getMinutes();
     var segundoActual = momentoActual.getSeconds();
 
-    //Identificadores 
+    
     var hora = document.getElementById('hora');
-    var minutos = document.getElementById('minutos');
+    var minutos = document.getElementById('minutos');//Identificadores 
     var segundos = document.getElementById('segundos');
 
-    function cambiarHora() {
-        //Calcular grados por hora (30deg cada hora, 30*12=360º)
-        var horaActualGrados = horaActual * 30 + "deg";
-        hora.style.transform = "rotate(" + horaActualGrados + ")";
-
-        //Calcular grados cada minuto (6deg cada minuto, 6*6=360º)
-        var minutoActualGrados = minutoActual * 6 + "deg";
-        minutos.style.transform = "rotate(" + minutoActualGrados + ")";
+    function cambiarSegundos() {
+        
+        var segundoActualGrados = segundoActual * 6 + "deg";//(6deg cada segundo, 6*6=360º)
+        segundos.style.transform = "rotate(" + segundoActualGrados + ")";//Calcular grados cada segundo 
     }
 
-    function cambiarSegundos() {
-        //Calcular grados cada segundo (6deg cada segundo, 6*6=360º)
-        var segundoActualGrados = segundoActual * 6 + "deg";
-        segundos.style.transform = "rotate(" + segundoActualGrados + ")";
+    function cambiarHora() {
+        
+        var horaActualGrados = horaActual * 30 + "deg";//(30deg cada hora, 30*12=360º)
+        hora.style.transform = "rotate(" + horaActualGrados + ")";//Calcular grados por hora 
+
+        
+        var minutoActualGrados = minutoActual * 6 + "deg";//(6deg cada minuto, 6*6=360º)
+        minutos.style.transform = "rotate(" + minutoActualGrados + ")";//Calculo grados cada minuto 
     }
 
     cambiarHora();
