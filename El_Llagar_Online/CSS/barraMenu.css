@@ -21,7 +21,7 @@ nav ul li:hover > ul {
     list-style: none;
 }
   /* especificidad: 002 */
-
+  
 nav > ul {/*menu*/
     background: #FEFEFE;/*color del menu*/
     padding: 0 0;
@@ -78,6 +78,7 @@ nav ul li a {
     display: block;
     padding: 25px 40px;
     text-decoration: none;
+    
 }
   /* especificidad: 003 */
 

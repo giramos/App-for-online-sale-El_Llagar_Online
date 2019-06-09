@@ -11,6 +11,7 @@ class Mapa {
         mapa.datos.set('Longitud', posicion.coords.longitude);
         mapa.mostrar();
     }
+        
 
     mostrar() {
         var localizacion = {
@@ -48,7 +49,9 @@ class Mapa {
                 title: marcadores[i][0],
                 map: mapaOpciones
             });
+            
         }
+        
     }
     errores(error) {
         alert('Error: ' + error.code + ' ' + error.message);
