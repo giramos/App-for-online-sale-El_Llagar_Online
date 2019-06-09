@@ -41,6 +41,7 @@ input:focus, textarea:focus {
   /* especificidad: 001 */
 label[for='comentario']{
   margin-top: 2%;
+  margin-bottom: 1%;
 }
 textarea {
   display: block;
@@ -53,17 +54,18 @@ textarea {
 }
   /* especificidad: 010 */
 
-.botonesForm {
+.btnF {
+  margin-top: 1%;
     width: 30%;
     font-size: 14px;
-    
+    border-radius:6%;
     text-align: center;
 }
   /* especificidad: 100 */
 
-#botonesForm {
+#btnF {
     display: inline;text-align: center;
-    padding-left: 90px;
+    padding-left: 100px;
 }
 
 
