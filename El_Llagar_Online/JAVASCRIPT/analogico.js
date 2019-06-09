@@ -1,10 +1,10 @@
 function funcionReloj() {
-    var momentoActual = new Date();//Crea hora
-    var horaActual = momentoActual.getHours();//Extraemos Hora
-    var minutoActual = momentoActual.getMinutes();//Extraemos Minutos
-    var segundoActual = momentoActual.getSeconds();//Extraemos Segundos
+    var momentoActual = new Date();//Creo la hora
+    var horaActual = momentoActual.getHours();
+    var minutoActual = momentoActual.getMinutes();
+    var segundoActual = momentoActual.getSeconds();
 
-    //Identificadores para elementos
+    //Identificadores 
     var hora = document.getElementById('hora');
     var minutos = document.getElementById('minutos');
     var segundos = document.getElementById('segundos');
