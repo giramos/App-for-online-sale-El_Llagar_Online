@@ -4,8 +4,6 @@ class Mapa {
     constructor() {
         this.datos = new Map();
         navigator.geolocation.getCurrentPosition(this.obtener, this.errores);
-        var tamano = $(window).height() - $("a").outerHeight(true) - $("footer").outerHeight(true);
-        $("main").css("height", "" + tamano + "px");
     }
 
     obtener(posicion) {
@@ -33,7 +31,7 @@ class Mapa {
 
         var marker = new google.maps.Marker({
             position: localizacion,
-            title: "Posición actual",
+            title: "Lugar donde se encuentra actualmente",
             map: mapaOpciones
         });
         //Array para guardar los marcadores
@@ -56,22 +54,7 @@ class Mapa {
     }
 
     errores(error) {
-        //Array para guardar los marcadores
-        switch (error.code) {
-            case error.PERMISSION_DENIED:
-                this.mensaje = "El usuario no permite la petición de geolocalización"
-                break;
-            case error.POSITION_UNAVAILABLE:
-                this.mensaje = "Información de geolocalización no disponible"
-                break;
-            case error.TIMEOUT:
-                this.mensaje = "La petición de geolocalización ha caducado"
-                break;
-            case error.UNKNOWN_ERROR:
-                this.mensaje = "Se ha producido un error desconocido"
-                break;
-        }
-
+        alert('Error: '+error.code+' '+error.message);
     }
 
 }
