@@ -78,30 +78,31 @@
 
     <main>
         <section>
-            <h1>Comentarios y sugerencias</h1>
-            <h2>En esta seccion podrá enviar sus comentarios y sugerencias</h2>
+            <h1>Contacto</h1>
+            <h2>¡Envíenos todos sus comentarios y sugerencias!</h2>
             <p>Para contactar con nosotros rellene el formulario con sus datos personales. En breve nos pondremos en
                 contacto con usted.</p>
 
             <form name="contacto" method="post" action="../PHP/insertarComentario.php">
 
-                <label for="nombre">Nombre:*<br /></label>
-                <input id="nombre" type="text" name="nombre" placeholder="Germán" pattern="[A-Za-z]{3,}" maxlength="10"
-                    required="required" /><br />
+                <label for="nombre">Nombre:<br /></label>
+                <input id="nombre" type="text" name="nombre" placeholder="Escriba su nombre de pila" pattern="[A-Za-z]{1,}" maxlength="20"
+                    required /><br />
 
-                <label for="apellidos">Apellidos:*<br /></label>
-                <input id="apellidos" type="text" name="apellidos" placeholder="Pelaez Diaz" pattern="[A-Za-z]{3,}"
-                    maxlength="25" required="required" /><br />
+                <label for="apellidos">Apellidos:<br /></label>
+                <input id="apellidos" type="text" name="apellidos" placeholder="Escriba sus apellidos" pattern="[A-Za-z]{1,}"
+                    maxlength="50" required/><br />
 
-                <label for="email">Email:*<br /></label>
-                <input id="email" type="email" name="email" placeholder="ejemplo@ejemplo.com"
-                    required="required" /><br />
+                <label for="email">Email:<br /></label>
+                <input id="email" type="email" name="email" placeholder="Escriba su email: ejemplo@um.es.com"
+                    required/><br />
 
-                <label for="comentario">Comentarios:*<br /></label>
-                <textarea id="comentario" rows="4" cols="50" name="comentario"
-                    placeholder="Inserte sus sugerencias aqui..." maxlength="500" required="required"></textarea>
+                <label for="comentario">Comentario:<br /></label>
+                <textarea id="comentario" cols="500" rows="10" name="comentario"
+                    placeholder="Escriba su comentario o sugerencia" maxlength="500" required></textarea>
+
                 <div id="botonesForm">
-                    <input class="botonesForm" type="button" id="enviar" value="Enviar" />
+                    <input class="botonesForm" type="button" id="enviar" value="Enviar información" />
                     <input class="botonesForm" type="button" id="borrar" value="Borrar información" />
                 </div>
 

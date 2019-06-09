@@ -30,17 +30,17 @@ class FormularioContacto {
         this.formulario = document.querySelector("form[name='contacto']");
         let valido = this.formulario.checkValidity();
         if (valido) {
-            this.formulario.submit();
+            this.formulario.submit();//Envia la informacion
         }
     }
 
     resetear() {
         this.formulario = document.querySelector("form[name='contacto']");
-        this.formulario.reset();
+        this.formulario.reset();//borra la informacion
         this.boton = document.getElementById("enviar");
         this.boton.click();
     }
 
 }
 
-let formulario = new FormularioContacto();
+var formulario = new FormularioContacto();
