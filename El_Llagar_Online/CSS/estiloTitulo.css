@@ -59,7 +59,7 @@
   
   
   /*animacion*/
-  -webkit-animation:move 5s;
+  -webkit-animation:move 5s;/*apple*/
      -moz-animation:move 5s;
       -ms-animation:move 5s;
        -o-animation:move 5s;

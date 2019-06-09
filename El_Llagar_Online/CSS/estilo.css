@@ -154,18 +154,24 @@ h3{
     width: 60%;
     
 }
+/* Especificidad 010*/
 .manzana{
     width: 20%;
 }
+/* Especificidad 100*/
 #refer{
     text-align: center;
     font-size: 150%;
 }
+/* Especificidad 100*/
+
 #subir{
     position: fixed; 
     bottom: 10px; 
     right: 2%;
 }
+/* Especificidad 100*/
+
 #imagAstu{
     position: static;
     width: 40%;

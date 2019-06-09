@@ -53,6 +53,7 @@ nav ul li {
     display: inline-block;
     
 }
+/* especificidad: 013 */
 nav ul li:last-child{/*ultimo item del navegador*/
   border-right: none;
 }
@@ -88,6 +89,7 @@ nav ul ul {/*menu desplegable*/
     border-radius: 10px 10px 10px 10px;
     
 }
+/* especificidad: 013 */
 nav ul ul:last-child {/*ultimo item menu desplegable*/
   border-right-style: ridge;
     border-right-color:  rgb(202, 206, 5);
