@@ -14,7 +14,7 @@
                  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
                  <script src="../JAVASCRIPT/fecha.js"></script>
                  <script src="../JAVASCRIPT/analogico.js"></script>
-                 <script src="../JAVASCRIPT/carrito.js"></script>
+                 <script src="../JAVASCRIPT/carritoPedido.js"></script>
                  <link href="../CSS/estilo.css" rel="stylesheet" type="text/css" />
                  <link href="../CSS/barraMenu.css" rel="stylesheet" type="text/css" />
                  <link href="../CSS/formulario.css" rel="stylesheet" type="text/css" />

@@ -1,10 +1,12 @@
 "use strict";
 
-class Carrito {
+// OOP - Paradigma Orientado a Objetos
+
+class CarritoPedido {
 
     constructor() {
-        this.elementos = [];
-        this.pagar = 0;
+        this.variables = [];
+        this.dinero = 0;
     }
 
     actualizar(nombre, precio) {
@@ -15,11 +17,10 @@ class Carrito {
         var precioCelda = celda.insertCell(1);
         nombreCelda.innerText = nombre;
         precioCelda.innerText = precio;
-        
     }
 
     añadir(nombre, precio) {
-        this.elementos.push({nombre: nombre, precio: precio});
+        this.variables.push({ nombre: nombre, precio: precio });
         this.actualizar(nombre, precio);
         this.calcularTotal(precio);
         this.habilitar();
@@ -28,8 +29,8 @@ class Carrito {
     calcularTotal(precio) {
         var total = document.getElementById("total");
         total.removeAttribute("hidden");
-        this.pagar += parseInt(precio);
-        total.innerText = "Total del pedido (en euros): " + this.pagar + "€";
+        this.dinero += parseInt(precio);
+        total.innerText = "Total del pedido (en euros): " + this.dinero + "€";
     }
 
     habilitar() {
@@ -38,7 +39,7 @@ class Carrito {
     }
 
     getElementos() {
-        return JSON.stringify(this.elementos);
+        return JSON.stringify(this.variables);
     }
 
     guardar() {
@@ -52,5 +53,5 @@ class Carrito {
 
 }
 
-var carrito = new Carrito();
+var carrito = new CarritoPedido();
 carrito.borrar();
