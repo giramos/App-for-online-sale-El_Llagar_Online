@@ -28,13 +28,13 @@ class Mapa {
             lat: this.datos.get("Latitud"),
             lng: this.datos.get("Longitud")
         };
-        var mapaOpciones = new google.maps.Map(document.getElementsByTagName('main')[0], {
+        var map = new google.maps.Map(document.getElementsByTagName('main')[0], {
             zoom: 12,
             center: localizacion,
             mapTypeId: google.maps.MapTypeId.TERRAIN
         });
 
-        var infoWindow = new google.maps.InfoWindow({mapaOpciones: mapaOpciones});
+        var infoWindow = new google.maps.InfoWindow({map: map});
         infoWindow.setPosition(localizacion);
         infoWindow.setContent('Usted está aquí');
 
@@ -42,7 +42,7 @@ class Mapa {
         var marker = new google.maps.Marker({
             position: localizacion,
             title: "Posición actual",
-            mapaOpciones: mapaOpciones
+            map: map
         });
         //Array para guardar los marcadores
         var marcadores = [
@@ -54,12 +54,12 @@ class Mapa {
         ];
 
         
-        //Añade los marcadores y lo almacena en el array
-        for (var i = 0; i < marcadores.length; i++) {
-            var marker = new google.maps.Marker({
+        var i;
+        for (i = 0; i < marcadores.length; i++) {
+            marker = new google.maps.Marker({
                 position: new google.maps.LatLng(marcadores[i][1], marcadores[i][2]),
                 title: marcadores[i][0],
-                mapaOpciones: mapaOpciones
+                map: map
             });
         }
 
@@ -75,18 +75,17 @@ class Mapa {
             ['El Llagar Online, Monumentos 40B', 43.371686, -5.859772]
         ];
 
-        var mapaOpciones = new google.maps.Map(document.getElementsByTagName('main')[0], {
+        var map = new google.maps.Map(document.getElementsByTagName('main')[0], {
             zoom: 12,
-            center: new google.maps.LatLng(marcadores[0][1], marcadores[0][2]),
-            mapTypeId: google.maps.MapTypeId.TERRAIN
+            center: new google.maps.LatLng(marcadores[0][1], marcadores[0][2])
         });
 
-        
-        for (var i = 0; i < marcadores.length; i++) {
-            var marker = new google.maps.Marker({
+        var i, marker;
+        for (i = 0; i < marcadores.length; i++) {
+            marker = new google.maps.Marker({
                 position: new google.maps.LatLng(marcadores[i][1], marcadores[i][2]),
                 title: marcadores[i][0],
-                mapaOpciones: mapaOpciones
+                map: map
             });
         }
 
