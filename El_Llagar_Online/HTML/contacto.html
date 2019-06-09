@@ -80,22 +80,26 @@
         <section>
             <h1>Contacto</h1>
             <h2>¡Envíenos todos sus comentarios y sugerencias!</h2>
-            <p>Para contactar con nosotros rellene el formulario con sus datos personales. En breve nos pondremos en
-                contacto con usted.</p>
+            <p>Para contactar con nosotros rellene el formulario con sus datos personales.</br>
+            En breve nos pondremos en contacto con usted, gracias.</p>
 
-            <form name="contacto" method="post" action="../PHP/insertarComentario.php">
+            <form name="formulario" method="post" action="../PHP/insertarComentario.php">
 
                 <label for="nombre">Nombre:<br /></label>
-                <input id="nombre" type="text" name="nombre" placeholder="Escriba su nombre de pila" pattern="[A-Za-z]{1,}" maxlength="20"
-                    required /><br />
+                <input id="nombre" type="text" name="nombre" placeholder="Escriba su nombre de pila"
+                    pattern="[A-Za-z]{1,}" maxlength="20" required /><br />
 
                 <label for="apellidos">Apellidos:<br /></label>
-                <input id="apellidos" type="text" name="apellidos" placeholder="Escriba sus apellidos" pattern="[A-Za-z]{1,}"
-                    maxlength="50" required/><br />
+                <input id="apellidos" type="text" name="apellidos" placeholder="Escriba sus apellidos"
+                    pattern="[A-Za-z]{1,}" maxlength="50" required /><br />
 
                 <label for="email">Email:<br /></label>
                 <input id="email" type="email" name="email" placeholder="Escriba su email: ejemplo@um.es.com"
-                    required/><br />
+                    required /><br />
+
+                <label for="asunto">Asunto:<br /></label>
+                <input id="asunto" type="text" name="asunto" placeholder="Escriba el asunto de su consulta"
+                    pattern="[A-Za-z]{1,}" maxlength="50" required /><br />
 
                 <label for="comentario">Comentario:<br /></label>
                 <textarea id="comentario" cols="500" rows="10" name="comentario"
@@ -135,22 +139,22 @@
 
         <div class="footer-centro">
             <address>
-            <div>
-                <em class="direccion"></em>
-                <p><span>C/ Castejón Fuero, 23, 33013</span> Oviedo, Asturias, España</p>
-            </div>
+                <div>
+                    <em class="direccion"></em>
+                    <p><span>C/ Castejón Fuero, 23, 33013</span> Oviedo, Asturias, España</p>
+                </div>
 
-            <div>
-                <em class="telefono"></em>
-                <p>985 202 122 - 999 000 789</p>
-            </div>
+                <div>
+                    <em class="telefono"></em>
+                    <p>985 202 122 - 999 000 789</p>
+                </div>
 
-            <div>
-                <em class="autor"></em>
-                <p><span>Web hecha por:</span></p>
-                <p><a href="mailto:uo202549@uniovi.es">Germán Iglesias Ramos UO202549</a></p>
-            </div>
-        </address>
+                <div>
+                    <em class="autor"></em>
+                    <p><span>Web hecha por:</span></p>
+                    <p><a href="mailto:uo202549@uniovi.es">Germán Iglesias Ramos UO202549</a></p>
+                </div>
+            </address>
         </div>
 
         <div class="footer-derecha">
@@ -172,7 +176,7 @@
 
         </div>
     </footer>
-    <script src="../JAVASCRIPT/formularioContacto.js"></script>
+    <script src="../JAVASCRIPT/formulario.js"></script>
 </body>
 
 </html>
