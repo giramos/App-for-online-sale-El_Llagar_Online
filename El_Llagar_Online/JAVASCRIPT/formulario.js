@@ -36,16 +36,16 @@ class Formulario {
         //  alert('Es obligatorio el nombre');}
         var elemento = evento.target;
         //devuelve el elemento que desencadenó el evento
-        elemento.style.background = "#e5b0c8"; //color para que cuando se borre o aparezca mal el formato
+        elemento.style.background = "#ff207a"; //color para que cuando se borre o aparezca mal el formato
     }
     //function comprobar() {
     comprobar(evento) {
         var elemento = evento.target;
         //devuelve el elemento que desencadenó el evento  
         if (elemento.validity.valid) {
-            elemento.style.background = "#c3f4eb";//color para confirmar que el formato es bueno
+            elemento.style.background = "#78ff1f";//color para confirmar que el formato es bueno
         } else {
-            elemento.style.background = "#e5b0c8";//color para que cuando se borre o aparezca mal el formato
+            elemento.style.background = "#ff207a";//color para que cuando se borre o aparezca mal el formato
         }
     }
 

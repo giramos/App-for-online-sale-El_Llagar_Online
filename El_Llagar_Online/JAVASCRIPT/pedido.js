@@ -1,35 +1,35 @@
 "use strict";
 
+// OOP - Paradigma Orientado a Objetos
 class Pedido {
 
     constructor() {
         this.formulario = document.querySelector("form[name='tramitar']");
-        this.boton = document.getElementById("grabar");
+        this.boton = document.getElementById("enviar");
         this.botonBorrar = document.getElementById("borrar");
-
         this.botonBorrar.addEventListener("click", this.resetear);
         this.boton.addEventListener("click", this.enviarFormulario);
         this.formulario.addEventListener("invalid", this.validacion, true);
         this.formulario.addEventListener("input", this.comprobar);
     }
-
+    //function validacion(evento)
     validacion(evento) {
-        let elemento = evento.target;
-        elemento.style.background = "#FFDDDD";
+        var elemento = evento.target;
+        elemento.style.background = "#ff207a";
     }
-
+    //function  comprobar(evento)
     comprobar(evento) {
-        let elemento = evento.target;
+        var elemento = evento.target;
         if (elemento.validity.valid) {
-            elemento.style.background = "#3ADF00";
+            elemento.style.background = "#78ff1f";
         } else {
-            elemento.style.background = "#FFDDDD";
+            elemento.style.background = "#ff207a";
         }
     }
-
+//function enviarFormulario()
     enviarFormulario() {
         this.formulario = document.querySelector("form[name='tramitar']");
-        let valido = this.formulario.checkValidity();
+        var valido = this.formulario.checkValidity();
         if (valido) {
             let datosUser = {
                 "nombre": this.formulario.nombre.value,
@@ -37,7 +37,7 @@ class Pedido {
                 "email": this.formulario.email.value
             };
             datosUser = JSON.stringify(datosUser);
-            let pedido = sessionStorage.getItem("pedido");
+            var pedido = sessionStorage.getItem("pedido");
 
             $.ajax({
                 url: "../php/tramitarPedido.php",
@@ -54,13 +54,13 @@ class Pedido {
             });
         }
     }
-
+//function resetear()
     resetear() {
         this.formulario = document.querySelector("form[name='tramitar']");
         this.formulario.reset();
-        this.boton = document.getElementById("grabar");
+        this.boton = document.getElementById("enviar");
         this.boton.click();
     }
 }
-
-let tramitarPedido = new Pedido();
+// creamos el pedido
+var tramitarPedido = new Pedido();
