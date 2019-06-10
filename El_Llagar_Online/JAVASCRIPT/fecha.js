@@ -1,3 +1,5 @@
+"use strict";
+
 const reloj = {
     //array meses
     meses: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio",

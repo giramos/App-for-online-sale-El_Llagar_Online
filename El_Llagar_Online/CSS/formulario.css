@@ -10,6 +10,13 @@
     border: 3px solid #CCC;
     border-radius: 3em;
 }
+
+/* especificidad: 002 */
+form > img{
+  width: 10%;
+  margin-top: 2%;
+  margin-left: 3%;  
+}
 /* especificidad: 002 */
 label + input {
   margin-top: 1em;
@@ -69,5 +76,7 @@ textarea {
     display: inline;text-align: center;
     padding-left: 100px;
 }
+
+
 
 

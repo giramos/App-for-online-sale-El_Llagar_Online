@@ -33,9 +33,9 @@
     </div>
 
     <div id="clockDate" title="Fecha">
-            <p id="date"></p>
-        </div>
-        
+        <p id="date"></p>
+    </div>
+
     <header>
         <div class="header">
 
@@ -78,28 +78,36 @@
 
     <main>
         <section>
-            <h1>Tramitar Pedido</h1>
-            <h2>Datos Personales</h2>
-            <p>Rellene los campos para formalizar su reserva.</p>
+            <h1>Pedido</h1>
+            <h2>Gestionamos su compra</h2>
+            <p>Cumplimente el siguiente formulario para procesar su compra con su nombre
+                completo y su email. Con sus datos, nos pondremos en marcha para agilizar lo antes posible
+                su pedido y enviarselo con nuestro transporte lo más antes posible para su disfrute.
+                Contamos con un equipo de transportistas de garantía y calidad, con alta experiencia en el mundo
+                del transporte y con notable atención.
+            </p>
 
-            <form name="reserva">
+            <form name="tramitar">
 
-                <label for="nombre">Nombre:*<br /></label>
-                <input id="nombre" type="text" name="nombre" placeholder="Germán" pattern="[A-Za-z]{3,}" maxlength="10"
-                    required="required" /><br />
+                
 
-                <label for="apellidos">Apellidos:*<br /></label>
-                <input id="apellidos" type="text" name="apellidos" placeholder="Iglesias Ramos" pattern="[A-Za-z]{3,}"
-                    maxlength="25" required="required" /><br />
+                <label for="nombre">Nombre:<br /></label>
+                <input id="nombre" type="text" name="nombre" placeholder="Escriba su nombre de pila"
+                    pattern="[A-Za-z]{1,}" maxlength="20" required /><br />
 
-                <label for="email">Email:*<br /></label>
-                <input id="email" type="email" name="email" placeholder="ejemplo@ejemplo.com"
-                    required="required" /><br />
+                <label for="apellidos">Apellidos:<br /></label>
+                <input id="apellidos" type="text" name="apellidos" placeholder="Escriba sus apellidos"
+                    pattern="[A-Za-z]{1,}" maxlength="50" required /><br />
 
-                <div id="botonesForm">
-                    <input class="botonesForm" type="button" id="grabar" value="Grabar Pedido" />
-                    <input class="botonesForm" type="button" id="borrar" value="Borrar información" />
+                <label for="email">Email:<br /></label>
+                <input id="email" type="email" name="email" placeholder="Escriba su email: ejemplo@um.es.com"
+                    required /><br />
+
+                <div id="btnF">
+                    <input class="btnF" type="button" id="enviar" value="Enviar información" />
+                    <input class="btnF" type="button" id="borrar" value="Borrar información" />
                 </div>
+                <img src="../IMG/van-310171_640.png" alt="furgoneta" title="Imagen de una furgoneta" />
 
             </form>
             <a id="subir" href="#lista_menu"><img src="../IMG/subir.png" alt="Subir" title="Ir arriba" /></a>
@@ -130,22 +138,22 @@
 
         <div class="footer-centro">
             <address>
-            <div>
-                <em class="direccion"></em>
-                <p><span>C/ Castejón Fuero, 23, 33013</span> Oviedo, Asturias, España</p>
-            </div>
+                <div>
+                    <em class="direccion"></em>
+                    <p><span>C/ Castejón Fuero, 23, 33013</span> Oviedo, Asturias, España</p>
+                </div>
 
-            <div>
-                <em class="telefono"></em>
-                <p>985 202 122 - 999 000 789</p>
-            </div>
+                <div>
+                    <em class="telefono"></em>
+                    <p>985 202 122 - 999 000 789</p>
+                </div>
 
-            <div>
-                <em class="autor"></em>
-                <p><span>Web hecha por:</span></p>
-                <p><a href="mailto:uo202549@uniovi.es">Germán Iglesias Ramos UO202549</a></p>
-            </div>
-        </address>
+                <div>
+                    <em class="autor"></em>
+                    <p><span>Web hecha por:</span></p>
+                    <p><a href="mailto:uo202549@uniovi.es">Germán Iglesias Ramos UO202549</a></p>
+                </div>
+            </address>
         </div>
 
         <div class="footer-derecha">
@@ -167,7 +175,7 @@
 
         </div>
     </footer>
-    <script src="../JAVASCRIPT/tramitarPedido.js"></script>
+    <script src="../JAVASCRIPT/pedido.js"></script>
 </body>
 
 </html>

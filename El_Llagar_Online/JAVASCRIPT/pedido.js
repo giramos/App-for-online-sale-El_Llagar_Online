@@ -1,9 +1,9 @@
 "use strict";
 
-class TramitarPedido {
+class Pedido {
 
     constructor() {
-        this.formulario = document.querySelector("form[name='reserva']");
+        this.formulario = document.querySelector("form[name='tramitar']");
         this.boton = document.getElementById("grabar");
         this.botonBorrar = document.getElementById("borrar");
 
@@ -28,7 +28,7 @@ class TramitarPedido {
     }
 
     enviarFormulario() {
-        this.formulario = document.querySelector("form[name='reserva']");
+        this.formulario = document.querySelector("form[name='tramitar']");
         let valido = this.formulario.checkValidity();
         if (valido) {
             let datosUser = {
@@ -56,11 +56,11 @@ class TramitarPedido {
     }
 
     resetear() {
-        this.formulario = document.querySelector("form[name='reserva']");
+        this.formulario = document.querySelector("form[name='tramitar']");
         this.formulario.reset();
         this.boton = document.getElementById("grabar");
         this.boton.click();
     }
 }
 
-let tramitarPedido = new TramitarPedido();
+let tramitarPedido = new Pedido();

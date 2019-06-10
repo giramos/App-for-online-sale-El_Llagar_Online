@@ -1,4 +1,7 @@
+"use strict";
+
 //Paradigma funcional
+
 function funcionReloj() {
     var momentoActual = new Date();//Creo la hora
     var horaActual = momentoActual.getHours();
