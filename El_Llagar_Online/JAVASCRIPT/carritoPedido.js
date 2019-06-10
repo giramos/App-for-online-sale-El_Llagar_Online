@@ -22,7 +22,7 @@ class CarritoPedido {
     //function guardar()
     guardar() {
         sessionStorage.setItem("pedido", this.getElementos());
-        location.replace("../HTML/formalizarPedido.html");
+        location.replace("../HTML/tramitarPedido.html");
     }
     //function añadir(nombre, precio)
     añadir(nombre, precio) {
