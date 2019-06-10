@@ -4,13 +4,13 @@
 class Pedido {
 
     constructor() {
-        this.botonBorrar.addEventListener("click", this.borrar);
-        this.boton.addEventListener("click", this.enviar);
-        this.formulario.addEventListener("invalid", this.validar, true);
-        this.formulario.addEventListener("input", this.comprobar);
         this.formulario = document.querySelector("form[name='tramitar']");
         this.boton = document.getElementById("enviar");
         this.botonBorrar = document.getElementById("borrar");
+        this.botonBorrar.addEventListener("click", this.borrar);
+        this.boton.addEventListener("click", this.enviar);
+        this.formulario.addEventListener("invalid", this.validar, true);
+        this.formulario.addEventListener("input", this.comprobar);    
     }
     //function enviar()
     enviar() {

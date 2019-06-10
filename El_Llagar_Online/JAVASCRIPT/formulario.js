@@ -5,13 +5,13 @@
 class Formulario {
 
     constructor() {
+        this.formulario = document.querySelector("form[name='formulario']");
+        this.boton = document.getElementById("enviar");
+        this.botonBorrar = document.getElementById("borrar");
         this.formulario.addEventListener("invalid", this.validar, true);
         this.formulario.addEventListener("input", this.comprobar);
         this.boton.addEventListener("click", this.enviar);
         this.botonBorrar.addEventListener("click", this.borrar);
-        this.formulario = document.querySelector("form[name='formulario']");
-        this.boton = document.getElementById("enviar");
-        this.botonBorrar = document.getElementById("borrar");
     }
     //function enviar() {
     enviar() {
