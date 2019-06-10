@@ -4,11 +4,11 @@ const reloj = {
     //array meses
     meses: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio",
         "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"],
-        //array días
-    dias: [ "Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"],
-    interval: null, 
+    //array días
+    dias: ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"],
+    interval: null,
     newDate: null,
-    dateDom:null,
+    dateDom: null,
 
     init: function () {
         var self = this;
@@ -26,7 +26,7 @@ const reloj = {
 
     intervalCallback: function () {//llamada continuada / actualiza y da la fecha
         this.newDate.setDate(this.newDate.getDate());
-      this.updateDom();
+        this.updateDom();
     }
 };
 

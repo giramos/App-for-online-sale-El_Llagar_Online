@@ -4,7 +4,7 @@
 
 class CarritoPedido {
 
-    
+
     //function actualizar(nombre, precio)
     actualizar(nombre, precio) {
         var carro = document.getElementById("carro");

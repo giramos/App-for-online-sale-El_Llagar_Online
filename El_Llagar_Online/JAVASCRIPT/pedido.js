@@ -12,8 +12,8 @@ class Pedido {
         this.boton = document.getElementById("enviar");
         this.botonBorrar = document.getElementById("borrar");
     }
-      //function enviar()
-      enviar() {
+    //function enviar()
+    enviar() {
         this.formulario = document.querySelector("form[name='tramitar']");
         var valido = this.formulario.checkValidity();
         if (valido) {

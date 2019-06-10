@@ -7,7 +7,7 @@ function funcionReloj() {
     var horaActual = momentoActual.getHours();
     var minutoActual = momentoActual.getMinutes();
     var segundoActual = momentoActual.getSeconds();
-    
+
     var hora = document.getElementById('hora');
     var minutos = document.getElementById('minutos');//Identificadores 
     var segundos = document.getElementById('segundos');
