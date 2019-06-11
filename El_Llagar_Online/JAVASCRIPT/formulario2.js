@@ -16,7 +16,7 @@ class Formulario2 {
     //function enviar() {
     enviar2() {
         this.formulario2 = document.querySelector("form[name='formulario2']");
-        let valido2 = this.formulario2.checkValidity();
+        var valido2 = this.formulario2.checkValidity();
         if (valido2) {
             this.formulario2.submit();//Envia la informacion, se podría haber modificado el type 
             // en vez de button directamente submit. Lo mismo pasa a continuacion con reset
