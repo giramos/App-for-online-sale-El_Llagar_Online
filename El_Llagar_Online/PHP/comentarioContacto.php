@@ -1,4 +1,5 @@
 <?php
+
     //datos de la base de datos
 $servername = "localhost";
 $username = "DBUSER2018";
@@ -7,7 +8,12 @@ $password = "DBPSWD2018";
 // Conexión al SGBD local con XAMPP con el usuario creado DBUSER2018:DBPSWD2018
 $db = new mysqli($servername,$username,$password);
 
-    //Crear la bbdd
+    /*if($db->connect_error) {
+        echo "<p>ERROR de conexión:".$db->connect_error.". No existe el usuario</p>";
+        exit();
+    } else {echo "<p>Conexión establecida.</p>";}*/
+
+// Creo la base de datos de trabajo "El_Llagar_Online" utilizando ordenación en Español
     $cadenaSQL = "CREATE DATABASE IF NOT EXISTS El_Llagar_Online COLLATE utf8_spanish_ci";
 
     //Si va sbien creo la tabla.
@@ -15,7 +21,8 @@ $db = new mysqli($servername,$username,$password);
 
         //crear la tabla
         $db->select_db("El_Llagar_Online");
-
+/// se puede abrir y seleccionar a la vez
+            //$db = new mysqli($servername,$username,$password,$database);
         $crearTabla = "CREATE TABLE IF NOT EXISTS comentarios (
         comentarioContacto_id INT NOT NULL AUTO_INCREMENT,
         asunto VARCHAR(100) NOT NULL,
@@ -40,22 +47,31 @@ $db = new mysqli($servername,$username,$password);
 
             $consultaPre->close();
 
-            //Meter aqui lo que quiero que muestre la pagina de la que se
-            // çinserte el comentario en plan mensaje de agradecimiento guapo o tal.
-            echo "<h2>Muchas gracias por sus sugerencias.</h2>
-            <p>Gracias a sus comentarios nos ayuda a mejorar el sitio para proporcionarle una mejor experiencia.</p>";
-
+            echo "<script>
+                    alert('Ha sido un éxito su envío de información');
+                    window.location= '../HTML/contacto.html'
+        </script>";
 
         } else {
-            echo "<p>Se ha producido  un error por favor intentelo mas tarde.</p>";
+            echo "<script>
+            alert('ERROR: inténtelo otra vez');
+            window.location= '../HTML/contacto.html'
+</script>";
             exit();
         }
 
     } else {
-        echo "<p>Se ha producido  un error por favor intentelo mas tarde.</p>";
+        echo "<script>
+            alert('ERROR: inténtelo otra vez');
+            window.location= '../HTML/contacto.html'
+</script>";
         exit();
     }
-
+    //$message = "Su consulta ha sido todo un éxito. Acepte y vuelva atrás";
+    //echo "<script type='text/javascript'>alert('$message');</script>";//ventanita emergente
+    
     //Cerrar la conexion
     $db->close();
+    
     ?>
+    
