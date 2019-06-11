@@ -16,10 +16,10 @@ $db = new mysqli($servername,$username,$password);
         //crear la tabla
         $db->select_db("El_Llagar_Online");
 
-        $crearTabla = "CREATE TABLE IF NOT EXISTS usuarios (
+        $crearTabla = "CREATE TABLE IF NOT EXISTS comentarios (
         id INT NOT NULL AUTO_INCREMENT,
-        nombre VARCHAR(30) NOT NULL,
-        email VARCHAR(60) NOT NULL, 
+        asunto VARCHAR(100) NOT NULL,
+        comentario VARCHAR(500) NOT NULL, 
         
         PRIMARY KEY (id))";
 
@@ -27,13 +27,13 @@ $db = new mysqli($servername,$username,$password);
         if ($db->query($crearTabla) === TRUE) {
 
             //insertar comentario
-            $db->select_db("usuarios");
+            $db->select_db("comentarios");
 
             $consultaPre =
-                $db->prepare("INSERT INTO usuarios(nombre,email) VALUES (?,?)");
+                $db->prepare("INSERT INTO comentarios(asunto,comentario) VALUES (?,?)");
 
             $consultaPre->bind_param('ss',
-                $_POST["nombre"], $_POST["email"]);
+                $_POST["asunto"], $_POST["comentario"]);
 
             $consultaPre->execute();
 
