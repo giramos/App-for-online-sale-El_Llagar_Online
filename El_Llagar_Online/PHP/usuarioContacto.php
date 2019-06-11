@@ -18,11 +18,11 @@ $db = new mysqli($servername,$username,$password);
         $db->select_db("El_Llagar_Online");
 
         $crearTabla = "CREATE TABLE IF NOT EXISTS usuarios (
-        usuarioContacto_id INT NOT NULL AUTO_INCREMENT,
+        id_usuario INT NOT NULL AUTO_INCREMENT,
         nombre VARCHAR(30) NOT NULL,
         email VARCHAR(60) NOT NULL, 
         
-        PRIMARY KEY (usuarioContacto_id))";
+        PRIMARY KEY (id_usuario))";
 
         //Si se crea con exito inserto el comentario.
         if ($db->query($crearTabla) === TRUE) {

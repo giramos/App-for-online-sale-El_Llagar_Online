@@ -20,9 +20,9 @@ $db = new mysqli($servername,$username,$password);
         comentarioContacto_id INT NOT NULL AUTO_INCREMENT,
         asunto VARCHAR(100) NOT NULL,
         comentario VARCHAR(500) NOT NULL, 
-        usuarioContacto_id INT NOT NULL,
+        id_usuario INT NOT NULL,
         PRIMARY KEY (comentarioContacto_id),
-        FOREIGN KEY (usuarioContacto_id) REFERENCES usuarios(usuarioContacto_id))";
+        FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario))";
 
         //Si se crea con exito inserto el comentario.
         if ($db->query($crearTabla) === TRUE) {
@@ -31,10 +31,10 @@ $db = new mysqli($servername,$username,$password);
             $db->select_db("comentarios");
 
             $consultaPre =
-                $db->prepare("INSERT INTO comentarios(asunto,comentario,usuarioContacto_id) VALUES (?,?,?)");
+                $db->prepare("INSERT INTO comentarios(asunto,comentario,id_usuario) VALUES (?,?,?)");
 
             $consultaPre->bind_param('ssi',
-              $_POST["asunto"], $_POST["comentario"], $_POST["usuarioContacto_id"]);
+              $_POST["asunto"], $_POST["comentario"], $_POST["id_usuario"]);
 
             $consultaPre->execute();
 
