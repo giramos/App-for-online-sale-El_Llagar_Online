@@ -86,15 +86,11 @@
                 para ofrecer a tod@s nuestros clientes el mejor producto, con la mejor calidad y con toda nuestro cariño
                 y dedicación.</p>
 
-            <form name="formulario" method="post" action="../PHP/insertarComentario.php">
+            <form name="formulario" method="post" action="../php/usuarioContacto.php">
 
                 <label for="nombre">Nombre:<br /></label>
                 <input id="nombre" type="text" name="nombre" placeholder="Escriba su nombre de pila"
                     pattern="[A-Za-z]{1,}" maxlength="20" required /><br />
-
-                <label for="apellidos">Apellidos:<br /></label>
-                <input id="apellidos" type="text" name="apellidos" placeholder="Escriba sus apellidos"
-                    pattern="[A-Za-z]{1,}" maxlength="50" required /><br />
 
                 <label for="email">Email:<br /></label>
                 <input id="email" type="email" name="email" placeholder="Escriba su email: ejemplo@um.es.com"
@@ -102,7 +98,7 @@
 
                 <label for="asunto">Asunto:<br /></label>
                 <input id="asunto" type="text" name="asunto" placeholder="Escriba el asunto de su consulta"
-                    pattern="[A-Za-z]{1,}" maxlength="50" required /><br />
+                    pattern="[A-Za-z]{1,}" maxlength="500" required /><br />
 
                 <label for="comentario">Comentario:<br /></label>
                 <textarea id="comentario" cols="500" rows="10" name="comentario"
