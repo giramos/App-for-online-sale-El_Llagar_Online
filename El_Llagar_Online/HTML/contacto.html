@@ -96,6 +96,15 @@
                 <input id="email" type="email" name="email" placeholder="Escriba su email: ejemplo@um.es.com"
                     required /><br />
 
+                <div id="btnF">
+                    <input class="btnF" type="button" id="enviar" title="Enviar datos" value="Enviar información" />
+                    <input class="btnF" type="button" id="borrar" title="Borar datos" value="Borrar información" />
+                </div>
+                <img src="../IMG/telefono.png" alt="telefono" title="Imagen de un telefono" />
+            </form>
+        </br>
+            <form name="formulario2" method="post" action="../php/comentarioContacto.php">
+
                 <label for="asunto">Asunto:<br /></label>
                 <input id="asunto" type="text" name="asunto" placeholder="Escriba el asunto de su consulta"
                     pattern="[A-Za-z]{1,}" maxlength="500" required /><br />
@@ -105,8 +114,8 @@
                     placeholder="Escriba su comentario o sugerencia" maxlength="500" required></textarea>
 
                 <div id="btnF">
-                    <input class="btnF" type="button" id="enviar" title="Enviar datos" value="Enviar información" />
-                    <input class="btnF" type="button" id="borrar" title="Borar datos" value="Borrar información" />
+                    <input class="btnF" type="button" id="enviar2" title="Enviar datos" value="Enviar información" />
+                    <input class="btnF" type="button" id="borrar2" title="Borar datos" value="Borrar información" />
                 </div>
                 <img src="../IMG/telefono.png" alt="telefono" title="Imagen de un telefono" />
             </form>
@@ -176,6 +185,7 @@
         </div>
     </footer>
     <script src="../JAVASCRIPT/formulario.js"></script>
+    <script src="../JAVASCRIPT/formulario2.js"></script>
 </body>
 
 </html>
