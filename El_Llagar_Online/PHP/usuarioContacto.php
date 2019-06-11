@@ -1,4 +1,5 @@
 <?php
+header('Location: ../HTML/contacto.html');
     //datos de la base de datos
 $servername = "localhost";
 $username = "DBUSER2018";
@@ -17,11 +18,11 @@ $db = new mysqli($servername,$username,$password);
         $db->select_db("El_Llagar_Online");
 
         $crearTabla = "CREATE TABLE IF NOT EXISTS usuarios (
-        id INT NOT NULL AUTO_INCREMENT,
+        usuarioContacto_id INT NOT NULL AUTO_INCREMENT,
         nombre VARCHAR(30) NOT NULL,
         email VARCHAR(60) NOT NULL, 
         
-        PRIMARY KEY (id))";
+        PRIMARY KEY (usuarioContacto_id))";
 
         //Si se crea con exito inserto el comentario.
         if ($db->query($crearTabla) === TRUE) {
@@ -57,4 +58,5 @@ $db = new mysqli($servername,$username,$password);
 
     //Cerrar la conexion
     $db->close();
+    
     ?>

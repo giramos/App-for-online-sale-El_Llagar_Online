@@ -17,11 +17,12 @@ $db = new mysqli($servername,$username,$password);
         $db->select_db("El_Llagar_Online");
 
         $crearTabla = "CREATE TABLE IF NOT EXISTS comentarios (
-        id INT NOT NULL AUTO_INCREMENT,
+        comentarioContacto_id INT NOT NULL AUTO_INCREMENT,
         asunto VARCHAR(100) NOT NULL,
         comentario VARCHAR(500) NOT NULL, 
-        
-        PRIMARY KEY (id))";
+        usuarioContacto_id INT NOT NULL,
+        PRIMARY KEY (comentarioContacto_id),
+        FOREIGN KEY (usuarioContacto_id) REFERENCES usuarios(usuarioContacto_id))";
 
         //Si se crea con exito inserto el comentario.
         if ($db->query($crearTabla) === TRUE) {
@@ -30,10 +31,10 @@ $db = new mysqli($servername,$username,$password);
             $db->select_db("comentarios");
 
             $consultaPre =
-                $db->prepare("INSERT INTO comentarios(asunto,comentario) VALUES (?,?)");
+                $db->prepare("INSERT INTO comentarios(asunto,comentario,usuarioContacto_id) VALUES (?,?,?)");
 
-            $consultaPre->bind_param('ss',
-                $_POST["asunto"], $_POST["comentario"]);
+            $consultaPre->bind_param('ssi',
+              $_POST["asunto"], $_POST["comentario"], $_POST["usuarioContacto_id"]);
 
             $consultaPre->execute();
 
