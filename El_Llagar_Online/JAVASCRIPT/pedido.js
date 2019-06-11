@@ -17,7 +17,7 @@ class Pedido {
         this.formulario = document.querySelector("form[name='tramitar']");
         var valido = this.formulario.checkValidity();
         if (valido) {
-            let datosUser = {
+            var datosUser = {
                 "nombre": this.formulario.nombre.value,
                 "apellidos": this.formulario.apellidos.value,
                 "email": this.formulario.email.value
@@ -26,7 +26,7 @@ class Pedido {
             var pedido = sessionStorage.getItem("pedido");
 
             $.ajax({
-                url: "../php/tramitarPedido.php",
+                url: "../php/pedido.php",
                 type: "POST",
                 data: { "datosUser": datosUser, "pedido": pedido },
                 dataType: "json",
@@ -34,12 +34,18 @@ class Pedido {
                     alert(data);
                     location.replace("../index.html");
                 },
+                /*if($db->connect_error) {
+        echo "<p>ERROR de conexión:".$db->connect_error.". No existe el usuario</p>";
+        exit();
+    } else {echo "<p>Conexión establecida.</p>";}*/
                 error: function () {
                     alert("Se ha producido un error al grabar su pedido por favor intĂ©ntolo mas tarde.");
                 }
             });
         }
     }
+
+    
     //function resetear()
     borrar() {
         this.formulario = document.querySelector("form[name='tramitar']");
