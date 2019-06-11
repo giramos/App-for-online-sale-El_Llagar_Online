@@ -20,8 +20,7 @@ $db = new mysqli($servername,$username,$password);
         id INT NOT NULL AUTO_INCREMENT,
         nombre VARCHAR(30) NOT NULL,
         email VARCHAR(60) NOT NULL, 
-        asunto VARCHAR(60) NOT NULL,
-        texto VARCHAR(500) NOT NULL, 
+        
         PRIMARY KEY (id))";
 
         //Si se crea con exito inserto el comentario.
@@ -31,10 +30,10 @@ $db = new mysqli($servername,$username,$password);
             $db->select_db("comentarios");
 
             $consultaPre =
-                $db->prepare("INSERT INTO comentarios(nombre,email,asunto,texto) VALUES (?,?,?,?)");
+                $db->prepare("INSERT INTO comentarios(nombre,email) VALUES (?,?)");
 
-            $consultaPre->bind_param('ssss',
-                $_POST["nombre"], $_POST["email"], $_POST["asunto"], $_POST["comentario"]);
+            $consultaPre->bind_param('ss',
+                $_POST["nombre"], $_POST["email"]);
 
             $consultaPre->execute();
 
