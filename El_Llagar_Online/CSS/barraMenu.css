@@ -36,9 +36,6 @@ nav > ul {/*menu*/
     border: 15px double rgb(202, 206, 5);/*el borde de todo el menu*/
     font-size: larger;/*tamaño de la letra*/
     font: small-caps 100%/200% serif;/*formato de la letra del menu*/
-    font-optical-sizing: auto;
-    
-            
     margin: 0 auto;
     
 }
@@ -61,7 +58,6 @@ nav ul li:last-child{/*ultimo item del navegador*/
 
 nav ul li:hover {/*el foco*/
   background: rgb(240, 221, 181);
-  font-optical-sizing: auto;
   font-size: larger;
   
     
