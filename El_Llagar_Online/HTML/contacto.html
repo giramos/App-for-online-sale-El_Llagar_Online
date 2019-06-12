@@ -102,7 +102,7 @@
                 </div>
                 <img src="../IMG/telefono.png" alt="telefono" title="Imagen de un telefono" />
             </form>
-        </br>
+            <br />
             <form name="formulario2" method="post" action="../php/comentarioContacto.php">
 
                 <label for="asunto">Asunto:<br /></label>
@@ -113,11 +113,11 @@
                 <textarea id="comentario" cols="500" rows="10" name="comentario"
                     placeholder="Escriba su comentario o sugerencia" maxlength="500" required></textarea>
 
-                    <label for="id_usuario">id_usuario:<br /></label>
+                <label for="id_usuario">id_usuario:<br /></label>
                 <input id="id_usuario" type="text" name="id_usuario" placeholder="Escriba el id_usuario de su usuario"
                     pattern="{1,}" maxlength="500" required /><br />
 
-                <div id="btnF">
+                <div id="btnF2">
                     <input class="btnF" type="button" id="enviar2" title="Enviar datos" value="Enviar información" />
                     <input class="btnF" type="button" id="borrar2" title="Borar datos" value="Borrar información" />
                 </div>
@@ -172,23 +172,23 @@
         <div class="footer-derecha">
 
             <p class="footer-company-about">
-                <span>About the company</span>
-                Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus
-                vehicula sit amet.
+                <span>Validación de HTML y CSS</span>
+
             </p>
 
             <div class="footer-icons">
 
-                <a href="#"><em class="fa fa-facebook"></em></a>
-                <a href="#"><em class="fa fa-twitter"></em></a>
-                <a href="#"><em class="fa fa-linkedin"></em></a>
-                <a href="#"><em class="fa fa-github"></em></a>
+                <a href="https://validator.w3.org/check?uri=referer">
+                    <img src="../IMG/html5.png" alt="HTML5 Válido" title="HTML5 Válido" /></a>
+                <br />
+                <a href="http://jigsaw.w3.org/css-validator/check/referer ">
+                    <img src="../IMG/css3.png" alt="CSS Válido" title="CSS Válido" /></a>
 
             </div>
 
         </div>
     </footer>
-    
+
     <script src="../JAVASCRIPT/formulario.js"></script>
     <script src="../JAVASCRIPT/formulario2.js"></script>
 </body>

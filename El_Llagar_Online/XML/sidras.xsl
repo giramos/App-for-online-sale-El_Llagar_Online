@@ -224,15 +224,21 @@
         </address>
         </div>
         <div class="footer-derecha">
-                    <div class="accesibilidad">
-                        <h3>Sobre la accesibilidad</h3>
-                        <p>Web optimizada para su uso en los siguientes navegadores:
-                            <br></br>
-                            Internet Explorer 8, Firefox 2.0 o superior, Safari, Ópera y Chrome.
-                            <br></br>
-                            Sitio web creado con CSS &#38; HTML válidos. • Accesibilidad AAA.
-                        </p>
-                    </div>
+                    <p class="footer-company-about">
+                <span>Validación de HTML y CSS</span>
+
+            </p>
+
+            <div class="footer-icons">
+
+                <a href="https://validator.w3.org/check?uri=referer">
+                    <img src="../IMG/html5.png" alt="HTML5 Válido" title="HTML5 Válido" /></a>
+                <br />
+                <br />
+                <a href="http://jigsaw.w3.org/css-validator/check/referer ">
+                    <img src="../IMG/css3.png" alt="CSS Válido" title="CSS Válido" /></a>
+
+            </div>
                      </div>
                     <div class="clear"></div>
                 </footer>
