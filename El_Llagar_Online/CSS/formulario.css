@@ -78,5 +78,12 @@ textarea {
 }
 
 
+  /* especificidad: 100 */
+
+#btnF2 {
+    display: inline;text-align: center;
+    padding-left: 100px;
+}
+
 
 
