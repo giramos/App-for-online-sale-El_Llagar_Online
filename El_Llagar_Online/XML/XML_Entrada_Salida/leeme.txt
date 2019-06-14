@@ -1,0 +1,29 @@
+Lenguaje de Porgramación: Se ha utilizado Eclipse Java 2018-2019
+Versión Compilador: JavaSE-1.8
+
+Programa que parte de la entrada de un xml y genera otro xml.
+
+Resumen:
+El archivo utilizado (manzana.xml), consta de una serie de diversas manzanas asturianas de denominación de origen que sirvan de materia prima para la fabricación
+de la sidra que nuestro llagar oferta de manera online. Se pretende hacer una selección con nuestro programa, una manera de hacer un "screening" según
+la zona de procedencia de las manzanas en el territorio asturiano. Así pues, la zona norte correspondería a la posición 1, la zona sur a la posición 2,
+la zona este a la posición 3 y por último la oeste a la posición 4. También en el archivo XML se puede distinguir otros elementos como la temporada que se 
+correspondería con el mes de recolecta y también con un nivel de valoración (0-100)
+
+Instrucciones:
+	*Consola:
+		-Hay que siturase en el directorio dónde está el archivo "program_manzana.jar"
+		-Se debe ejecutar la instrucción: java -jar program_manzana.jar manzana.xml
+		-Se debe de seguir las instrucciones que se muestran por consola, respetando la introducción exacta de MAY/MIN
+		-Se generará un xml situado en el mismo directorio en donde se encuentra el archivo "program_manzana.jar"
+		-El nombre del xml generado será "manzanas-tipo-"+ tipo seleccionado
+
+Archivos utilizado:
+	-manzana.xml
+
+Los archivos .xml generados de ejemplo son:
+	-manzanas-tipo-Norte.xml
+	-manzanas-tipo-Sur.xml
+	-manzanas-tipo-Este.xml
+	-manzanas-tipo-Oeste.xml
+

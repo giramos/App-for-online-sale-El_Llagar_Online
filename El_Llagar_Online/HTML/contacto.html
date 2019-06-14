@@ -1,129 +1,196 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="author" content="Germán Iglesias Ramos"/>
-    <meta name="description" content="Página principal de la pagina web dedicada a la venta de sidra"/>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Germán Iglesias Ramos" />
+    <meta name="description" content="Página principal de la pagina web dedicada a la venta de sidra" />
     <meta name="keywords" content="sidra, Sidra, sidreria, Sidreria, Sidrería, sidrería, sidras, culin, culín, escanciador, bebida
-    corcho, botella, botellas, asturias, Asturias, chigre, escanciar, llagar, Llagar"/>
+    corcho, botella, botellas, asturias, Asturias, chigre, escanciar, llagar, Llagar" />
     <meta name="keywords" content="HTML, CSS, JavaScript" />
-    <link rel="icon" href="../IMG/iconoSidra.jpg" type="image/jpg"/>
-    <!-- Espacio para meter las hojas de estilos o los diferentes scrips-->
+    <link rel="icon" href="../IMG/iconoSidra.jpg" type="image/jpg" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="../JAVASCRIPT/reloj.js"></script>
-    <link href="../CSS/reloj.css" rel="stylesheet" type="text/css"/>
-    <link href="../CSS/estilos.css" rel="stylesheet" type="text/css"/>
-    <link href="../CSS/navBar.css" rel="stylesheet" type="text/css"/>
-    <link href="../CSS/formulario.css" rel="stylesheet" type="text/css"/>
-    <link href="../CSS/estiloTitulo.css" rel="stylesheet" type="text/css"/>
+    <script src="../JAVASCRIPT/fecha.js"></script>
+    <script src="../JAVASCRIPT/analogico.js"></script>
+    <link href="../CSS/estilo.css" rel="stylesheet" type="text/css" />
+    <link href="../CSS/barraMenu.css" rel="stylesheet" type="text/css" />
+    <link href="../CSS/formulario.css" rel="stylesheet" type="text/css" />
+    <link href="../CSS/estiloTitulo.css" rel="stylesheet" type="text/css" />
+    <link href="../CSS/analogico.css" rel="stylesheet" type="text/css" />
+    <link href="../CSS/footer.css" rel="stylesheet" type="text/css" />
     <title>El Llagar Online</title>
 </head>
+
 <body>
-        <div class="Iam">
-                <p>Esto es</p>
+    <div id="cajacontenido" title="Reloj analógico">
+        <div id="aplicacion">
+            <div id="CajaReloj">
+                <img id="segundos" src="../IMG/Aguja3.png" alt="Manilla segundos reloj" />
+                <img id="minutos" src="../IMG/Aguja2.png" alt="Manilla pequeña reloj" />
+                <img id="hora" src="../IMG/Aguja1.png" alt="Manilla grande reloj" />
+            </div>
+        </div>
+    </div>
+
+    <div id="clockDate" title="Fecha">
+        <p id="date"></p>
+    </div>
+
+    <header>
+        <div class="header">
+
+            <div class="Iam" title="Título animado del Llagar Online">
+                <a href="../index.html" title="Ir a la página principal">
+                    <img src="../IMG/Llagar.gif" alt="El Llagar Online" />
+                </a>
                 <blockquote>
                     <div class="innerIam">
                         El Llagar Online<br />
                         El Llagar Online de la sidra<br />
-                        El Llagar Online de los asturianos<br />
+                        El Llagar Online de Asturias<br />
                         El Llagar Online de la tradición<br />
-                        El Llagar Online de tod@s
+                        El Llagar Online de tod@s<br />
+                        El Llagar Online de la cultura<br />
+                        El Llagar Online de la folixa<br />
+                        El Llagar Online de la tradición<br />
                     </div>
                 </blockquote>
             </div>
-   
-<div id="clockDate">
-    <p id="date"></p>
-    <ul id="clock">
-        <li id="hours"></li>
-        <li class="dot">:</li>
-        <li id="minutes"></li>
-        <li class="dot">:</li>
-        <li id="seconds"></li>
-    </ul>
-</div>
-<header>
-    <a href="../index.html" title="Ir a la página principal">
-        <img src="../IMG/Llagar.gif" alt="El Llagar Online"/>
-    </a>
-</header>
-<nav>
-    <ul id="lista_menu">
-        <li><a href="../index.html" title="Ir a la página principal">Principal</a></li>
-        <li><a href="historia.html" title="Ir a la página de la historia"> Historia</a></li>
-        <li><a href="productos.html" title="Ir a la página de los productos">Productos</a>
-            <ul>
-                <li><a href="../XML/sidras.xml" title="Ir a la página de las sidras tradicionales">Sidras</a></li>
-                <li><a href="../XML/sidrasEspumosas.xml" title="Ir a la página de las sidras espumosas">Sidras Espumosas</a></li>
-				<li><a href="../XML/otrosProductos.xml" title="Ir a la página de otors productos">Otros Productos</a></li>
-            </ul>
-        </li>
-        <li><a href="establecimientos.html" title="Ir a la página de los establecimientos">Establecimientos</a></li>
-        <li><a href="contacto.html" title="Ir a la pñagina de contacto">Contacto</a></li>
-    </ul>
-</nav>
+        </div>
+    </header>
+    <nav>
+        <ul id="lista_menu">
+            <li><a href="../index.html" title="Ir a la página principal">Principal</a></li>
+            <li><a href="historia.html" title="Ir a la página de la historia"> Historia</a></li>
+            <li><a href="productos.html" title="Ir a la página de los productos">Productos</a>
+                <ul>
+                    <li><a href="../XML/sidras.xml" title="Ir a la página de las sidras tradicionales">Sidras</a></li>
+                    <li><a href="../XML/sidrasEspumosas.xml" title="Ir a la página de las sidras espumosas">Sidras
+                            Espumosas</a></li>
+                    <li><a href="../XML/otrosProductos.xml" title="Ir a la página de otors productos">Otros
+                            Productos</a></li>
+                </ul>
+            </li>
+            <li><a href="establecimientos.html" title="Ir a la página de los establecimientos">Lugares</a></li>
+            <li><a href="contacto.html" title="Ir a la pñagina de contacto">Contacto</a></li>
+        </ul>
+    </nav>
 
-<main>
-    <section>
-        <h1>Comentarios y sugerencias</h1>
-        <h2>En esta seccion podrá enviar sus comentarios y sugerencias</h2>
-        <p>Para contactar con nosotros rellene el formulario con sus datos personales. En breve nos pondremos en contacto con usted.</p>
+    <main>
+        <section>
+            <h1>Contacto</h1>
+            <h2>¡Envíenos todos sus comentarios y sugerencias!</h2>
+            <p>Puede ponerse en contacto con el Servicio de Atención al cliente del Llagar Online a
+                través del siguiente formulario. Recuerde que nuestra política de empresa es la de mejorar día tras
+                días,
+                para ofrecer a tod@s nuestros clientes el mejor producto, con la mejor calidad y con toda nuestro cariño
+                y dedicación.</p>
 
-        <form name="contacto" method="post" action="../PHP/insertarComentario.php">
+            <form name="formulario" method="post" action="../php/usuarioContacto.php">
 
-            <label for="nombre">Nombre:*<br/></label>
-            <input id="nombre" type="text" name="nombre" placeholder="Germán" pattern="[A-Za-z]{3,}" maxlength="10"
-                   required="required"/><br/>
+                <label for="nombre">Nombre:<br /></label>
+                <input id="nombre" type="text" name="nombre" placeholder="Escriba su nombre de pila"
+                    pattern="[A-Za-z]{1,}" maxlength="20" required /><br />
 
-            <label for="apellidos">Apellidos:*<br/></label>
-            <input id="apellidos" type="text" name="apellidos" placeholder="Pelaez Diaz" pattern="[A-Za-z]{3,}"
-                   maxlength="25" required="required"/><br/>
+                <label for="email">Email:<br /></label>
+                <input id="email" type="email" name="email" placeholder="Escriba su email: ejemplo@um.es.com"
+                    required /><br />
 
-            <label for="email">Email:*<br/></label>
-            <input id="email" type="email" name="email" placeholder="ejemplo@ejemplo.com" required="required"/><br/>
+                <div id="btnF">
+                    <input class="btnF" type="button" id="enviar" title="Enviar datos" value="Enviar información" />
+                    <input class="btnF" type="button" id="borrar" title="Borar datos" value="Borrar información" />
+                </div>
+                <img src="../IMG/telefono.png" alt="telefono" title="Imagen de un telefono" />
+            </form>
+            <br />
+            <form name="formulario2" method="post" action="../php/comentarioContacto.php">
 
-            <label for="comentario">Comentarios:*<br/></label>
-            <textarea id="comentario" rows="4" cols="50" name="comentario"
-                      placeholder="Inserte sus sugerencias aqui..." maxlength="500" required="required"></textarea>
-            <div id="botonesForm">
-                <input class="botonesForm" type="button" id="enviar" value="Enviar"/>
-                <input class="botonesForm" type="button" id="borrar" value="Borrar información"/>
+                <label for="asunto">Asunto:<br /></label>
+                <input id="asunto" type="text" name="asunto" placeholder="Escriba el asunto de su consulta"
+                    maxlength="500" required /><br />
+
+                <label for="comentario">Comentario:<br /></label>
+                <textarea id="comentario" cols="500" rows="10" name="comentario"
+                    placeholder="Escriba su comentario o sugerencia" maxlength="500" required></textarea>
+
+                <label for="id_usuario">id_usuario:<br /></label>
+                <input id="id_usuario" type="text" name="id_usuario" placeholder="Escriba el id_usuario de su usuario"
+                    pattern="{1,}" maxlength="500" required /><br />
+
+                <div id="btnF2">
+                    <input class="btnF" type="button" id="enviar2" title="Enviar datos" value="Enviar información" />
+                    <input class="btnF" type="button" id="borrar2" title="Borar datos" value="Borrar información" />
+                </div>
+                <img src="../IMG/telefono.png" alt="telefono" title="Imagen de un telefono" />
+            </form>
+            <a id="subir" href="#lista_menu"><img src="../IMG/subir.png" alt="Subir" title="Ir arriba" /></a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-izquierda">
+
+            <h3>Llagar Online<span>
+                    <img src="../IMG/astur.png" alt="Imagen de escudo" />
+                </span></h3>
+
+            <div class="footer-menu">
+                <h3>Mapa web</h3>
+                <ul>
+                    <li><a href="../index.html" title="Ir a la página principal">Principal</a></li>
+                    <li><a href="historia.html" title="Ir a la página de la historia">Historia</a></li>
+                    <li><a href="productos.html" title="Ir a la página de los productos">Productos</a></li>
+                    <li><a href="establecimientos.html" title="Ir a la página de establecimientos">Establecimientos</a>
+                    </li>
+                    <li><a href="contacto.html" title="Ir a la página de contacto">Contacto</a></li>
+                </ul>
             </div>
 
-        </form>
-    </section>
-</main>
+            <p class="footer-derechos">&copy; Copyright LLAGAR ONLINE, S.L. 2019</p>
+        </div>
 
-<footer>
-    <div id="copy">
-        <span class="copy">
-                &copy; Copyright LLAGAR ONLINE, S.L. 2019 - Todos los derechos reservados
-        </span>
-        <span class="contacto_footer">
-            Sitio web hecho por:
-            <a href="mailto:uo202549@uniovi.es">Germán Iglesias Ramos</a>
-        </span>
-    </div>
+        <div class="footer-centro">
+            <address>
+                <div>
+                    <em class="direccion"></em>
+                    <p><span>C/ Castejón Fuero, 23, 33013</span> Oviedo, Asturias, España</p>
+                </div>
 
-    <div class="mapa_web">
-        <h3>Mapa web</h3>
-        <ul>
-            <li><a href="../index.html" title="Ir a la página principal">Principal</a></li>
-            <li><a href="historia.html" title="Ir a la página de la historia">Historia</a></li>
-            <li><a href="productos.html" title="Ir a la página de los productos">Productos</a></li>
-            <li><a href="establecimientos.html" title="Ir a la página de establecimientos">Establecimientos</a></li>
-            <li><a href="contacto.html" title="Ir a la página de contacto">Contacto</a></li>
-        </ul>
-    </div>
+                <div>
+                    <em class="telefono"></em>
+                    <p>985 202 122 - 999 000 789</p>
+                </div>
 
-    <div class="accesibilidad">
-        <h3>Sobre la accesibilidad</h3>
-        <p>Web optimizada para su uso en los siguientes navegadores:<br/>
-            Internet Explorer 8, Firefox 2.0 o superior, Safari, Ópera y Chrome.<br/>
-            Sitio web creado con CSS &amp; HTML válidos. • Accesibilidad AAA.</p>
-    </div>
-    <div class="clear"></div>
-</footer>
-<script src="../JAVASCRIPT/formularioContacto.js"></script>
+                <div>
+                    <em class="autor"></em>
+                    <p><span>Web hecha por:</span></p>
+                    <p><a href="mailto:uo202549@uniovi.es">Germán Iglesias Ramos UO202549</a></p>
+                </div>
+            </address>
+        </div>
+
+        <div class="footer-derecha">
+
+            <p class="footer-company-about">
+                <span>Validación de HTML y CSS</span>
+
+            </p>
+
+            <div class="footer-icons">
+
+                <a href="https://validator.w3.org/check?uri=referer">
+                    <img src="../IMG/html5.png" alt="HTML5 Válido" title="HTML5 Válido" /></a>
+                <br />
+                <a href="http://jigsaw.w3.org/css-validator/check/referer ">
+                    <img src="../IMG/css3.png" alt="CSS Válido" title="CSS Válido" /></a>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="../JAVASCRIPT/formulario.js"></script>
+    <script src="../JAVASCRIPT/formulario2.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,181 @@
+@charset "utf-8";
+
+/* Especificidad 001 */
+body {
+    max-width: 800px;
+    min-width: 300px;
+    /*	Las reglas se aplican para cualquier
+     ancho del navegador que sea inferior al valor definido en la consulta.*/
+    margin: auto;
+    /*margen superior*/
+    padding: 20px 80px;
+    background: #eee url(../IMG/extra_clean_paper.png);
+}
+
+
+/*Fecha*/
+/* Especificidad 102 */
+body div #date {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 120%;
+    text-decoration: underline;
+    font-style: italic;
+}
+/* Especificidad 010 */
+.header {
+    /* mueve el elemento debajo de los elementos flotantes a ambos lados - both*/
+    max-width: 800px;
+    padding: 60px;
+    text-align: center;
+    background: #eee url(../IMG/extra_clean_paper.png);
+    color: white;
+    font-size: 30px;
+}
+/* Especificidad 002 */
+body header {
+    /*pondremos el GIF del asturiano escanciando a la izquierda*/
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    padding: 0px;;
+    text-align: center;
+}
+/* Especificidad 011 */
+.header img {
+    /*Tamaño de la imagen y posicion*/
+    position: static;
+    width: 12%;
+    height: auto;
+    float: left;
+    margin-bottom: 0%;
+    margin-left: 0%;
+    clear: both;
+}
+/* Especificidad 001 */
+main{
+    padding-bottom: 5%; /*valor del grosor del área de relleno*/
+}
+/* Especificidad 010*/
+.botonesPrincipales {
+    text-align: center; 
+    
+}
+/* Especificidad 010*/
+.botonPrincipal{
+    border-radius: 45px; /*angulo del borde*/
+    border: 3px outset #806612; /*Define un borde de inicio 3D*/
+    text-align: center;
+    position: relative;
+    width: 50%;
+    font-size: 26px;
+    background: burlywood; /*color sin pasar el raton de los botones*/
+    cursor: pointer; /*manita*/
+    font-weight: unset;
+}
+/* Especificidad 020*/
+.botonPrincipal:hover{
+    background: rgba(0,0,0,0);
+    color: #000;/*color de las letras interiores al hacer el efecto*/
+    box-shadow: inset 0 0 0 3px burlywood;/*color del borde sombra*/
+}
+/* Especificidad 001 */
+p{    
+    font-size: 120%;
+}
+/* Especificidad 001 */
+h1{
+    font-size: 3rem; /*tamaño de la letra*//*La unidad relativa rem corresponde a la altura total del tipo de letra*/
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+    /*Sombra efecto FUEGOOOO*/
+    text-shadow: 0 0 20px #fefcc9, 2px -2px 3px #feec85, -4px -4px 5px #ffae34,
+     5px -10px 6px #ec760c, -5px -12px 8px #cd4606, 0 -15px 20px #973716, 2px -15px 20px #451b0e;
+}
+/* Especificidad 001 */
+h2{
+    font-size: 2rem;/*La unidad relativa rem corresponde a la altura total del tipo de letra*/
+    text-align: center; /*decidi alinear tanto h1 coomo h2 centrados*/
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif
+}
+/* Especificidad 001 */
+h3{
+    font-size: 1.2rem;/*La unidad relativa rem corresponde a la altura total del tipo de letra*/
+}
+/* Especificidad 010*/
+.botonSidra{
+    width: 30%;
+    height: 30%;
+    border: #6b727c solid 2px;
+}
+/* Especificidad 020*/
+.botonSidra:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Especificidad 010*/
+ .botella {
+    float: left; 
+    margin: 80px 10px 25px 25px ;
+    max-width: 800px;
+ }
+ /* Especificidad 010*/
+ .Llagar{
+    max-width: 800px;
+    width: 70%; height: auto;
+    min-width: 300px;
+ }
+/* Especificidad 010*/
+  .audio{
+    margin-left: auto;
+    margin-right: auto;
+    display:block;  
+ }
+/* Especificidad 010*/
+ .folixa{
+     float: right;
+     max-width: 800px;
+     min-width: 300px;
+     height: auto;
+     width: 50%;
+ }
+/* Especificidad 011*/
+.paisanos figcaption{
+     float: right;
+     margin: 20px 20px 10px 10px;
+     max-width: 800px;
+     width: auto; 
+     min-width: 300px;
+ }
+ /* Especificidad 010*/
+.video{
+    margin-left: auto;
+    margin-right: auto;
+    display:block;  
+    width: 60%;
+    
+}
+/* Especificidad 010*/
+.manzana{
+    width: 20%;
+}
+/* Especificidad 100*/
+#refer{
+    text-align: center;
+    font-size: 150%;
+}
+/* Especificidad 100*/
+
+#subir{
+    position: fixed; 
+    bottom: 10px; 
+    right: 2%;
+}
+/* Especificidad 100*/
+
+#imagAstu{
+    position: static;
+    width: 40%;
+    float: left;
+}
+
+ 

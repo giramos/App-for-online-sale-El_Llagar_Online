@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+  /* Especificidad 001*/
+
+  main {
+    max-width: 60%;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+/* Especificidad 101*/
+
+ #menu  img {
+      margin-top: 2%;
+      margin-bottom: 4%;
+      width: 80%;
+      height: 50%;
+      border-radius: 6px;
+      border: 6px double #575f6a;
+  }
+  /* Especificidad 101*/
+  #menu h3 {
+      font-size: 130%;
+  }
+  /* Especificidad 101*/
+  #menu h2 {
+    text-align: center;
+}
+/* Especificidad 010*/
+.sidras {
+    border-top: #575f6a double 4px;
+}
+/* Especificidad 200*/
+#menu #ficha { 
+    width: 100%; 
+    border-collapse: collapse; 
+}
+/* Especificidad 201*/
+#menu #ficha th { 
+    
+    font-weight: bolder; 
+    border: 4px double ;
+}
+
+/* Especificidad 201*/
+#menu #ficha td{
+    border: 4px double ;
+    text-align: left; 
+    padding: 6px; 
+}
+
+/* Especificidad 201*/
+#menu #ficha caption{
+    margin-bottom: 5%;
+    font-weight: bold;
+    text-decoration: underline;
+}
+/* Especificidad 111*/
+#menu .sidras p {
+    padding: 0%;
+    margin: 0%;
+}
+
+/* Especificidad 111*/
+#menu input[type="button"] {
+    width: 50%;
+    font-size: 15px;
+    text-decoration: none; /*si queremos subrayado o no*/
+    padding: 10px; /*distancia entre el borde del boton y el texto*/
+    font-weight: 600; /*grosor de las letras*/
+    font-size: 20px; /*tamaño de las letras*/
+    border-radius: 6px;
+    border: 2px solid;
+    margin-bottom: 10px;
+    cursor: pointer; /*manita*/
+}
+/* Especificidad 121*/
+#menu input[type="button"]:hover{
+    color: #1883ba;
+    background-color: #ffffff;
+  }
+/* Especificidad 101*/
+  #menu aside {
+    max-width: 60%;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+/* Especificidad 102*/
+#menu aside table {
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+/* Especificidad 102*/
+#menu aside table {
+    border-collapse: collapse;
+    font-size: 20px;
+}
+/* Especificidad 102*/
+#menu aside table, th, td {
+    border: 1px solid black;
+}
+/* Especificidad 100*/
+ #subir{
+    position: fixed; 
+    bottom: 10px; 
+    right: 2%;
+}
+

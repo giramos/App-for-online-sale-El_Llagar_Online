@@ -9,45 +9,54 @@
 	corcho, botella, botellas, asturias, Asturias, chigre, escanciar, llagar, Llagar" />
     <meta name="keywords" content="HTML, CSS, JavaScript" />
     <link rel="icon" href="../IMG/iconoSidra.jpg" type="image/jpg" />
-    <!-- Espacio para meter las hojas de estilos o los diferentes scrips-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="../JAVASCRIPT/reloj.js"></script>
-    <link href="../CSS/reloj.css" rel="stylesheet" type="text/css" />
-    <link href="../CSS/estilos.css" rel="stylesheet" type="text/css" />
-    <link href="../CSS/navBar.css" rel="stylesheet" type="text/css" />
+    <script src="../JAVASCRIPT/fecha.js"></script>
+    <script src="../JAVASCRIPT/analogico.js"></script>
+    <link href="../CSS/estilo.css" rel="stylesheet" type="text/css" />
+    <link href="../CSS/barraMenu.css" rel="stylesheet" type="text/css" />
     <link href="../CSS/estiloTitulo.css" rel="stylesheet" type="text/css" />
+    <link href="../CSS/analogico.css" rel="stylesheet" type="text/css" />
+    <link href="../CSS/footer.css" rel="stylesheet" type="text/css" />
+    <link href="../CSS/tabla.css" rel="stylesheet" type="text/css" />
     <title>El Llagar Online</title>
 </head>
 
 <body>
-
-    <div class="Iam">
-        <p>Esto es</p>
-        <blockquote>
-            <div class="innerIam">
-                El Llagar Online<br />
-                El Llagar Online de la sidra<br />
-                El Llagar Online de los asturianos<br />
-                El Llagar Online de la tradición<br />
-                El Llagar Online de tod@s
+    <div id="cajacontenido" title="Reloj analógico">
+        <div id="aplicacion">
+            <div id="CajaReloj">
+                <img id="segundos" src="../IMG/Aguja3.png" alt="Manilla segundos reloj" />
+                <img id="minutos" src="../IMG/Aguja2.png" alt="Manilla pequeña reloj" />
+                <img id="hora" src="../IMG/Aguja1.png" alt="Manilla grande reloj" />
             </div>
-        </blockquote>
+        </div>
     </div>
 
-    <div id="clockDate">
+    <div id="clockDate" title="Fecha">
         <p id="date"></p>
-        <ul id="clock">
-            <li id="hours"></li>
-            <li class="dot">:</li>
-            <li id="minutes"></li>
-            <li class="dot">:</li>
-            <li id="seconds"></li>
-        </ul>
     </div>
+
     <header>
-        <a href="../index.html" title="Ir a la página principal">
-            <img src="../IMG/Llagar.gif" alt="El Llagar Online" />
-        </a>
+        <div class="header">
+
+            <div class="Iam" title="Título animado del Llagar Online">
+                <a href="../index.html" title="Ir a la página principal">
+                    <img src="../IMG/Llagar.gif" alt="El Llagar Online" />
+                </a>
+                <blockquote>
+                    <div class="innerIam">
+                        El Llagar Online<br />
+                        El Llagar Online de la sidra<br />
+                        El Llagar Online de Asturias<br />
+                        El Llagar Online de la tradición<br />
+                        El Llagar Online de tod@s<br />
+                        El Llagar Online de la cultura<br />
+                        El Llagar Online de la folixa<br />
+                        El Llagar Online de la tradición<br />
+                    </div>
+                </blockquote>
+            </div>
+        </div>
     </header>
     <nav>
         <ul id="lista_menu">
@@ -62,76 +71,209 @@
                             Productos</a></li>
                 </ul>
             </li>
-            <li><a href="establecimientos.html" title="Ir a la página de los establecimientos">Establecimientos</a></li>
+            <li><a href="establecimientos.html" title="Ir a la página de los establecimientos">Lugares</a></li>
             <li><a href="contacto.html" title="Ir a la pñagina de contacto">Contacto</a></li>
         </ul>
     </nav>
     <main>
         <section>
             <h1>Historia</h1>
-            <h2>Historia</h2>
-            <p> El Llagar Online nace como una propuesta para la evaluación extraordinaria de la asignatura Softwares y
-                Estandares para la Web.</p>
-            <p> En esta página web se intenta mostrar los distintos conocimientos adquiridos durante
-                las diferentes prácticas de la asignatura.</p>
-            <p> Para ello se aplicarán los conocimientos de HTML para realizar
-                las diferentes vistas de la aplicación, de la misma manera se utilizarán los conocimientos adquiridos de
-                CSS
-                para mostrar de forma correcta y tratar los estilos de las vistas.</p>
-            <p>Por otro lado, también se utilizará XML para guardar las pizzas que conformarán la carta de la
-                aplicación,
-                junto con estos XML se crearán las DTDs y XMLSchemas necesarios para la validación, de la misma forma
-                para
-                mostrar las pizzas se utilizarán transformaciones XSLT.</p>
-            <p> En lo referente a la computación en el cliente se utilizará jquery para la creación de un reloj para las
-                diferentes páginas de aplicación, el formato json será utilizado para el intercambio de
-                información entre el cliente y el servidor y se utilizará Ajax para leer y mostrar la información en
-                dicho
-                formato.</p>
-            <p> También sera usado en lo que concierne a la computación en el cliente la api de geolocalización de
-                HTML5, y se consumirán los servicios web de Google Maps para mostrar la ubicación de los locales a los
-                clientes, asi como la ubicación del cliente respecto a estos, en caso de que autorice la
-                geolocalización.</p>
-            <p> Por otro lado la computación en el servidor se hará sobre PHP, se utilizará para validar la
-                información del cliente y guardarla en una base de datos MYSQL y se enviará desde PHP un mensaje a los
-                usuarios
-                de que se ha procesado su pedido correctamente.</p>
-            <p> El funcionamiento de todo lo anterior se probará sobre la
-                máquina local XAMPP, y se utilizarán los validadores de HTML, CSS, XML, etc. para comprobar que están
-                bien
-                formados todos los ficheros que conforman el sitio web.</p>
+
+            <div id="refer">
+                <a href="#historia" title="Ir a la sección Historia">Historia</a>
+                <a href="#cancios" title="Ir a la sección Cancios">Cancios</a>
+                <a href="#galardones" title="Ir a la sección Galardones">Galardones</a>
+            </div>
+
+            <h2>Tradición familiar. La experiencia de tres generaciones y
+                el mismo espíritu de superación para ofrecer la mejor sidra natural</h2>
+
+            <img src="../IMG/manzana.png" alt="manzana" title="Imagen de una manzana" />
+
+            <p id="historia">El Llagar Online fué fundado por mis abuelos paternos, D. Alfredo García Menéndez y Dña.
+                Margarita
+                Suárez Rodríguez en el año 1940.</p>
+            <p>Dedicados al transporte de viajeros haciendo la ruta Navia-Gijón-Navia en un autocar de su propiedad, se
+                quedan
+                sin trabajo al ser confiscado dicho vehículo durante la guerra. Transcurridos 2 años el autocar aparece
+                en Salamanca
+                completamente inservible por lo que ellos deciden venderlo al desguace por unas 11.500 pesetas. Con este
+                dinero y
+                algún ahorro construyen el edificio principal para hacer el llagar.</p>
+            <p>Comienza aquí su pequeña producción y venta de sidra natural, que años más tarde continúa con el negocio
+                su yerno (mi padre),
+                D. Julián Iglesias Villanueva, haciendo cada año pequeños aumentos en nuevos toneles y maquinaria.</p>
+            <p>En 1982 fallece mi padre mientras me encontraba haciendo el servicio militar. Con el apoyo de mi madre y
+                mis hermanos
+                decidí continuar con su labor y a base de muchos esfuerzos, económicos y sentimentales, fuí creando el
+                llagar que hasta
+                ahora estaba situado en el barrio de San Blas, en Navia, famoso por la parrilla y las fiestas de Santa
+                Eulalia que allí se
+                organizaban.</p>
+            <p>Al no disponer de terreno alrededor de la finca que permitiera realizar ampliaciones en el mismo, nos
+                planteamos hacer otro
+                llagar nuevo en una finca adquirida no muy lejos de ésta, en el mismo municipio de Navia. Unas nuevas
+                instalaciones que
+                esperamos sean de vuestro agrado, donde podréis visitar nuestro llagar y degustar nuestra sidra natural
+            </p>
+
+            <figure>
+                <img class="Llagar" src="../IMG/llaga_antigua.jpg" alt="Foto que contien un llagar, lagar, chagar"
+                    title="Imagen de un llagar" />
+                <figcaption> Llagar, lagar o chagar.</figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <h2>Cancios de chigre (Canciones de bar)</h2>
+            <figure class="folixa">
+                <img class="paisanos" src="../IMG/paisanos.png" alt="paisanos" title="Imagen de paisanos en folixa" />
+                <figcaption> Folixa en La Petisa de Salas.</figcaption>
+            </figure>
+
+            <p id="cancios">Todavía en algunos chigres de Asturias se canta, ya no es habitual el que un grupo de
+                tertulianos
+                entonados por unas sidras o vinos se animen a cantar,
+                ¡ahora se molesta! al menos en las ciudades es muy raro el oir estas canciones que abajo se pueden
+                escuchar
+                y
+                muchas más que sería largo el reproducir aqui, estas son las más populares, y en su mayoria asturianas,
+                pero no hay reparos en cantar tonadas actuales o de otros sitios si estas son del agrado de los
+                cantantes,
+                pero este mes y con motivo de el Festival de la sidra de Gijón, habrá canciones cantadas por algun coro
+                y acompañado por los espectadores,
+                y en chigres de pueblos y villas como La Petisa de Salas se sigue cantando….los más vieyos, pero los
+                jóvenes escuchan,
+                algún día quizá canten ellos en recuerdo de los que ya no lo harán</p>
+
+            <p>Algunas de las más comunes son:</p>
+
+            <p>1. Chus Pedro - Si quies que te cortexe </p>
+            <audio class="audio" src="../MULTIMEDIA/chus.mp3" title="Reproducir audio" controls>
+            </audio>
+
+            <p>2. Tuna de Oviedo - Compostelana</p>
+            <video class="video" src="../MULTIMEDIA/tuna.mp4" title="Reproducir video" controls preload="auto">
+            </video>
+        </section>
+
+        <section>
+            <h2>Premios</h2>
+            <p id="galardones">A lo largo del tiempo, hemos sido galardonados por nuestros socios y clientes, por
+                nuestra apuesta por
+                una sidra de calidad,
+                así como por una apuesta por la innovación con nuevos productos derivados de la sidra y también por dar
+                a conocer
+                la cultura de la sidra a través de nuestros productos, sevicios e instalaciones abiertas a todos los
+                públicos</p>
+
+            <table title="Tabla de galardones">
+                <thead>
+                    <tr>
+                        <th>Año</th>
+                        <th>Galardón</th>
+                        <th>Posición</th>
+                        <th>Descripción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2013</td>
+                        <td>Insignia Sidrera de oro</td>
+                        <td>1º Premio</td>
+                        <td>Mejor Aperitivo de sidra, Vermut</td>
+                    </tr>
+                    <tr>
+                        <td>2007</td>
+                        <td>Medalla de platino</td>
+                        <td>3ª Mejor</td>
+                        <td>Sidra de Denominación de Origen Protegido</td>
+                    </tr>
+                    <tr>
+                        <td>2015</td>
+                        <td>Medalla de platino</td>
+                        <td>1º Premio</td>
+                        <td>Sidra de Denominación de Origen Protegido</td>
+                    </tr>
+                    <tr>
+                        <td>2016</td>
+                        <td>Llagar de plata</td>
+                        <td>2ª Mejor</td>
+                        <td>Prueba Popular de sidra en Villaviciosa</td>
+                    </tr>
+                    <tr>
+                        <td>2018</td>
+                        <td>Llagar de plata</td>
+                        <td>1º Premio</td>
+                        <td>Prueba Popular de sidra en Villaviciosa</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <a id="subir" href="#lista_menu"><img src="../IMG/subir.png" alt="Subir" title="Ir arriba" /></a>
         </section>
     </main>
 
-    <footer>
-        <div id="copy">
-            <span class="copy">
-                &copy; Copyright LLAGAR ONLINE, S.L. 2019 - Todos los derechos reservados
-            </span>
-            <span class="contacto_footer">
-                Sitio web hecho por:
-                <a href="mailto:uo202549@uniovi.es">Germán Iglesias Ramos</a>
-            </span>
+    <footer class="footer">
+        <div class="footer-izquierda">
+
+            <h3>Llagar Online<span>
+                    <img src="../IMG/astur.png" alt="Imagen de escudo" />
+                </span></h3>
+
+            <div class="footer-menu">
+                <h3>Mapa web</h3>
+                <ul>
+                    <li><a href="../index.html" title="Ir a la página principal">Principal</a></li>
+                    <li><a href="historia.html" title="Ir a la página de la historia">Historia</a></li>
+                    <li><a href="productos.html" title="Ir a la página de los productos">Productos</a></li>
+                    <li><a href="establecimientos.html" title="Ir a la página de establecimientos">Establecimientos</a>
+                    </li>
+                    <li><a href="contacto.html" title="Ir a la página de contacto">Contacto</a></li>
+                </ul>
+            </div>
+
+            <p class="footer-derechos">&copy; Copyright LLAGAR ONLINE, S.L. 2019</p>
         </div>
 
-        <div class="mapa_web">
-            <h3>Mapa web</h3>
-            <ul>
-                <li><a href="../index.html" title="Ir a la página principal">Principal</a></li>
-                <li><a href="historia.html" title="Ir a la página de la historia">Historia</a></li>
-                <li><a href="productos.html" title="Ir a la página de los productos">Productos</a></li>
-                <li><a href="establecimientos.html" title="Ir a la página de establecimientos">Establecimientos</a></li>
-                <li><a href="contacto.html" title="Ir a la página de contacto">Contacto</a></li>
-            </ul>
+        <div class="footer-centro">
+            <address>
+                <div>
+                    <em class="direccion"></em>
+                    <p><span>C/ Castejón Fuero, 23, 33013</span> Oviedo, Asturias, España</p>
+                </div>
+
+                <div>
+                    <em class="telefono"></em>
+                    <p>985 202 122 - 999 000 789</p>
+                </div>
+
+                <div>
+                    <em class="autor"></em>
+                    <p><span>Web hecha por:</span></p>
+                    <p><a href="mailto:uo202549@uniovi.es">Germán Iglesias Ramos UO202549</a></p>
+                </div>
+            </address>
         </div>
 
-        <div class="accesibilidad">
-            <h3>Sobre la accesibilidad</h3>
-            <p>Web optimizada para su uso en los siguientes navegadores:<br />
-                Internet Explorer 8, Firefox 2.0 o superior, Safari, Ópera y Chrome.<br />
-                Sitio web creado con CSS &amp; HTML válidos. • Accesibilidad AAA.</p>
+        <div class="footer-derecha">
+
+            <p class="footer-company-about">
+                <span>Validación de HTML y CSS</span>
+
+            </p>
+
+            <div class="footer-icons">
+
+                <a href="https://validator.w3.org/check?uri=referer">
+                    <img src="../IMG/html5.png" alt="HTML5 Válido" title="HTML5 Válido" /></a>
+                <br />
+                <a href="http://jigsaw.w3.org/css-validator/check/referer ">
+                    <img src="../IMG/css3.png" alt="CSS Válido" title="CSS Válido" /></a>
+
+            </div>
+
         </div>
-        <div class="clear"></div>
     </footer>
 
 </body>

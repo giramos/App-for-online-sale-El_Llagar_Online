@@ -1,0 +1,11 @@
+
+        <!ELEMENT productos (producto)*>
+        <!ELEMENT producto (titulo, rutaFoto, nombre, descripcion, precio )>
+        <!ELEMENT titulo (#PCDATA)>
+		<!ELEMENT rutaFoto (#PCDATA)>
+		<!ELEMENT nombre (#PCDATA)>
+        <!ELEMENT descripcion (#PCDATA)>
+        <!ELEMENT precio (#PCDATA)>
+		<!ATTLIST precio
+                unidad CDATA #REQUIRED>
+        

@@ -9,47 +9,54 @@
     corcho, botella, botellas, asturias, Asturias, chigre, escanciar, llagar, Llagar" />
     <meta name="keywords" content="HTML, CSS, JavaScript" />
     <link rel="icon" href="../IMG/iconoSidra.jpg" type="image/jpg" />
-    <!-- Espacio para meter las hojas de estilos o los diferentes scrips-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="../JAVASCRIPT/reloj.js"></script>
-    <link href="../CSS/reloj.css" rel="stylesheet" type="text/css" />
-    <link href="../CSS/estilos.css" rel="stylesheet" type="text/css" />
-    <link href="../CSS/navBar.css" rel="stylesheet" type="text/css" />
+    <script src="../JAVASCRIPT/fecha.js"></script>
+    <script src="../JAVASCRIPT/analogico.js"></script>
+    <link href="../CSS/estilo.css" rel="stylesheet" type="text/css" />
+    <link href="../CSS/barraMenu.css" rel="stylesheet" type="text/css" />
     <link href="../css/formulario.css" rel="stylesheet" type="text/css" />
     <link href="../CSS/estiloTitulo.css" rel="stylesheet" type="text/css" />
+    <link href="../CSS/analogico.css" rel="stylesheet" type="text/css" />
+    <link href="../CSS/footer.css" rel="stylesheet" type="text/css" />
     <title>El Llagar Online</title>
 </head>
 
 <body>
-
-    <div class="Iam">
-        <p>Esto es</p>
-        <blockquote>
-            <div class="innerIam">
-                El Llagar Online<br />
-                El Llagar Online de la sidra<br />
-                El Llagar Online de los asturianos<br />
-                El Llagar Online de la tradición<br />
-                El Llagar Online de tod@s
+    <div id="cajacontenido" title="Reloj analógico">
+        <div id="aplicacion">
+            <div id="CajaReloj">
+                <img id="segundos" src="../IMG/Aguja3.png" alt="Manilla segundos reloj" />
+                <img id="minutos" src="../IMG/Aguja2.png" alt="Manilla pequeña reloj" />
+                <img id="hora" src="../IMG/Aguja1.png" alt="Manilla grande reloj" />
             </div>
-        </blockquote>
+        </div>
     </div>
 
-
-    <div id="clockDate">
+    <div id="clockDate" title="Fecha">
         <p id="date"></p>
-        <ul id="clock">
-            <li id="hours"></li>
-            <li class="dot">:</li>
-            <li id="minutes"></li>
-            <li class="dot">:</li>
-            <li id="seconds"></li>
-        </ul>
     </div>
+
     <header>
-        <a href="../index.html" title="Ir a la página principal">
-            <img src="../IMG/Llagar.gif" alt="El Llagar Online" />
-        </a>
+        <div class="header">
+
+            <div class="Iam" title="Título animado del Llagar Online">
+                <a href="../index.html" title="Ir a la página principal">
+                    <img src="../IMG/Llagar.gif" alt="El Llagar Online" />
+                </a>
+                <blockquote>
+                    <div class="innerIam">
+                        El Llagar Online<br />
+                        El Llagar Online de la sidra<br />
+                        El Llagar Online de Asturias<br />
+                        El Llagar Online de la tradición<br />
+                        El Llagar Online de tod@s<br />
+                        El Llagar Online de la cultura<br />
+                        El Llagar Online de la folixa<br />
+                        El Llagar Online de la tradición<br />
+                    </div>
+                </blockquote>
+            </div>
+        </div>
     </header>
     <nav>
         <ul id="lista_menu">
@@ -64,71 +71,109 @@
                             Productos</a></li>
                 </ul>
             </li>
-            <li><a href="establecimientos.html" title="Ir a la página de los establecimientos">Establecimientos</a></li>
+            <li><a href="establecimientos.html" title="Ir a la página de los establecimientos">Lugares</a></li>
             <li><a href="contacto.html" title="Ir a la pñagina de contacto">Contacto</a></li>
         </ul>
     </nav>
 
     <main>
         <section>
-            <h1>Tramitar Pedido</h1>
-            <h2>Datos Personales</h2>
-            <p>Rellene los campos para formalizar su reserva.</p>
+            <h1>Pedido</h1>
+            <h2>Gestionamos su compra</h2>
+            <p>Cumplimente el siguiente formulario para procesar su compra con su nombre
+                completo y su email. Con sus datos, nos pondremos en marcha para agilizar lo antes posible
+                su pedido y enviarselo con nuestro transporte lo más antes posible para su disfrute.
+                Contamos con un equipo de transportistas de garantía y calidad, con alta experiencia en el mundo
+                del transporte y con notable atención.
+            </p>
 
-            <form name="reserva">
+            <form name="tramitar">
 
-                <label for="nombre">Nombre:*<br /></label>
-                <input id="nombre" type="text" name="nombre" placeholder="Germán" pattern="[A-Za-z]{3,}" maxlength="10"
-                    required="required" /><br />
+                <label for="nombre">Nombre:<br /></label>
+                <input id="nombre" type="text" name="nombre" placeholder="Escriba su nombre de pila"
+                    pattern="[A-Za-z]{1,}" maxlength="20" required /><br />
 
-                <label for="apellidos">Apellidos:*<br /></label>
-                <input id="apellidos" type="text" name="apellidos" placeholder="Iglesias Ramos" pattern="[A-Za-z]{3,}"
-                    maxlength="25" required="required" /><br />
+                <label for="apellidos">Apellidos:<br /></label>
+                <input id="apellidos" type="text" name="apellidos" placeholder="Escriba sus apellidos"
+                     maxlength="50" required /><br />
 
-                <label for="email">Email:*<br /></label>
-                <input id="email" type="email" name="email" placeholder="ejemplo@ejemplo.com"
-                    required="required" /><br />
+                <label for="email">Email:<br /></label>
+                <input id="email" type="email" name="email" placeholder="Escriba su email: ejemplo@um.es.com"
+                    required /><br />
 
-                <div id="botonesForm">
-                    <input class="botonesForm" type="button" id="grabar" value="Grabar Pedido" />
-                    <input class="botonesForm" type="button" id="borrar" value="Borrar información" />
+                <div id="btnF">
+                    <input class="btnF" type="button" id="enviar" title="Enviar datos" value="Enviar información" />
+                    <input class="btnF" type="button" id="borrar" title="Borrar datos" value="Borrar información" />
                 </div>
+                <img src="../IMG/van-310171_640.png" alt="furgoneta" title="Imagen de una furgoneta" />
 
             </form>
+            <a id="subir" href="#lista_menu"><img src="../IMG/subir.png" alt="Subir" title="Ir arriba" /></a>
         </section>
     </main>
 
-    <footer>
-        <div id="copy">
-            <span class="copy">
-                &copy; Copyright LLAGAR ONLINE, S.L. 2019 - Todos los derechos reservados
-            </span>
-            <span class="contacto_footer">
-                Sitio web hecho por:
-                <a href="mailto:uo202549@uniovi.es">Germán Iglesias Ramos</a>
-            </span>
+    <footer class="footer">
+        <div class="footer-izquierda">
+
+            <h3>Llagar Online<span>
+                    <img src="../IMG/astur.png" alt="Imagen de escudo" />
+                </span></h3>
+
+            <div class="footer-menu">
+                <h3>Mapa web</h3>
+                <ul>
+                    <li><a href="../index.html" title="Ir a la página principal">Principal</a></li>
+                    <li><a href="historia.html" title="Ir a la página de la historia">Historia</a></li>
+                    <li><a href="productos.html" title="Ir a la página de los productos">Productos</a></li>
+                    <li><a href="establecimientos.html" title="Ir a la página de establecimientos">Establecimientos</a>
+                    </li>
+                    <li><a href="contacto.html" title="Ir a la página de contacto">Contacto</a></li>
+                </ul>
+            </div>
+
+            <p class="footer-derechos">&copy; Copyright LLAGAR ONLINE, S.L. 2019</p>
         </div>
 
-        <div class="mapa_web">
-            <h3>Mapa web</h3>
-            <ul>
-                <li><a href="../index.html" title="Ir a la página principal">Principal</a></li>
-                <li><a href="historia.html" title="Ir a la página de la historia">Historia</a></li>
-                <li><a href="productos.html" title="Ir a la página de los productos">Productos</a></li>
-                <li><a href="establecimientos.html" title="Ir a la página de establecimientos">Establecimientos</a></li>
-                <li><a href="contacto.html" title="Ir a la página de contacto">Contacto</a></li>
-            </ul>
+        <div class="footer-centro">
+            <address>
+                <div>
+                    <em class="direccion"></em>
+                    <p><span>C/ Castejón Fuero, 23, 33013</span> Oviedo, Asturias, España</p>
+                </div>
+
+                <div>
+                    <em class="telefono"></em>
+                    <p>985 202 122 - 999 000 789</p>
+                </div>
+
+                <div>
+                    <em class="autor"></em>
+                    <p><span>Web hecha por:</span></p>
+                    <p><a href="mailto:uo202549@uniovi.es">Germán Iglesias Ramos UO202549</a></p>
+                </div>
+            </address>
         </div>
 
-        <div class="accesibilidad">
-            <h3>Sobre la accesibilidad</h3>
-            <p>Web optimizada para su uso en los siguientes navegadores:<br />
-                Internet Explorer 8, Firefox 2.0 o superior, Safari, Ópera y Chrome.<br />
-                Sitio web creado con CSS &amp; HTML válidos. • Accesibilidad AAA.</p>
+        <div class="footer-derecha">
+
+            <p class="footer-company-about">
+                <span>Validación de HTML y CSS</span>
+
+            </p>
+
+            <div class="footer-icons">
+
+                <a href="https://validator.w3.org/check?uri=referer">
+                    <img src="../IMG/html5.png" alt="HTML5 Válido" title="HTML5 Válido" /></a>
+                <br />
+                <a href="http://jigsaw.w3.org/css-validator/check/referer ">
+                    <img src="../IMG/css3.png" alt="CSS Válido" title="CSS Válido" /></a>
+
+            </div>
+
         </div>
-        <div class="clear"></div>
     </footer>
-    <script src="../JAVASCRIPT/tramitarPedido.js"></script>
+    <script src="../JAVASCRIPT/pedido.js"></script>
 </body>
 
 </html>

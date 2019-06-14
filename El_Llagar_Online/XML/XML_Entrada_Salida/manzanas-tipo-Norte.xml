@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manzanas>
+  <manzana>
+    <nombre>Amariega</nombre>
+    <posicion_geografica>1</posicion_geografica>
+    <mes_temporada>10</mes_temporada>
+    <nivel>90</nivel>
+  </manzana>
+  <manzana>
+    <nombre>Perracabiella</nombre>
+    <posicion_geografica>1</posicion_geografica>
+    <mes_temporada>12</mes_temporada>
+    <nivel>92</nivel>
+  </manzana>
+  <manzana>
+    <nombre>Verdialona</nombre>
+    <posicion_geografica>1</posicion_geografica>
+    <mes_temporada>9</mes_temporada>
+    <nivel>94</nivel>
+  </manzana>
+</manzanas>

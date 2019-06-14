@@ -1,0 +1,22 @@
+
+	/* Especificidad 001*/
+	table { 
+		width: 100%; 
+		border-collapse: collapse; 
+	}
+		/* Especificidad 001*/
+
+	th { 
+		background: #333; 
+		color: white; 
+		font-weight: bold; 
+	}	
+	
+	/* Especificidad 001*/
+
+
+	td, th { 
+		padding: 6px; 
+		border: 2px solid #ccc; 
+		text-align: left; 
+	}
