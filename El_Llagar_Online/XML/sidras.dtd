@@ -1,0 +1,19 @@
+        <!ELEMENT sidras (sidra)*>
+        <!ELEMENT sidra (titulo, rutaFoto, nombre, descripcion, composicion, precio, porcentaje_alcohol, cantidad_neta )>
+        <!ELEMENT titulo (#PCDATA)>
+	<!ELEMENT rutaFoto (#PCDATA)>
+	<!ELEMENT nombre (#PCDATA)>    
+        <!ELEMENT descripcion (#PCDATA)>
+        <!ELEMENT composicion (compuesto+)>
+        <!ELEMENT compuesto (#PCDATA)>
+        <!ELEMENT precio (#PCDATA)>
+	<!ATTLIST precio
+                unidad CDATA #REQUIRED>
+        <!ELEMENT porcentaje_alcohol (#PCDATA)>
+        <!ATTLIST porcentaje_alcohol
+                cantidad CDATA #REQUIRED
+                unidad CDATA #REQUIRED>
+	<!ELEMENT cantidad_neta (#PCDATA)>
+        <!ATTLIST cantidad_neta
+                unidad CDATA #REQUIRED>		
+         

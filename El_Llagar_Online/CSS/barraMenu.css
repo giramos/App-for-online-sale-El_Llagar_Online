@@ -1,0 +1,117 @@
+@charset "utf-8";
+
+
+	 
+  /* especificidad: 001 */
+  @media screen and (max-width:800px ) {
+    nav{
+      height: auto;
+      text-align: center;
+      line-height: 0.5em; /*HAS DE MIRAR PARA LO DE LOS ESTABLECIMIENTOS*/
+    }
+  }
+  /* Especificidad 003*/
+nav ul ul {
+    display: none;
+}
+  /* especificidad: 014 */
+
+nav ul li:hover > ul {
+    display: block;
+    list-style: none;
+}
+  /* especificidad: 002 */
+  
+nav > ul {/*menu*/
+    background: #FEFEFE;/*color del menu*/
+    padding: 0 0;
+    list-style: none;
+    position: relative;
+    display: inline-table;
+   
+    width: 100%;
+    text-align: center;
+    z-index: 100; /*Establece orden de prioridad*/
+    border-radius: 10px 10px 10px 10px;
+    border: 15px double rgb(202, 206, 5);/*el borde de todo el menu*/
+    font-size: larger;/*tamaño de la letra*/
+    font: small-caps 100%/200% serif;/*formato de la letra del menu*/
+    margin: 0 auto;
+    
+}
+  /* especificidad: 003 */
+
+nav ul li {
+    float: left;
+    width: 19.6%;
+    border-right-style: ridge;
+    border-right-color:  rgb(202, 206, 5);
+    border-right-width: 3px;
+    display: inline-block;
+    
+}
+/* especificidad: 013 */
+nav ul li:last-child{/*ultimo item del navegador*/
+  border-right: none;
+}
+  /* especificidad: 013 */
+
+nav ul li:hover {/*el foco*/
+  background: rgb(240, 221, 181);
+  font-size: larger;
+  
+    
+}
+  /* especificidad: 014 */
+
+nav ul li:hover a {
+    color: #000; /*color que aparece cuando acercamos el puntero a las letras*/
+}
+  /* especificidad: 004 */
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    display: block;
+    padding: 25px 40px;
+    text-decoration: none;
+    
+}
+  /* especificidad: 003 */
+
+nav ul ul {/*menu desplegable*/
+    background-color: rgb(202, 206, 5);
+    padding: 0;
+    position: absolute;
+    width: 40%;
+    border-radius: 10px 10px 10px 10px;
+    
+}
+/* especificidad: 013 */
+nav ul ul:last-child {/*ultimo item menu desplegable*/
+  border-right-style: ridge;
+    border-right-color:  rgb(202, 206, 5);
+    border-right-width: 3px;
+}
+
+  /* especificidad: 004 */
+
+nav ul ul li {
+    float: none;
+    border-top: 1px solid #FEFEFE;
+    border-bottom: 1px solid #FEFEFE;
+    position: relative;
+    width: 100%;
+}
+  /* especificidad: 005 */
+
+nav ul ul li a {
+    padding: 15px 40px;
+    color: #000;
+}
+  /* especificidad: 015 */
+
+nav ul ul li a:hover {
+    background: rgb(240, 221, 181);
+    border-radius: 10px 10px 10px 10px;
+}
+

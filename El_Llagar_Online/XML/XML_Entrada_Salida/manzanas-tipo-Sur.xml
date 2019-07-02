@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manzanas>
+  <manzana>
+    <nombre>Arbeya</nombre>
+    <posicion_geografica>2</posicion_geografica>
+    <mes_temporada>9</mes_temporada>
+    <nivel>88</nivel>
+  </manzana>
+  <manzana>
+    <nombre>Carrandona</nombre>
+    <posicion_geografica>2</posicion_geografica>
+    <mes_temporada>11</mes_temporada>
+    <nivel>93</nivel>
+  </manzana>
+  <manzana>
+    <nombre>Xuanina</nombre>
+    <posicion_geografica>2</posicion_geografica>
+    <mes_temporada>8</mes_temporada>
+    <nivel>93</nivel>
+  </manzana>
+</manzanas>

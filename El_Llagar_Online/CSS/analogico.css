@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/* especificidad: 100 */
+#CajaReloj {
+    float: right;
+    width: 120px;
+    height: 120px;
+    background-image: url(../IMG/Base_reloj.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+     /*para ajustar el margen derecho*/
+    display: block; margin-left: auto; margin-right: auto;
+}
+/* especificidad: 100 */
+#hora {
+    position: absolute;
+    height: 24px;
+    margin-left: 55.2px;
+    margin-top: 36px;
+    transform: rotate(0deg);
+    transform-origin: bottom;
+    /*transition-duration: 1s;*/
+}
+/* especificidad: 100 */
+#minutos {
+    position: absolute;
+    height: 39px;
+    margin-left: 57px;
+    margin-top: 22.2px;
+    transform: rotate(0deg);
+    transform-origin: bottom;
+    /*transition-duration: 1s;*/
+}
+/* especificidad: 100 */
+#segundos {
+    position: absolute;
+    height: 42px;
+    margin-left: 60px;
+    margin-top: 19.2px;
+    transform: rotate(0deg);
+    transform-origin: bottom;
+    /*transition-duration: 1s;*/
+}

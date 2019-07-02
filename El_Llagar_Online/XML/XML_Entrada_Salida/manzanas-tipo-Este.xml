@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manzanas>
+  <manzana>
+    <nombre>Golden</nombre>
+    <posicion_geografica>3</posicion_geografica>
+    <mes_temporada>9</mes_temporada>
+    <nivel>94</nivel>
+  </manzana>
+  <manzana>
+    <nombre>Peñarudes</nombre>
+    <posicion_geografica>3</posicion_geografica>
+    <mes_temporada>11</mes_temporada>
+    <nivel>94</nivel>
+  </manzana>
+  <manzana>
+    <nombre>Reineta</nombre>
+    <posicion_geografica>3</posicion_geografica>
+    <mes_temporada>10</mes_temporada>
+    <nivel>90</nivel>
+  </manzana>
+</manzanas>

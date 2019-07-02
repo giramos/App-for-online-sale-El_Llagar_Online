@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/xsl' href='sidras.xsl'?>
+<sidras>
+ 
+     <sidra>
+         <titulo>EL GAITERO sidra achampanada etiqueta blanca botella 75 cl.</titulo>
+         <rutaFoto>../img/00118730600188____2__600x600.jpg</rutaFoto>
+         <nombre>El Gaitero</nombre>
+         <descripcion>La sidra tradicional de El Gaitero por excelencia, espumosa, que empezó a producirse ya a finales del siglo XIX en todo el mundo. Ésta es una sidra semiseca singular, obtenida por elaboración tradicional y de gran riqueza aromática, espumosa y con formación de rosarios de gran finura en la burbuja.</descripcion>
+         <composicion>
+            <compuesto>Manzana autóctona</compuesto>
+            <compuesto>Hierbas aromáticas</compuesto>
+            <compuesto>Taninos secos</compuesto>
+            <compuesto>Frutas maduras</compuesto>
+            <compuesto>Taninos secos</compuesto>
+         </composicion>
+         <precio unidad="€">2</precio>
+         <porcentaje_alcohol cantidad="100" unidad="%">4.1</porcentaje_alcohol>
+         <cantidad_neta unidad="cl">75</cantidad_neta>
+     </sidra>
+
+     <sidra>
+         <titulo>SIDRA BRUT POMARINA D.O.P.</titulo>
+         <rutaFoto>../img/sidra-el-gaitero-etiqueta-negra.jpg</rutaFoto>
+         <nombre>Pomarina Brut</nombre>
+         <descripcion>Color Amarillo dorado limpio y brillante con burbuja fina. La sidra Pomarina Brut proviene de plantaciones nuevas de fincas con Denominación de Origen Protegida. Su elaboración se caracteriza por realizar la ultima fase de la fermentación de manera presurizada para integrar mejor la burbuja. Esta sidra es una espumosa en su variedad Brut, con sabor fresco y elegante</descripcion>
+         <composicion>
+            <compuesto>Manzana madura</compuesto>
+            <compuesto>Taninos secos</compuesto>
+            <compuesto>Frutas computada</compuesto>
+         </composicion>
+         <precio unidad="€">6</precio>
+         <porcentaje_alcohol cantidad="100" unidad="%">4</porcentaje_alcohol>
+         <cantidad_neta unidad="cl">75</cantidad_neta>
+     </sidra>
+
+     <sidra>
+         <titulo>Sidra Lagar de Camin Brut</titulo>
+         <rutaFoto>../img/papa.jpg</rutaFoto>
+         <nombre>Pomarina Brut</nombre>
+         <descripcion>La sidra lagar de Camin Brut es una sidra espumosa totalmente natural. También se conoce como sidra achampanada o brut de manzana. Ideal para celebraciones!</descripcion>
+         <composicion>
+            <compuesto>Manzana madura</compuesto>
+            <compuesto>Hierbas aromáticas</compuesto>
+         </composicion>
+         <precio unidad="€">4</precio>
+         <porcentaje_alcohol cantidad="100" unidad="%">4.5</porcentaje_alcohol>
+         <cantidad_neta unidad="cl">75</cantidad_neta>
+     </sidra>
+
+     <sidra>
+         <titulo>SIDRA POMAR ROSEE VIUDA ANGELON</titulo>
+         <rutaFoto>../img/papa.jpg</rutaFoto>
+         <nombre>Pomar Rosee</nombre>
+         <descripcion>Sidra espumosa elaborada a partir de las propias manzanas que Viuda de Angelón tiene en la localidad de Monga (Nava, Asturias).</descripcion>
+         <composicion>
+            <compuesto>Manzana autóctona</compuesto>
+            <compuesto>Hierbas aromáticas</compuesto>
+            <compuesto>Frutas maduras</compuesto>
+         </composicion>
+         <precio unidad="€">7</precio>
+         <porcentaje_alcohol cantidad="100" unidad="%">5</porcentaje_alcohol>
+         <cantidad_neta unidad="cl">75</cantidad_neta>
+     </sidra>
+ </sidras>
+     

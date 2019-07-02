@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Germán Iglesias Ramos" />
+    <meta name="description"
+        content="Página principal de la pagina web dedicada a la distribución y venta de sidras y derivados" />
+    <meta name="keywords" content="sidra, Sidra, sidreria, Sidreria, Sidrería, sidrería, sidras, culin, culín, escanciador, bebida
+    corcho, botella, botellas, asturias, Asturias, chigre, escanciar, llagar, Llagar" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <link rel="icon" href="IMG/iconoSidra.jpg" type="image/jpg" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="JAVASCRIPT/fecha.js"></script>
+    <script src="JAVASCRIPT/analogico.js"></script>
+    <link href="CSS/barraMenu.css" rel="stylesheet" type="text/css" />
+    <link href="CSS/estilo.css" rel="stylesheet" type="text/css" />
+    <link href="CSS/estiloTitulo.css" rel="stylesheet" type="text/css" />
+    <link href="./CSS/analogico.css" rel="stylesheet" type="text/css" />
+    <link href="./CSS/footer.css" rel="stylesheet" type="text/css" />
+    <title>El Llagar Online</title>
+</head>
+
+<body>
+    <div id="cajacontenido" title="Reloj analógico">
+        <div id="aplicacion">
+            <div id="CajaReloj">
+                <img id="segundos" src="./IMG/Aguja3.png" alt="Manilla segundos reloj" />
+                <img id="minutos" src="./IMG/Aguja2.png" alt="Manilla pequeña reloj" />
+                <img id="hora" src="./IMG/Aguja1.png" alt="Manilla grande reloj" />
+            </div>
+        </div>
+    </div>
+
+    <div id="clockDate" title="Fecha">
+        <p id="date"></p>
+    </div>
+
+    <header>
+        <div class="header">
+
+            <div class="Iam" title="Título animado del Llagar Online">
+                <a href="index.html" title="Ir a la página principal">
+                    <img src="IMG/Llagar.gif" alt="El Llagar Online" />
+                </a>
+                <blockquote>
+                    <div class="innerIam">
+                        El Llagar Online<br />
+                        El Llagar Online de la sidra<br />
+                        El Llagar Online de Asturias<br />
+                        El Llagar Online de la tradición<br />
+                        El Llagar Online de tod@s<br />
+                        El Llagar Online de la cultura<br />
+                        El Llagar Online de la folixa<br />
+                        El Llagar Online de la tradición<br />
+                    </div>
+                </blockquote>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul id="lista_menu">
+            <li><a href="index.html" title="Ir a la página principal">Principal</a></li>
+            <li><a href="HTML/historia.html" title="Ir a la página de la historia">Historia </a></li>
+            <li><a href="HTML/productos.html" title="Ir a la página de los productos">Productos</a>
+                <ul>
+                    <li><a href="XML/sidras.xml"
+                            title="Ir a la página de las sidras tradicionales"><span>Sidras</span></a></li>
+                    <li><a href="XML/sidrasEspumosas.xml" title="Ir a la página de las sidras espumosas">Sidras
+                            Espumosas</a></li>
+                    <li><a href="XML/otrosProductos.xml" title="Ir a la página de otors productos">Otros
+                            Productos</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="HTML/establecimientos.html" title="Ir a la página de los establecimientos">Lugares</a>
+            </li>
+            <li><a href="HTML/contacto.html" title="Ir a la pñagina de contacto">Contacto</a></li>
+        </ul>
+
+    </nav>
+
+
+    <main>
+        <section>
+            <h1>¡De la mejor manzana, la mejor sidra!</h1>
+            <h2>¡Sean bienvenid@s al Llagar Online!</h2>
+
+            <div class="botonesPrincipales">
+                <input class="botonPrincipal" type="button" title="Ir a la página de los establecimientos"
+                    onclick="location.href='HTML/establecimientos.html';" value="Nuestros Establecimientos" />
+                <p></p>
+                <input class="botonPrincipal" type="button" title="Ir a la págna de los productos"
+                    onclick="location.href='HTML/productos.html';" value="Nuestros Productos" />
+                <p></p>
+                <input class="botonPrincipal" type="button" title="Ir a la págna de la historia"
+                    onclick="location.href='HTML/historia.html';" value="Nuestra Historia" />
+            </div>
+
+            <img class="botella" src="./IMG/botella.png" alt="botella" title="Imagen de una botella de sidra" />
+
+
+            <p>Una vez llegado hasta aquí, usted disfrutará del Llagar Online, será testigo y podrá encontrar una
+                descripción de la
+                localización de nuestros establecimientos en sus lugares físicos, podrá contemplar y adquirir los
+                maravillosos
+                productos tradicionales y con esencia Asturiana. A demás, será informado de nuestros servicios
+                para que pueda degustar nuestros productos relacionados con la sidra, tanto en nuestros locales como a
+                domicilio.
+                Ofrecemos un servicio de venta presencial de productos asturianos a través de nuestras tiendas en
+                Oviedo.
+                Nuestros servicios de comercio electrónico y logística están a su entera disposición con el objetivo de
+                amoldarse a sus exigencias en la medida de lo posible.
+            </p>
+            <a id="subir" href="#lista_menu" title="Ir arriba"><img src="./IMG/subir.png" alt="Subir"
+                    title="Ir arriba" /></a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-izquierda">
+
+            <h3>Llagar Online<span>
+                    <img src="IMG/astur.png" alt="Imagen de escudo" />
+                </span></h3>
+
+            <div class="footer-menu">
+                <h3>Mapa web</h3>
+                <ul>
+                    <li><a href="index.html" title="Ir a la página principal">Principal</a></li>
+                    <li><a href="HTML/historia.html" title="Ir a la página de la historia">Historia</a></li>
+                    <li><a href="HTML/productos.html" title="Ir a la página de los productos">Productos</a></li>
+                    <li><a href="HTML/establecimientos.html"
+                            title="Ir a la página de establecimientos">Establecimientos</a>
+                    </li>
+                    <li><a href="HTML/contacto.html" title="Ir a la página de contacto">Contacto</a></li>
+                </ul>
+            </div>
+
+            <p class="footer-derechos">&copy; Copyright LLAGAR ONLINE, S.L. 2019</p>
+        </div>
+
+        <div class="footer-centro">
+            <address>
+                <div>
+                    <em class="direccion"></em>
+                    <p><span>C/ Castejón Fuero, 23, 33013</span> Oviedo, Asturias, España</p>
+                </div>
+
+                <div>
+                    <em class="telefono"></em>
+                    <p>985 202 122 - 999 000 789</p>
+                </div>
+
+                <div>
+                    <em class="autor"></em>
+                    <p><span>Web hecha por:</span></p>
+                    <p><a href="mailto:uo202549@uniovi.es">Germán Iglesias Ramos UO202549</a></p>
+                </div>
+            </address>
+        </div>
+
+        <div class="footer-derecha">
+
+            <p class="footer-company-about">
+                <span>Validación de HTML y CSS</span>
+
+            </p>
+
+            <div class="footer-icons">
+
+                <a href="https://validator.w3.org/check?uri=referer">
+                    <img src="IMG/html5.png" alt="HTML5 Válido" title="HTML5 Válido" /></a>
+                <br />
+                <a href="http://jigsaw.w3.org/css-validator/check/referer ">
+                    <img src="IMG/css3.png" alt="CSS Válido" title="CSS Válido" /></a>
+
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/xsl' href='productos.xsl'?>
+<productos>
+     <producto>
+         <titulo>Escanciador eléctrico Manzana</titulo>
+         <rutaFoto>../img/escanciador-electrico-manzana.jpg</rutaFoto>
+         <nombre>Escanciador eléctrico modelo Manzana</nombre>
+         <descripcion>Primer escanciador electrico de su familia, ahora con un diseño renovado y más atractivo. Incluye varilla extensible y bomba de gran capacidad. Valido para botella vasca y asturiana</descripcion>
+         <precio unidad="€">60</precio>
+     </producto>
+
+     <producto>
+         <titulo>Tapon escanciador de sidra</titulo>
+         <rutaFoto>../img/ss.jpg</rutaFoto>
+         <nombre>Tapon escanciador de sidra</nombre>
+         <descripcion>El tapón está fabricado en plástico y por su tamaño es muy fácil de transportar. Simplemente hay que colocarlo en la boca de la botella de sidra y ya estaremos preparados para escanciar la sidra como un profesional sin desperdiciar una gota.</descripcion>
+         <precio unidad="€">1</precio>
+     </producto>
+
+    <producto>
+         <titulo>Vaso de sidra de plástico para fiestas y eventos</titulo>
+         <rutaFoto>../img/vaso.jpg</rutaFoto>
+         <nombre>Vaso de sidra</nombre>
+         <descripcion>Excelentes vasos de plástico para eventos multitudinarios o donde el vidrio no está permitido</descripcion>
+         <precio unidad="€">3</precio>
+     </producto>
+
+     <producto>
+         <titulo>LLAVERO CENCERRO ASTURIAS</titulo>
+         <rutaFoto>../img/llavero-cencerro-asturias.jpg</rutaFoto>
+         <nombre>Llavero</nombre>
+         <descripcion>Un llavero imitación de los cencerros que los animales de pasto llevan al cuello.</descripcion>
+         <precio unidad="€">5</precio>
+     </producto>
+ </productos>
